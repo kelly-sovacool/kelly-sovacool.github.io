@@ -8,3 +8,4 @@ redirect_from:
   - /about.html
 ---
 
+Hi, I'm Kelly! I'm a PhD student in the Department of Computational Medicine & Bioinformatics at the University of Michigan.
