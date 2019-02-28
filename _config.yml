@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Kelly Sovacool"
   avatar           : "profile.png"
-  bio              : "Bioinformatics PhD Student at the University of Michigan"
+  bio              : "Bioinformatics PhD Student at U-M"
   location         : "Ann Arbor, MI"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=TlglgLgAAAAJ"
-  email            :
+  email            : "kelly@sovacool.dev"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
