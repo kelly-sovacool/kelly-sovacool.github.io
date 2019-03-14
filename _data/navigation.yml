@@ -2,8 +2,8 @@
 main:
   - title: "CV"
     url: /files/cv_science_KLS.pdf
-#  - title: "Publications"
-#    url: /publications/
+  - title: "Publications"
+    url: {{author.googlescholar}}
 #  - title: "Talks"
 #    url: /talks/
 #  - title: "Teaching"
