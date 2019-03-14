@@ -11,7 +11,7 @@ title                    : "Kelly L. Sovacool"
 title_separator          : "-"
 name                     : &name "Kelly L. Sovacool"
 description              : &description "Bioinformatics PhD Student at the University of Michigan"
-url                      : https://sovacool.dev # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sovacool.dev
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kelly-sovacool/kelly-sovacool.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -19,7 +19,7 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+talkmap_link             : false # change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
