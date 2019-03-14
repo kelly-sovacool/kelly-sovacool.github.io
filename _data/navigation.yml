@@ -3,7 +3,7 @@ main:
   - title: "CV"
     url: /files/cv_science_KLS.pdf
   - title: "Publications"
-    url: "{{author.googlescholar}}"
+    url: /publication/
 #  - title: "Talks"
 #    url: /talks/
 #  - title: "Teaching"
