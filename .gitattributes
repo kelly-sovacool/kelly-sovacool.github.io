@@ -1,2 +1,2 @@
-* linguist-vendored=True
-run-local.sh linguist-vendored=False
+* linguist-vendored=true
+run-local.sh linguist-vendored=false
