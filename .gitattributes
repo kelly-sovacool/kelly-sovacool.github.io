@@ -1,0 +1,6 @@
+*.js linguist-vendored=True
+*.css linguist-vendored=True
+*.html linguist-vendored=True
+*.rb linguist-vendored=True
+*.ipynb linguist-vendored=True
+*.py linguist-vendored=True
