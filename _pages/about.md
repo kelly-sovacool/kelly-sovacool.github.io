@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Kelly! I'm a PhD student in the [Department](https://medicine.umich.edu/dept/computational-medicine-bioinformatics) of Computational Medicine & Bioinformatics at the University of Michigan.
+Hi, I'm Kelly! I'm a [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics) PhD student in [Pat Schloss' Lab](http://www.schlosslab.org/) at the University of Michigan.
 
 When I'm not doing science, you might find me volunteering with [Girls Who Code](http://umich.edu/~girlswc/), running, cycling, or moonlighting as a [live sound engineer](kelly-sovacool.github.io/files/cv_sound_KLS.pdf).
 
