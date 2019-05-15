@@ -18,22 +18,21 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 *Last updated: 2019-05-15*
 
 **Table of Contents:**
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Resources for Bioinformatics Software Development & Data Analysis](#resources-for-bioinformatics-software-development-data-analysis)
-	- [Programming](#programming)
-		- [Python](#python)
-		- [R](#r)
-	- [Reproducibility](#reproducibility)
-		- [Project organization](#project-organization)
-		- [Literate programming](#literate-programming)
-			- [R Markdown](#r-markdown)
-			- [Jupyter](#jupyter)
-		- [Documentation](#documentation)
-	- [Misc. Tools](#misc-tools)
-		- [For git](#for-git)
-		- [Editors](#editors)
-		- [etc.](#etc)
+- [Programming](#programming)
+	- [Python](#python)
+	- [R](#r)
+- [Reproducibility](#reproducibility)
+	- [Project organization](#project-organization)
+	- [Literate programming](#literate-programming)
+		- [R Markdown](#r-markdown)
+		- [Jupyter](#jupyter)
+	- [Documentation](#documentation)
+- [Misc. Tools](#misc-tools)
+	- [For git](#for-git)
+	- [Editors](#editors)
+	- [etc.](#etc)
 
 <!-- /TOC -->
 
