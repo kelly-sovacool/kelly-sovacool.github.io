@@ -47,22 +47,25 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
 - [GWC Code demos](https://github.com/GWC-DCMB/codeDemos): introductory Python demos - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
 - [GWC Challenge Questions](https://github.com/GWC-DCMB/challengeQuestions): practice solving problems - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
-- [Office Hours for BIOINF 529: Bioinformatic Concepts & Algorithms](https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg) - [Marcus Sherman](https://www.betteridiot.tech/)
-- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
-- [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
-- [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
 - [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
-- [Transforming Code into Beautiful, Idiomatic Python](https://pyvideo.org/pycon-us-2013/transforming-code-into-beautiful-idiomatic-pytho.html) - Raymond Hettinger
-- [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
+- Books:
+    - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
+    - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
+    - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
+- Videos:
+    - [Office Hours for BIOINF 529: Bioinformatic Concepts & Algorithms](https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg) - [Marcus Sherman](https://www.betteridiot.tech/)
+    - [Transforming Code into Beautiful, Idiomatic Python](https://pyvideo.org/pycon-us-2013/transforming-code-into-beautiful-idiomatic-pytho.html) - Raymond Hettinger
+    - [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
 
 ### R
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
 - [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/) - Jenny Bryan & Jim Hester
-- [R for Data Science](https://r4ds.had.co.nz/) - Hadley Wickham
-- [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) - Roger Peng, Sean Kross, & Brooke Anderson
-- [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
-- [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
+- Books:
+    - [R for Data Science](https://r4ds.had.co.nz/) - Hadley Wickham
+    - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) - Roger Peng, Sean Kross, & Brooke Anderson
+    - [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
+    - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
 
 
 ## Reproducibility
@@ -111,10 +114,11 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Language LaTeX](https://atom.io/packages/language-latex)
 - [PyCharm](https://www.jetbrains.com/pycharm/): IDE for Python.
     - The community edition is free, or link your university email to get the pro version for free.
+    - Supports Snakemake syntax highlighting & Jupyter notebooks.
 - [RStudio](https://www.rstudio.com/): IDE for R.
-- [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & others!
+- [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & more.
 
 ### etc.
-- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more!
+- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more.
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) Python testing module.
