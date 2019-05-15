@@ -17,6 +17,25 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 *Last updated: 2019-05-15*
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Resources for Bioinformatics Software Development & Data Analysis](#resources-for-bioinformatics-software-development-data-analysis)
+	- [Programming](#programming)
+		- [Python](#python)
+		- [R](#r)
+	- [Reproducibility](#reproducibility)
+		- [Project organization](#project-organization)
+		- [Literate programming](#literate-programming)
+			- [R Markdown](#r-markdown)
+			- [Jupyter](#jupyter)
+		- [Documentation](#documentation)
+	- [Misc. Tools](#misc-tools)
+		- [For git](#for-git)
+		- [Editors](#editors)
+		- [etc.](#etc)
+
+<!-- /TOC -->
+
 ## Programming
 - [Software Carpentry](https://software-carpentry.org/lessons/): Intro lessons on the Unix shell, git, R, & Python.
 - [Langmead Lab teaching materials](http://www.langmead-lab.org/teaching-materials/): cover classic bioinformatics algorithms.
@@ -25,7 +44,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 ### Python
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
-- [GWC Code demos](https://github.com/GWC-DCMB/codeDemos): introductory Python - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
+- [GWC Code demos](https://github.com/GWC-DCMB/codeDemos): introductory Python demos - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
 - [GWC Challenge Questions](https://github.com/GWC-DCMB/challengeQuestions): practice solving problems - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
 - [Office Hours for BIOINF 529: Bioinformatic Concepts & Algorithms](https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg) - [Marcus Sherman](https://www.betteridiot.tech/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
@@ -57,13 +76,13 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 
 ### Literate programming
-- R Markdown
-    - [How I use R Markdown to document my bioinformatics analyses](https://rachaellappan.github.io/rmarkdown/) - Rachael Lappan
-    - [RMarkdown for writing reproducible scientific papers](https://libscie.github.io/rmarkdown-workshop/handout.html) - Mike Frank & Chris Hartgerink
-    - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) - Yihui Xie, J. J. Allaire, Garrett Grolemund
-- Jupyter
-    - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
-    - [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
+#### R Markdown
+- [How I use R Markdown to document my bioinformatics analyses](https://rachaellappan.github.io/rmarkdown/) - Rachael Lappan
+- [RMarkdown for writing reproducible scientific papers](https://libscie.github.io/rmarkdown-workshop/handout.html) - Mike Frank & Chris Hartgerink
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) - Yihui Xie, J. J. Allaire, Garrett Grolemund
+#### Jupyter
+- [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
+- [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
 
 ### Documentation
 - Lee BD (2018) **Ten simple rules for documenting scientific software**. PLoS Comput Biol 14(12): e1006561. doi: [10.1371/journal.pcbi.1006561](https://doi.org/10.1371/journal.pcbi.1006561).
@@ -73,14 +92,21 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [pkgdown](https://pkgdown.r-lib.org/): build a website for your R package.
 
 ## Misc. Tools
+### For git
 - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
     - All users (Pro or free) get free unlimited private repositories on GitHub.
 - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
-- [Atom](https://atom.io/): text editor.
-    - [Markdown Preview](https://atom.io/packages/markdown-preview-plus) extension.
-- [RStudio](https://www.rstudio.com/): IDE for R.
+### Editors
+- [Atom](https://atom.io/): text editor. Additional pacakges for atom:
+    - [Autosave on change](https://atom.io/packages/autosave-onchange)
+    - [Markdown Preview](https://atom.io/packages/markdown-preview-plus)
+    - [Markdown TOC](https://atom.io/packages/markdown-toc)
+    - [Language LaTeX](https://atom.io/packages/language-latex)
 - [PyCharm](https://www.jetbrains.com/pycharm/): IDE for Python.
     - The community edition is free, or link your university email to get the pro version for free.
+- [RStudio](https://www.rstudio.com/): IDE for R.
+- [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & others!
+### etc.
 - [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more!
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) Python testing module.
