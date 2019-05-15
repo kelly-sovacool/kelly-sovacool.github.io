@@ -32,6 +32,8 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
 - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
 - [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
+- [Transforming Code into Beautiful, Idiomatic Python](https://pyvideo.org/pycon-us-2013/transforming-code-into-beautiful-idiomatic-pytho.html) - Raymond Hettinger
+- [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
 
 ### R
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
@@ -73,10 +75,12 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 ## Misc. Tools
 - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
     - All users (Pro or free) get free unlimited private repositories on GitHub.
-- [GitKraken](https://www.gitkraken.com/) has a nice GUI for interacting with git, GitHub, GitLab, etc.
+- [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 - [Atom](https://atom.io/): text editor.
     - [Markdown Preview](https://atom.io/packages/markdown-preview-plus) extension.
 - [RStudio](https://www.rstudio.com/): IDE for R.
 - [PyCharm](https://www.jetbrains.com/pycharm/): IDE for Python.
     - The community edition is free, or link your university email to get the pro version for free.
-- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more! 
+- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more!
+- [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
+- [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) Python testing module.
