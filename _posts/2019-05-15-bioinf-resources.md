@@ -11,7 +11,9 @@ tags:
 
 # Resources for Bioinformatics Software Development & Data Analysis
 
-I found myself sending some of the same links over and over again to different people who asked questions related to bioinformatics. So it was time to compile them all in one convenient place. All of the resources linked below are free unless otherwise noted.
+I found myself sending some of the same links over and over again to people who asked questions related to bioinformatics. So it was time to compile all the links in one convenient place!
+
+All of the resources linked below are free unless otherwise noted. This isn't intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.
 
 *Last updated: 2019-05-15*
 
@@ -23,6 +25,8 @@ I found myself sending some of the same links over and over again to different p
 
 ### Python
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
+- [GWC Code demos](https://github.com/GWC-DCMB/codeDemos): introductory Python - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
+- [GWC Challenge Questions](https://github.com/GWC-DCMB/challengeQuestions): practice solving problems - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
 - [Office Hours for BIOINF 529: Bioinformatic Concepts & Algorithms](https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg) - [Marcus Sherman](https://www.betteridiot.tech/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
 - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
@@ -45,15 +49,15 @@ I found myself sending some of the same links over and over again to different p
 - [git](https://git-scm.com/doc): version control system.
     - Also take a look at the [Software Carpentry lesson on git](http://swcarpentry.github.io/git-novice/).
 
-
 ### Project organization
-    - Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
-    - [Git repo project template](https://github.com/Reproducible-Science-Curriculum/rr-init).
-    - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
+- Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
+- [Scientific project template](https://github.com/SchlossLab/new_project).
+- [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 
 ### Literate programming
 - R Markdown
     - [How I use R Markdown to document my bioinformatics analyses](https://rachaellappan.github.io/rmarkdown/) - Rachael Lappan
+    - [RMarkdown for writing reproducible scientific papers](https://libscie.github.io/rmarkdown-workshop/handout.html) - Mike Frank & Chris Hartgerink
     - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) - Yihui Xie, J. J. Allaire, Garrett Grolemund
 - Jupyter
     - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
