@@ -30,7 +30,7 @@ I found myself sending some of the same links over and over again to different p
 - [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
 
 ### R
-- [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology.
+- [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
 - [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/) - Jenny Bryan & Jim Hester
 - [R for Data Science](https://r4ds.had.co.nz/) - Hadley Wickham
@@ -39,7 +39,7 @@ I found myself sending some of the same links over and over again to different p
 - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
 
 ## Reproducibility
-- [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/).
+- [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
 
