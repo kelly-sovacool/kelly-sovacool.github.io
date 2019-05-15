@@ -79,3 +79,4 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [RStudio](https://www.rstudio.com/): IDE for R.
 - [PyCharm](https://www.jetbrains.com/pycharm/): IDE for Python.
     - The community edition is free, or link your university email to get the pro version for free.
+- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more! 
