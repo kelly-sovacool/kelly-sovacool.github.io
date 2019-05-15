@@ -11,6 +11,10 @@ tags:
 
 # Resources for Bioinformatics Software Development & Data Analysis
 
+I found myself sending some of the same links over and over again to different people who asked questions related to bioinformatics. So it was time to compile them all in one convenient place. All of the resources linked below are free unless otherwise noted.
+
+*Last updated: 2019-05-15*
+
 ## Programming
 - [Software Carpentry](https://software-carpentry.org/lessons/): Intro lessons on the Unix shell, git, R, & Python.
 - [Langmead Lab teaching materials](http://www.langmead-lab.org/teaching-materials/): cover classic bioinformatics algorithms.
@@ -23,7 +27,7 @@ tags:
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
 - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
 - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
-- [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera - Charles Severance
+- [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
 
 ### R
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology.
@@ -61,6 +65,7 @@ tags:
 
 ## Misc. Tools
 - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
+    - All users (Pro or free) get free unlimited private repositories on GitHub.
 - [GitKraken](https://www.gitkraken.com/) has a nice GUI for interacting with git, GitHub, GitLab, etc.
 - [Atom](https://atom.io/): text editor.
     - [Markdown Preview](https://atom.io/packages/markdown-preview-plus) extension.
