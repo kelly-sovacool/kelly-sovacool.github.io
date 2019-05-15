@@ -17,6 +17,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 *Last updated: 2019-05-15*
 
+**Table of Contents:**
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Resources for Bioinformatics Software Development & Data Analysis](#resources-for-bioinformatics-software-development-data-analysis)
@@ -35,6 +36,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 		- [etc.](#etc)
 
 <!-- /TOC -->
+
 
 ## Programming
 - [Software Carpentry](https://software-carpentry.org/lessons/): Intro lessons on the Unix shell, git, R, & Python.
@@ -63,6 +65,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
 - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
 
+
 ## Reproducibility
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
@@ -76,10 +79,12 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 
 ### Literate programming
+
 #### R Markdown
 - [How I use R Markdown to document my bioinformatics analyses](https://rachaellappan.github.io/rmarkdown/) - Rachael Lappan
 - [RMarkdown for writing reproducible scientific papers](https://libscie.github.io/rmarkdown-workshop/handout.html) - Mike Frank & Chris Hartgerink
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) - Yihui Xie, J. J. Allaire, Garrett Grolemund
+
 #### Jupyter
 - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
 - [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
@@ -91,11 +96,14 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Writing R package documentation](https://support.rstudio.com/hc/en-us/articles/200532317-Writing-Package-Documentation).
 - [pkgdown](https://pkgdown.r-lib.org/): build a website for your R package.
 
+
 ## Misc. Tools
+
 ### For git
 - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
     - All users (Pro or free) get free unlimited private repositories on GitHub.
 - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
+
 ### Editors
 - [Atom](https://atom.io/): text editor. Additional pacakges for atom:
     - [Autosave on change](https://atom.io/packages/autosave-onchange)
@@ -106,6 +114,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - The community edition is free, or link your university email to get the pro version for free.
 - [RStudio](https://www.rstudio.com/): IDE for R.
 - [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & others!
+
 ### etc.
 - [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more!
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
