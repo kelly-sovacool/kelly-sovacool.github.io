@@ -42,6 +42,14 @@ I found myself sending some of the same links over and over again to different p
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
+- [git](https://git-scm.com/doc): version control system.
+    - Also take a look at the [Software Carpentry lesson on git](http://swcarpentry.github.io/git-novice/).
+
+
+### Project organization
+    - Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
+    - [Git repo project template](https://github.com/Reproducible-Science-Curriculum/rr-init).
+    - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 
 ### Literate programming
 - R Markdown
@@ -50,11 +58,6 @@ I found myself sending some of the same links over and over again to different p
 - Jupyter
     - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
     - [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
-
-### Project organization
-- Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
-- [Git repo project template](https://github.com/Reproducible-Science-Curriculum/rr-init).
-- [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 
 ### Documentation
 - Lee BD (2018) **Ten simple rules for documenting scientific software**. PLoS Comput Biol 14(12): e1006561. doi: [10.1371/journal.pcbi.1006561](https://doi.org/10.1371/journal.pcbi.1006561).
