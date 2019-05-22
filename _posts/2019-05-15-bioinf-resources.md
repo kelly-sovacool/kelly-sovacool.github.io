@@ -52,6 +52,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
     - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
     - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
+    - [Object-Oriented Programming in Python](https://python-textbok.readthedocs.io) - 
 - Videos:
     - [Office Hours for BIOINF 529: Bioinformatic Concepts & Algorithms](https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg) - [Marcus Sherman](https://www.betteridiot.tech/)
     - [Transforming Code into Beautiful, Idiomatic Python](https://pyvideo.org/pycon-us-2013/transforming-code-into-beautiful-idiomatic-pytho.html) - Raymond Hettinger
