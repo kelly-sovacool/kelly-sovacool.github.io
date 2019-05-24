@@ -40,7 +40,11 @@ You can check out the source code for this website in my [GitHub repo](https://g
 <div class="row">
 	<div class="column">
     <h2></h2>
-    <a href="http://www.schlosslab.org/"><img border="0" alt="Schloss Lab" src="images/schloss_lab.jpeg"> <a href="http://umich.edu/~girlswc/"><img border="0" alt="Girls Who Code" src="images/gwc.jpeg">
+    <a href="http://www.schlosslab.org/"><img border="0" alt="Schloss Lab" src="images/schloss_lab.jpeg">
+  </div>
+  <div class="column">
+    <h2></h2>
+    <a href="http://umich.edu/~girlswc/"><img border="0" alt="Girls Who Code" src="images/gwc.jpeg">
   </div>
   <div class="column">
     <h2></h2>
