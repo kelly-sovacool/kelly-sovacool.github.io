@@ -13,6 +13,3 @@ Hi, I'm Kelly! I'm a [Bioinformatics](https://medicine.umich.edu/dept/computatio
 When I'm not doing science, you might find me volunteering with [Girls Who Code](http://umich.edu/~girlswc/), running, cycling, or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/cv_sound_KLS.pdf).
 
 You can check out the source code for this website in my [GitHub repo](https://github.com/kelly-sovacool/kelly-sovacool.github.io).
-
-
-<iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/23163300/latest-rides/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
