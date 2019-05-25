@@ -21,13 +21,14 @@ You can check out the source code for this website in my [GitHub repo](https://g
   box-sizing: border-box;
 }
 
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
   padding: 10px;
-  height: 454px;
 }
 
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -37,17 +38,17 @@ You can check out the source code for this website in my [GitHub repo](https://g
 </head>
 <body>
 
+
 <div class="row">
-	<div class="column">
-    <h2></h2>
+  <div class="column">
     <a href="http://www.schlosslab.org/"><img border="0" alt="Schloss Lab" src="images/schloss_lab.jpeg">
   </div>
   <div class="column">
-    <h2></h2>
     <a href="http://umich.edu/~girlswc/"><img border="0" alt="Girls Who Code" src="images/gwc.jpeg">
   </div>
   <div class="column">
-    <h2></h2>
     <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/23163300/activity-summary/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
   </div>
+</div>
+
 </body>
