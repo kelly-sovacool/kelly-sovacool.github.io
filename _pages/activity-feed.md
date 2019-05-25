@@ -1,7 +1,8 @@
 ---
-permalink: /activity-feed/
 title: "Activity Feed"
+permalink: /activity-feed/
 excerpt: "Activity Feed"
+layout: archive
 ---
 
 <head>
