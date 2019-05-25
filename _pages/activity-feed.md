@@ -1,10 +1,7 @@
 ---
-permalink: /
+permalink: /activity-feed/
 title: "Activity Feed"
 excerpt: "Activity Feed"
-redirect_from:
-  - /activity-feed/
-  - /activity-feed.html
 ---
 
 <head>
