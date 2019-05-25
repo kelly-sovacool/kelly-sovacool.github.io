@@ -43,7 +43,7 @@ layout: archive
     <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/23163300/latest-rides/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
   </div>
   <div class="column right">
-    <a class="twitter-timeline" href="https://twitter.com/kelly_sovacool?ref_src=twsrc%5Etfw" data-height="400">Tweets by kelly_sovacool</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" href="https://twitter.com/kelly_sovacool?ref_src=twsrc%5Etfw" data-height="600">Tweets by kelly_sovacool</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
 
