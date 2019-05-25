@@ -1,4 +1,11 @@
-# Activity Feed
+---
+permalink: /
+title: "Activity Feed"
+excerpt: "Activity Feed"
+redirect_from:
+  - /activity-feed/
+  - /activity-feed.html
+---
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
