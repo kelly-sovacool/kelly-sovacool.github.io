@@ -24,5 +24,5 @@ layout: archive
 </div>
 
 <script>
-    new GitHubCalendar(".calendar", "kelly-sovacool");
+    new GitHubCalendar(".calendar", "kelly-sovacool", { responsive: true });
 </script>
