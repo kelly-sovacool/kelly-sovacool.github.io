@@ -17,6 +17,6 @@ When I'm not doing science, you might find me volunteering with [Girls Who Code]
 helping or teaching at a [Software Carpentry](https://umswc.github.io/) workshop, [running or cycling](http://bit.ly/strava-kelly), or moonlighting as
 a [live sound engineer](https://sovacool.dev/latex-cv/cv_sound_KLS.pdf).
 
-You can check out my public projects on [GitHub](https://github.com/kelly-sovacool/meta-repo)!
+You can check out my public projects on [GitHub](https://github.com/kelly-sovacool)!
 
-![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_top_repos.svg?sanitize=true)
+[![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_top_repos.svg?sanitize=true)](https://github.com/kelly-sovacool/meta-repo)
