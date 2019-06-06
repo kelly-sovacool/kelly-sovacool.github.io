@@ -10,7 +10,7 @@ redirect_from:
 
 Hi, I'm Kelly!
 I'm a [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics) PhD student in
-[Pat Schloss' Lab](http://www.schlosslab.org/) at the University of Michigan.
+[Pat Schloss' lab](http://www.schlosslab.org/) at the University of Michigan.
 I’m interested in developing bioinformatics tools and data analysis pipelines for microbial ecology.
 
 When I'm not doing science, you might find me volunteering with [Girls Who Code](http://umich.edu/~girlswc/),
