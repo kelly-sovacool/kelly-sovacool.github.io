@@ -18,3 +18,5 @@ helping or teaching at a [Software Carpentry](https://umswc.github.io/) workshop
 a [live sound engineer](https://sovacool.dev/latex-cv/cv_sound_KLS.pdf).
 
 You can check out my public projects on [GitHub](https://github.com/kelly-sovacool/meta-repo)!
+
+![languages](https://github.com/kelly-sovacool/meta-repo/blob/master/figures/language_top_repos.svg)
