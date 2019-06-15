@@ -19,4 +19,4 @@ a [live sound engineer](https://sovacool.dev/latex-cv/cv_sound_KLS.pdf).
 
 You can check out my public projects on [GitHub](https://github.com/kelly-sovacool)!
 
-[![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_top_repos.svg?sanitize=true)](https://github.com/kelly-sovacool/meta-repo)
+[![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true)](https://github.com/kelly-sovacool/meta-repo)
