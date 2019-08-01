@@ -2,13 +2,13 @@ This was forked from [AcademicPages](https://github.com/academicpages/academicpa
 
 # Things To Maintain
 
-- .gitattributes
-- .gitignore
-- CNAME
-- _config.yml
-- _data/navigation.yml
-- _pages/about.md
-- _posts/
-- files/
-- images/
-- run-local.sh
+- [`.gitattributes`](.gitattributes)
+- [`.gitignore`](.gitignore)
+- [`CNAME`](CNAME)
+- [`_config.yml`](_config.yml)
+- [`_data/navigation.yml`](_data/navigation.yml)
+- [`_pages/about.md`](_pages/about.md)
+- [`_posts/`](_posts/)
+- [`files/`](files/)
+- [`images/`](files/)
+- [`run-local.sh`](run-local.sh)
