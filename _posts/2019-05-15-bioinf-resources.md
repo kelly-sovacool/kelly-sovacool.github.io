@@ -15,7 +15,7 @@ I found myself sending some of the same links over and over again to people who 
 
 All of the resources linked below are free unless otherwise noted. This isn't intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.
 
-*Last updated: 2019-05-22*
+*Last updated: 2019-08-14*
 
 **Table of Contents:**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
