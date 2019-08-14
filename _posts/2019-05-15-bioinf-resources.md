@@ -75,6 +75,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
 - [git](https://git-scm.com/doc): version control system.
+    - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
     - Also take a look at the [Software Carpentry lesson on git](http://swcarpentry.github.io/git-novice/).
 
 ### Project organization
