@@ -15,7 +15,7 @@ I found myself sending some of the same links over and over again to people who 
 
 All of the resources linked below are free unless otherwise noted. This isn't intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.
 
-*Last updated: 2019-08-14*
+*Last updated: 2019-09-05*
 
 **Table of Contents:**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -60,6 +60,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
 
 ### R
+- [RStudio's online learning resources](https://www.rstudio.com/online-learning/)
 - [Cheatsheets by RStudio](https://www.rstudio.com/resources/cheatsheets/)
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
 - [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
@@ -72,6 +73,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
     - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
     - [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) - Claus O. Wilke
+    - [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/index.html) - Gareth James, Daniela Witten, Trevor Hastie, & Robert Tibshirani
 
 ## Reproducibility
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
