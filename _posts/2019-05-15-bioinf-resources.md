@@ -60,15 +60,18 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
 
 ### R
+- [Cheatsheets by RStudio](https://www.rstudio.com/resources/cheatsheets/)
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
 - [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/) - Jenny Bryan & Jim Hester
+- [What is the Tidyverse?](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/)
+- [Getting started with the Tidyverse](http://www.storybench.org/getting-started-with-tidyverse-in-r/)
 - Books:
     - [R for Data Science](https://r4ds.had.co.nz/) - Hadley Wickham
     - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) - Roger Peng, Sean Kross, & Brooke Anderson
     - [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
     - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
-
+    - [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) - Claus O. Wilke
 
 ## Reproducibility
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
