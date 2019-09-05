@@ -63,8 +63,6 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [RStudio's online learning resources](https://www.rstudio.com/online-learning/)
 - [Cheatsheets by RStudio](https://www.rstudio.com/resources/cheatsheets/)
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
-- [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
-- [Happy Git and GitHub for the useR](https://happygitwithr.com/) - Jenny Bryan & Jim Hester
 - [What is the Tidyverse?](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/)
 - [Getting started with the Tidyverse](http://www.storybench.org/getting-started-with-tidyverse-in-r/)
 - Books:
@@ -72,6 +70,8 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) - Roger Peng, Sean Kross, & Brooke Anderson
     - [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
     - [R Packages](http://r-pkgs.had.co.nz/) - Hadley Wickham
+    - [What they forgot to teach you about R](https://whattheyforgot.org/) - Jenny Bryan & Jim Hester
+    - [Happy Git and GitHub for the useR](https://happygitwithr.com/) - Jenny Bryan & Jim Hester
     - [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) - Claus O. Wilke
     - [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/index.html) - Gareth James, Daniela Witten, Trevor Hastie, & Robert Tibshirani
 
