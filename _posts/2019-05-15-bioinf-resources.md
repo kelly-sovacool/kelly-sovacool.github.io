@@ -115,7 +115,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 
 ### Editors
-- [Atom](https://atom.io/): text editor. Additional pacakges for atom:
+- [Atom](https://atom.io/): text editor. Additional packages for atom:
     - [Autosave on change](https://atom.io/packages/autosave-onchange)
     - [Markdown Preview](https://atom.io/packages/markdown-preview-plus)
     - [Markdown TOC](https://atom.io/packages/markdown-toc)
@@ -127,6 +127,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & more.
 
 ### etc.
+- [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh because of this and haven't looked back!
 - [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more.
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) Python testing module.
