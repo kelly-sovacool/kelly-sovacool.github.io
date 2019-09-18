@@ -15,7 +15,7 @@ I found myself sending some of the same links over and over again to people who 
 
 All of the resources linked below are free unless otherwise noted. This isn't intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.
 
-*Last updated: 2019-09-05*
+*Last updated: 2019-09-17*
 
 **Table of Contents:**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -98,6 +98,8 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 #### Jupyter
 - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
 - [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
+- [Google Colab](https://colab.research.google.com) - free Jupyter notebook environment in the cloud.
+  - We use this for teaching Python for data science in our [Girls Who Code club](http://umich.edu/~girlswc/).
 
 ### Documentation
 - Lee BD (2018) **Ten simple rules for documenting scientific software**. PLoS Comput Biol 14(12): e1006561. doi: [10.1371/journal.pcbi.1006561](https://doi.org/10.1371/journal.pcbi.1006561).
