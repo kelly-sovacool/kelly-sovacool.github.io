@@ -17,7 +17,7 @@ When I'm not in the lab, you might find me volunteering with [Girls Who Code](ht
 teaching at a [Software Carpentry](https://umswc.github.io/) workshop, 
 attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup, 
 [running or cycling](http://bit.ly/strava-kelly), 
-or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/cv_sound_KLS.pdf).
+or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 
 You can check out my public projects on [GitHub](https://github.com/kelly-sovacool)!
 
