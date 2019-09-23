@@ -15,7 +15,7 @@ I found myself sending some of the same links over and over again to people who 
 
 All of the resources linked below are free unless otherwise noted. This isn't intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.
 
-*Last updated: 2019-09-17*
+*Last updated: 2019-09-23*
 
 **Table of Contents:**
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -79,6 +79,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
+    - [Tutorial: conda on the cloud](https://github.com/um-dang/conda_on_the_cloud) - Will Close
 - [git](https://git-scm.com/doc): version control system.
     - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
     - Also take a look at the [Software Carpentry lesson on git](http://swcarpentry.github.io/git-novice/).
