@@ -21,6 +21,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Programming](#programming)
+    - [Shell](#shell)
 	- [Python](#python)
 	- [R](#r)
 - [Reproducibility](#reproducibility)
@@ -29,10 +30,8 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 		- [R Markdown](#r-markdown)
 		- [Jupyter](#jupyter)
 	- [Documentation](#documentation)
-- [Misc. Tools](#misc-tools)
-	- [For git](#for-git)
-	- [Editors](#editors)
-	- [etc.](#etc)
+- [Editors](#editors)
+- [Misc.](#misc)
 
 <!-- /TOC -->
 
@@ -42,6 +41,11 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Langmead Lab teaching materials](http://www.langmead-lab.org/teaching-materials/): cover classic bioinformatics algorithms.
 - [Advent of Code](https://adventofcode.com/): small programming puzzles.
 - [Stepik Bioinformatics Contest](https://bioinf.me/en/contest).
+
+### Shell
+- [Introduction to the Unix Shell](http://swcarpentry.github.io/shell-novice/) - Software Carpentry
+- [Extra Unix Shell Material](http://swcarpentry.github.io/shell-extras/) - Software Carpentry
+- [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh because of this and haven't looked back!
 
 ### Python
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
@@ -76,13 +80,16 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/index.html) - Gareth James, Daniela Witten, Trevor Hastie, & Robert Tibshirani
 
 ## Reproducibility
+- [git](https://git-scm.com/doc): version control system.
+    - [Version Control with Git](http://swcarpentry.github.io/git-novice/) - Software Carpentry
+    - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
+    - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
+        - All users (Pro or free) get free unlimited private repositories on GitHub.
+    - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
-    - [Tutorial: conda on the cloud](https://github.com/um-dang/conda_on_the_cloud) - Will Close
-- [git](https://git-scm.com/doc): version control system.
-    - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
-    - Also take a look at the [Software Carpentry lesson on git](http://swcarpentry.github.io/git-novice/).
+    - [Tutorial: conda on the cluster](https://github.com/um-dang/conda_on_the_cluster) - Will Close
 
 ### Project organization
 - Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
@@ -104,20 +111,13 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 ### Documentation
 - Lee BD (2018) **Ten simple rules for documenting scientific software**. PLoS Comput Biol 14(12): e1006561. doi: [10.1371/journal.pcbi.1006561](https://doi.org/10.1371/journal.pcbi.1006561).
+- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more.
 - [Sphinx](http://www.sphinx-doc.org/en/master/) for creating documentation.
 - [Read the Docs](https://docs.readthedocs.io/en/stable/) for hosting documentation.
 - [Writing R package documentation](https://support.rstudio.com/hc/en-us/articles/200532317-Writing-Package-Documentation).
 - [pkgdown](https://pkgdown.r-lib.org/): build a website for your R package.
 
-
-## Misc. Tools
-
-### For git
-- Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
-    - All users (Pro or free) get free unlimited private repositories on GitHub.
-- [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
-
-### Editors
+## Editors
 - [Atom](https://atom.io/): text editor. Additional packages for atom:
     - [Autosave on change](https://atom.io/packages/autosave-onchange)
     - [Markdown Preview](https://atom.io/packages/markdown-preview-plus)
@@ -129,8 +129,6 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [RStudio](https://www.rstudio.com/): IDE for R.
 - [Kite](https://kite.com/): AI autocomplete for Python. Works in Atom, PyCharm, Vim, & more.
 
-### etc.
-- [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh because of this and haven't looked back!
-- [docopt](http://docopt.org/): easily create & parse command-line interfaces. Available for Python, R, C++, & more.
+## Misc.
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.3/index.html): command-line tool for working with and converting to CSV format from Excel, JSON, etc.
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) Python testing module.
