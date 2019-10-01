@@ -102,6 +102,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [How I use R Markdown to document my bioinformatics analyses](https://rachaellappan.github.io/rmarkdown/) - Rachael Lappan
 - [RMarkdown for writing reproducible scientific papers](https://libscie.github.io/rmarkdown-workshop/handout.html) - Mike Frank & Chris Hartgerink
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) - Yihui Xie, J. J. Allaire, Garrett Grolemund
+- [Communicating with R Markdown](https://ysc-rmarkdown.netlify.com/)
 
 #### Jupyter
 - [Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses](https://github.com/ljdursi/glbio-jupyter-workshop) - Jonathan Dursi
