@@ -14,16 +14,16 @@ I'm a [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bi
 I’m interested in developing bioinformatics tools and data analysis pipelines for microbial ecology.
 
 When I'm not in the lab, you might find me volunteering with [Girls Who Code](http://umich.edu/~girlswc/),
-teaching at a [Software Carpentry](https://umswc.github.io/) workshop, 
-attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup, 
-[running or cycling](http://bit.ly/strava-kelly), 
+teaching at a [Software Carpentry](https://umswc.github.io/) workshop,
+attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
+[running or cycling](http://bit.ly/strava-kelly),
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 
 You can check out my public projects on [GitHub](https://github.com/kelly-sovacool)!
 
 ## My Languages
 
-![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true)
+[![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true)](https://github.com/kelly-sovacool/meta-repo#plots)
 
 
 ## Latest Bike Rides
