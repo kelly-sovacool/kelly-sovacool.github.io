@@ -45,7 +45,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 ### Shell
 - [Introduction to the Unix Shell](http://swcarpentry.github.io/shell-novice/) - Software Carpentry
 - [Extra Unix Shell Material](http://swcarpentry.github.io/shell-extras/) - Software Carpentry
-- [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh because of this and haven't looked back!
+- [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh and haven't looked back! ([Why zsh is cooler than your shell](https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692))
 
 ### Python
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
@@ -89,6 +89,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
+    - [cheatsheet](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
     - [Tutorial: conda on the cluster](https://github.com/um-dang/conda_on_the_cluster) - Will Close
 
 ### Project organization
