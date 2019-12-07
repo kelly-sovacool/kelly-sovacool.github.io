@@ -18,7 +18,7 @@ teaching at a [Software Carpentry](https://umswc.github.io/) workshop,
 attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 [running or cycling](http://bit.ly/strava-kelly),
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).    
-\
+&nbsp;
 
 <a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" height="250" width="333"></a> <a href="http://bit.ly/strava-kelly"><img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/jitter_type_dist_log2.png" height="250" width="333"></a>
 
