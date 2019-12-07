@@ -19,13 +19,6 @@ attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 [running or cycling](http://bit.ly/strava-kelly),
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 
-You can check out my public projects on [GitHub](https://github.com/kelly-sovacool)!
 
-## My Languages
+[<img src="../images/logo_GWC-DCMB.png" height=200>](http://umich.edu/~girlswc/) [<img src="../images/logo_SWC.svg" height=200>](https://umswc.github.io/) [<img src="../images/logo_DANG.png" height=200>](https://um-dang.github.io) [<img src="../images/logo_mothur.png" height=200>](http://www.schlosslab.org/) [<img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true" height=200>](https://github.com/kelly-sovacool/meta-repo#plots)
 
-[![languages](https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true)](https://github.com/kelly-sovacool/meta-repo#plots)
-
-
-## Latest Bike Rides
-
-<iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/athletes/23163300/latest-rides/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
