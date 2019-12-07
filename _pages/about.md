@@ -19,11 +19,5 @@ attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 [running or cycling](http://bit.ly/strava-kelly),
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 
-<center>
-[<img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true" height=200>](https://github.com/kelly-sovacool/)  [<img src="../images/logo_GWC-DCMB.png" height=200>](http://umich.edu/~girlswc/) [<img src="../images/logo_SWC.svg" height=200>](https://umswc.github.io/)[<img src="../images/logo_DANG.png" height=200>](https://um-dang.github.io) [<img src="../images/logo_mothur.png" height=200>](http://www.schlosslab.org/)
 
-
-
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/23163300/activity-summary/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
-
-</center>
+[<img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true" height=200>](https://github.com/kelly-sovacool/) [<img src="../images/logo_GWC-DCMB.png" height=200>](http://umich.edu/~girlswc/) [<img src="../images/logo_SWC.svg" height=200>](https://umswc.github.io/)[<img src="../images/logo_DANG.png" height=200>](https://um-dang.github.io) [<img src="../images/logo_mothur.png" height=200>](http://www.schlosslab.org/) <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/23163300/activity-summary/10a1f58688a612e44a9b081b022b2812a9f486f3'></iframe>
