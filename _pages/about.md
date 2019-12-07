@@ -20,9 +20,9 @@ attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 
 
-    <img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true" height=200>
-    <img src="/images/logo_GWC-DCMB.png" height=200>
-    <img src="/images/logo_DANG.png" height=200>
-    <img src="/images/logo_SWC.svg" height=200>
-    <img src="/images/logo_mothur.png" height=200>
-    <img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/jitter_type_dist_log2.png" height=200>
+<img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.svg?sanitize=true" height=200>
+<img src="/images/logo_GWC-DCMB.png" height=200>
+<img src="/images/logo_DANG.png" height=200>
+<img src="/images/logo_SWC.svg" height=200>
+<img src="/images/logo_mothur.png" height=200>
+<img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/jitter_type_dist_log2.png" height=200>
