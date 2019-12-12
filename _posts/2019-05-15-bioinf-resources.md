@@ -44,7 +44,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 ### Shell
 - [Introduction to the Unix Shell](http://swcarpentry.github.io/shell-novice/) - Software Carpentry
-- [Extra Unix Shell Material](http://swcarpentry.github.io/shell-extras/) - Software Carpentry
+- [Extra Unix Shell Material](http://carpentries-incubator.github.io/shell-extras/) - Software Carpentry
 - [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh and haven't looked back! ([Why zsh is cooler than your shell](https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692))
 
 ### Python
