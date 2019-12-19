@@ -22,6 +22,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 - [Programming](#programming)
     - [Shell](#shell)
+    - [Git](#Git)
 	- [Python](#python)
 	- [R](#r)
 - [Reproducibility](#reproducibility)
@@ -46,6 +47,15 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Introduction to the Unix Shell](http://swcarpentry.github.io/shell-novice/) - Software Carpentry
 - [Extra Unix Shell Material](http://carpentries-incubator.github.io/shell-extras/) - Software Carpentry
 - [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh and haven't looked back! ([Why zsh is cooler than your shell](https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692))
+
+### Git
+- [git documentation](https://git-scm.com/doc)
+- [Version Control with Git](http://swcarpentry.github.io/git-novice/) - Software Carpentry
+- [Learn Git Branching](http://learngitbranching.js.org/?NODEMO): interactive git visualizer
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
+- Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
+    - All users (Pro or free) get free unlimited private repositories on GitHub.
+- [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 
 ### Python
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
@@ -80,12 +90,6 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [An Introduction to Statistical Learning with Applications in R](http://faculty.marshall.usc.edu/gareth-james/ISL/index.html) - Gareth James, Daniela Witten, Trevor Hastie, & Robert Tibshirani
 
 ## Reproducibility
-- [git](https://git-scm.com/doc): version control system.
-    - [Version Control with Git](http://swcarpentry.github.io/git-novice/) - Software Carpentry
-    - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
-    - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
-        - All users (Pro or free) get free unlimited private repositories on GitHub.
-    - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 - [Riffomonas reproducible research tutorial](http://www.riffomonas.org/reproducible_research/) - Pat Schloss
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/): Python-based workflow management system.
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
