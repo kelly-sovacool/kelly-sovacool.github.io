@@ -79,7 +79,7 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
         * Clean up after running
         * Run it multiple times in a row & it does the exact same thing every time
 
-### Intro to design patterns (Jeffrey Carver)
+### Intro to Design Patterns (Jeffrey Carver)
 
 * Chain of responsibility
     * Common interface to handle requests, but user doesn’t need to know which specific method handles the request.
@@ -182,7 +182,7 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re learning so many useful tips &amp; tricks for research software sustainability at <a href="https://twitter.com/hashtag/urssi_winterschool?src=hash&amp;ref_src=twsrc%5Etfw">#urssi_winterschool</a> <br>...and having fun along the way! <a href="https://t.co/FMApXXj9wL">pic.twitter.com/FMApXXj9wL</a></p>&mdash; Kelly Sovacool (@kelly_sovacool) <a href="https://twitter.com/kelly_sovacool/status/1207708578561179648?ref_src=twsrc%5Etfw">December 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### Software testing & continuous integration (Kyle Niemeyer)
+### Software Testing and Continuous Integration (Kyle Niemeyer)
 
 * How do you know your code gives the right answers? …what about after you make changes to the code?
 * When: ALWAYS
