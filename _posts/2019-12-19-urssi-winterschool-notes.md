@@ -13,23 +13,24 @@ tags:
 All slides & other resources are available on GitHub: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
 
 **Contents**:
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Day 1](#day-1)
-	- [Intro to Software Design (Jeffrey Carver)](#intro-to-software-design-jeffrey-carver)
-	- [Think like a programmer (Andy Loftus)](#think-like-a-programmer-andy-loftus)
-	- [Intro to design patterns (Jeffrey Carver)](#intro-to-design-patterns-jeffrey-carver)
-	- [Basics of packaging Python programs (Kyle Niemeyer)](#basics-of-packaging-python-programs-kyle-niemeyer)
-- [Day 2](#day-2)
-	- [Collaboration with Git & GitHub (Karthik Ram)](#collaboration-with-git-github-karthik-ram)
-	- [Git Exercises (James Howison)](#git-exercises-james-howison)
-	- [Software testing & continuous integration (Kyle Niemeyer)](#software-testing-continuous-integration-kyle-niemeyer)
-	- [Git Exercises ctd (James Howison)](#git-exercises-ctd-james-howison)
-- [Day 3](#day-3)
-	- [Code Review (Jeffrey Carver)](#code-review-jeffrey-carver)
-	- [Open Science & Software Citation (Kyle Niemeyer)](#open-science-software-citation-kyle-niemeyer)
-	- [Reproducibility](#reproducibility)
-	- [Documentation (Kyle Niemeyer)](#documentation-kyle-niemeyer)
+- [My notes from the URSSI Winter School](#my-notes-from-the-urssi-winter-school)
+	- [Day 1](#day-1)
+		- [Intro to Software Design (Jeffrey Carver)](#intro-to-software-design-jeffrey-carver)
+		- [Think like a programmer (Andy Loftus)](#think-like-a-programmer-andy-loftus)
+		- [Intro to Design Patterns (Jeffrey Carver)](#intro-to-design-patterns-jeffrey-carver)
+		- [Basics of packaging Python programs (Kyle Niemeyer)](#basics-of-packaging-python-programs-kyle-niemeyer)
+	- [Day 2](#day-2)
+		- [Collaboration with Git and GitHub (Karthik Ram)](#collaboration-with-git-and-github-karthik-ram)
+		- [Git Exercises (James Howison)](#git-exercises-james-howison)
+		- [Software Testing and Continuous Integration (Kyle Niemeyer)](#software-testing-and-continuous-integration-kyle-niemeyer)
+		- [Git Exercises ctd (James Howison)](#git-exercises-ctd-james-howison)
+	- [Day 3](#day-3)
+		- [Code Review (Jeffrey Carver)](#code-review-jeffrey-carver)
+		- [Open Science and Software Citation (Kyle Niemeyer)](#open-science-and-software-citation-kyle-niemeyer)
+		- [Reproducibility](#reproducibility)
+		- [Documentation (Kyle Niemeyer)](#documentation-kyle-niemeyer)
 
 <!-- /TOC -->
 
@@ -133,7 +134,7 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
         * Only works for really small projects
         * Everyone just commits to master 😬
     * Feature branching workflow
-        * Also work in a feature branch.
+        * All work in a feature branch (not master).
         * Start a pull request before merging to master.
         * Delete branches after they’re merged.
     * Forking workflow
