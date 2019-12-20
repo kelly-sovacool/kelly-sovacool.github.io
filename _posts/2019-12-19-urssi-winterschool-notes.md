@@ -1,5 +1,5 @@
 ---
-title: 
+title: "URSSI Winter School"
 date: 2019-12-19
 permalink: /posts/2019/12/urssi-winterschool-notes
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 # My notes from the URSSI Winter School
 
-All slides & other resources are available here: https://github.com/si2-urssi/winterschool
+All slides & other resources are available: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
 
 **Contents**:
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -33,7 +33,7 @@ All slides & other resources are available here: https://github.com/si2-urssi/wi
 
 <!-- /TOC -->
 
-https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re learning so many useful tips &amp; tricks for research software sustainability at <a href="https://twitter.com/hashtag/urssi_winterschool?src=hash&amp;ref_src=twsrc%5Etfw">#urssi_winterschool</a> <br>...and having fun along the way! <a href="https://t.co/FMApXXj9wL">pic.twitter.com/FMApXXj9wL</a></p>&mdash; Kelly Sovacool (@kelly_sovacool) <a href="https://twitter.com/kelly_sovacool/status/1207708578561179648?ref_src=twsrc%5Etfw">December 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Day 1
 
@@ -118,10 +118,11 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
     * The `setup.py` file (at same level as source directory) tells pip how to install your package.
         * See slides for example use.
     * See Kyle’s "better example” slide for cool use of `path.abspath` & `path.join` with `here` variable (kinda like R’s `here` pkg)
-    * Changelog: https://keepachangelog.com
-    * Semantic versioning: https://semver.org (PEP 440)
-        * MAJOR.MINOR.PATCH
-    * Problem with `setup.py`: could have malicious code. PyPA has come up with `pyproject.toml` & flit to get around that. Also easier than using `setup.py`.
+    * [Keep a Changelog](https://keepachangelog.com)
+    * [Semantic versioning](https://semver.org) (PEP 440)
+        * `MAJOR.MINOR.PATCH`
+    * Problem with `setup.py`: could have malicious code.
+        * PyPA has come up with `pyproject.toml` & `flit` to get around that. Also easier than using `setup.py`.
         * Also look into `cookiecutter` templates.
 * Think about this at the very beginning so you don’t have to re-organize everything later.
 
@@ -140,7 +141,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
     * Forking workflow
         * Only reason to fork is if you don’t have write access to someone else’s project / when you’re not a core contributor.
         * Create a PR when ready to merge.
-* Alias `git` to `hub`.  https://hub.github.com/
+* Alias `git` to [`hub`](https://hub.github.com/)
     * Extensions to interface with GitHub from the command line.
     * Create a GitHub repo from a local git repo: `git create username/reponame`
     * Open up the repo in your browser: `git browse`
@@ -172,7 +173,6 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
 
 ### Git Exercises (James Howison)
 
-* Material: https://jameshowison.github.io/peer_production_course/docs/additional_git_exercises.html
 * Pull requests are communication; make them digestible.
 * Note: any time you edit files, that’s a feature, so you should always do that in a branch.
 * Maintainer as developer AND champion of the community.
@@ -235,7 +235,8 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
 
 ### Git Exercises ctd (James Howison)
 
-* https://learngitbranching.js.org/?NODEMO
+* The "split a pull request" activity (see urssi repo).
+* [LearnGitBranching](https://learngitbranching.js.org/?NODEMO) visualizer.
 * Note: `git cherry-pick` keeps the original author information. 😄
 * `git rebase` re-writes history to move the branch point. Obviates merge commits, instead makes them fast-forwards.
 * `git rebase -i` in interactive mode is a good idea. Allows you to squash commits and clean things up.
@@ -312,7 +313,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
     * Science depends on the correctness of your code.
     * Help spread best-practices & high-level understanding in the scientific community.
     * Results may not always be known. There's not always "ground truth" (e.g. in simulations).
-* GitHub-specific tips: using Pull Requests for code review (examples: [pr-omethe-us/PyKED](https://github.com/pr-omethe-us/PyKED)) (Kyle Niemeyer)
+* GitHub-specific tips: using Pull Requests for code review (examples: [pr-omethe-us/PyKED](https://github.com/pr-omethe-us/PyKED) & [astropy](https://github.com/astropy/astropy)) (Kyle Niemeyer)
     * Use pull request templates.
         * Could enforce check boxes like which issue(s) it resolves, that test cases were added, etc.
     * Easily view file diffs & add comments right alongside the code. Facilitates conversation.
@@ -320,7 +321,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
         * Make suggestions for small, easy changes. There's an "insert suggestion" button! (Don't do this for design changes.)
     * Under settings > branches, you can protect branches
         * e.g. require that a PR has to be reviewed before merging into master.
-        * More on code owners: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+        * More on code owners in [github docs](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)
     * Tool: [octobox.io](https://octobox.io) for managing GitHub notifications.
 
 ### Open Science & Software Citation (Kyle Niemeyer)
@@ -339,7 +340,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
             * Permissive: BSD 3-clause, MIT
             * Copyleft: GPL (the license is "viral")
     * Pick an existing license; don't make your own!
-    * Resource: https://choosealicense.com
+    * [choosealicense.com](https://choosealicense.com)
     * Open Source Initiative (OSI) Licenses
         * To call your work "open-source", you have to release it under one of the OSI licenses.
 * Non-software: Creative Commons
@@ -364,7 +365,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
             * Connects with GitHub! When you turn on Zenodo for your repo, it creates a new DOI when you cut a new release.
     * Without proper citations, your work is not reproducible.
     * Academia relies on citations for credit.
-    * Paper: Software Citation Principles https://peerj.com/articles/cs-86/
+    * Paper: [Software Citation Principles](https://peerj.com/articles/cs-86/)
         * Software should be "first-class" citations just like other publications.
         * How? name, author(s), DOI or other persistent identifier.
             * A GitHub link is **not** a persistent identifier, but it's better than nothing.
@@ -372,7 +373,7 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
     * How can we make our software easily citable?
         * Create a DOI (e.g. via Zenodo)
         * Include a `CITATION` file in your GitHub repo.
-    * Tool in development: https://citeas.org (James Howison)
+    * Tool in development: [cite as](https://citeas.org) (James Howison)
         * Web scraper to find the right citation given a package name or website.
 
 ### Reproducibility
@@ -397,8 +398,8 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
     * rOpenSci: Scientific software for R. Helping researchers write sustainable software tools.
     * [software-review](https://github.com/ropensci/software-review): rOpenSci Software Peer Review of community-contributed packages
     * JOSS got started when rOpenSci realized the need extends beyond R packages.
-    * dev-guide: https://devguide.ropensci.org/
-    * PyOpenSci recently got started as the Python version of ROpenSci. (**David Nicholson**)
+    * rOpenSci's [dev-guide](https://devguide.ropensci.org/)
+    * PyOpenSci recently got started as the Python version of ROpenSci. ([David Nicholson](https://twitter.com/nicholdav))
 * JOSS: Journal of Open Source Software (Kyle Niemeyer)
     * Open, no fees.
     * If you've already licensed your code & have good documentation, it should take under an hour to submit to JOSS.
@@ -459,4 +460,4 @@ https://twitter.com/kelly_sovacool/status/1207708578561179648?s=20
             ```
     * `doctr`: auto-deploy docs to GitHub pages using TravisCI.
     * [Read the Docs](https://readthedocs.org) to host your documentation.
-    * Example: https://github.com/kyleniemeyer/ME373
+        * Simple example: [Kyle's MechE course](https://github.com/kyleniemeyer/ME373)
