@@ -1,5 +1,5 @@
 ---
-title: 'URSSI Winter School notes'
+title: 
 date: 2019-12-19
 permalink: /posts/2019/12/urssi-winterschool-notes
 tags:

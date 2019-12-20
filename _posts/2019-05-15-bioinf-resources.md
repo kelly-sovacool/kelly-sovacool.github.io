@@ -1,5 +1,5 @@
 ---
-title: 'Bioinformatics Resources'
+title: 
 date: 2019-05-15
 permalink: /posts/2019/05/bioinf-resources
 tags:
