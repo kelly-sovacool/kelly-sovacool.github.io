@@ -10,7 +10,7 @@ tags:
 ---
 # My notes from the URSSI Winter School
 
-All slides & other resources are available: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
+All slides & other resources are available on GitHub: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
 
 **Contents**:
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -126,7 +126,7 @@ All slides & other resources are available: [si2-urssi/winterschool](https://git
 
 ## Day 2
 
-### Collaboration with Git & GitHub (Karthik Ram)
+### Collaboration with Git and GitHub (Karthik Ram)
 
 * Workflows
     * Centralized workflow
@@ -324,7 +324,7 @@ All slides & other resources are available: [si2-urssi/winterschool](https://git
         * More on code owners in [github docs](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)
     * Tool: [octobox.io](https://octobox.io) for managing GitHub notifications.
 
-### Open Science & Software Citation (Kyle Niemeyer)
+### Open Science and Software Citation (Kyle Niemeyer)
 
 * TLDR: if you make your code public, pick a license and put a `LICENSE` file in your repo.
 * Copyright
