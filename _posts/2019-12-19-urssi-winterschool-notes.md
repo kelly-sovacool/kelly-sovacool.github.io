@@ -33,8 +33,6 @@ All slides & other resources are available: [si2-urssi/winterschool](https://git
 
 <!-- /TOC -->
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re learning so many useful tips &amp; tricks for research software sustainability at <a href="https://twitter.com/hashtag/urssi_winterschool?src=hash&amp;ref_src=twsrc%5Etfw">#urssi_winterschool</a> <br>...and having fun along the way! <a href="https://t.co/FMApXXj9wL">pic.twitter.com/FMApXXj9wL</a></p>&mdash; Kelly Sovacool (@kelly_sovacool) <a href="https://twitter.com/kelly_sovacool/status/1207708578561179648?ref_src=twsrc%5Etfw">December 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ## Day 1
 
 ### Intro to Software Design (Jeffrey Carver)
@@ -181,6 +179,8 @@ All slides & other resources are available: [si2-urssi/winterschool](https://git
     * “Turn the music on — make it feel like a party!"
     * Even when you’re working with people face-to-face, you should document discussions on GitHub.
 * How to split pull requests.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’re learning so many useful tips &amp; tricks for research software sustainability at <a href="https://twitter.com/hashtag/urssi_winterschool?src=hash&amp;ref_src=twsrc%5Etfw">#urssi_winterschool</a> <br>...and having fun along the way! <a href="https://t.co/FMApXXj9wL">pic.twitter.com/FMApXXj9wL</a></p>&mdash; Kelly Sovacool (@kelly_sovacool) <a href="https://twitter.com/kelly_sovacool/status/1207708578561179648?ref_src=twsrc%5Etfw">December 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Software testing & continuous integration (Kyle Niemeyer)
 
