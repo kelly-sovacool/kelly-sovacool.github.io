@@ -461,3 +461,4 @@ All slides & other resources are available: [si2-urssi/winterschool](https://git
     * `doctr`: auto-deploy docs to GitHub pages using TravisCI.
     * [Read the Docs](https://readthedocs.org) to host your documentation.
         * Simple example: [Kyle's MechE course](https://github.com/kyleniemeyer/ME373)
+        * More complex example: [astropy](https://github.com/astropy/astropy)
