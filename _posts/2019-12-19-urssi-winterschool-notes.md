@@ -171,12 +171,13 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
 
 ### Git Exercises (James Howison)
 
+* Group activity [here](https://jameshowison.github.io/peer_production_course/docs/additional_git_exercises.html#split_a_pull_request).
 * Pull requests are communication; make them digestible.
 * Note: any time you edit files, that’s a feature, so you should always do that in a branch.
 * Maintainer as developer AND champion of the community.
     * Create a welcoming & active environment.
-    * How long ago was the last commit is really important. Is the project active?
-    * “Turn the music on — make it feel like a party!"
+    * How long ago was the last commit is really important: is the project active?
+        * “Turn the music on — make it feel like a party!"
     * Even when you’re working with people face-to-face, you should document discussions on GitHub.
 * How to split pull requests.
 
@@ -228,14 +229,13 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
     * codecov.io integrates with GitHub.
 * Continuous integration
     * Ensure all changes to your project pass tests through automated test & build process.
-    * Services: GitHub Actions, travis, CircleCI, AppVeyor, Jenkins (used by mothur)
+    * Services: GitHub Actions, travis, CircleCI, AppVeyor, Jenkins (not mentioned by Kyle but used by [mothur](https://github.com/mothur/mothur))
     * Add the CI badge to your readme: it signals that your tool is being actively maintained.
-    * See PyTeCK repo as an example of useful badges.
-* Tests in the wild: PyTeCK
+    * See [PyTeCK](https://github.com/pr-omethe-us/PyTeCK/) as an example of useful badges & tests in the wild.
 
 ### Git Exercises ctd (James Howison)
 
-* The "split a pull request" activity (see urssi repo).
+* [The "split a pull request" activity.](https://jameshowison.github.io/peer_production_course/docs/additional_git_exercises.html#split_a_pull_request)
 * [LearnGitBranching](https://learngitbranching.js.org/?NODEMO) visualizer.
 * Note: `git cherry-pick` keeps the original author information. 😄
 * `git rebase` re-writes history to move the branch point. Obviates merge commits, instead makes them fast-forwards.
@@ -429,27 +429,27 @@ All slides & other resources are available on GitHub: [si2-urssi/winterschool](h
     * "A love-letter that you write to your future self."
 * It's easier than you think!
 * Types:
-    * user & developer guides
+    * User & developer guides
         * `README` file accompanied by `LICENSE`, `CITATION`, `CHANGELOG`, etc.
-    * code comments
+    * Code comments
         * docstring
-            * for functions & classes
-            * available within Python via `help()` & easy to parse by Sphinx.
+            * Write them for functions & classes.
+            * Available within Python via `help()` & easy to parse by Sphinx.
         * in-line
-            * bad: polluting the code with unnecessary information that's already evident from reading the code.
-            * good: use sparingly to explain reasons behind choices & complicated sections
-    * self-documenting code
-        * intelligently name things that tells you why it exists, what it does, and how it's used.
-        * write really simple functions that do only one thing.
+            * Bad: polluting the code with unnecessary information that's already evident from reading the code.
+            * Good: use sparingly to explain reasons behind choices & complicated sections.
+    * Self-documenting code
+        * Intelligently name things that tells you why it exists, what it does, and how it's used.
+        * Write really simple functions that do only one thing.
             * "A `function` should have _a function_, not _multiple functions_."
-        * follow consistent style.
-    * generated API documentation
+        * Follow consistent style.
+    * Generated API documentation
 * Tools
     * Sphinx: automatically generate documentation
         * Set it up with CI to automatically build your documentation website when you make changes.
         * Writing docstrings that are compatible with Sphinx:
-            * Styles: NumPy, Google, reStructuredText...
-            * Specify parameters, returns, & include a short description
+            * Styles: NumPy, Google, reStructuredText... (note: PyCharm can insert doc scaffolds automatically).
+            * Specify parameters, returns, & include a short description.
         * Easy to get started quickly. See slides for more details.
             ```
             # at top-level of repo, same level as package dir
