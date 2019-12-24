@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 date: 2019-05-15
 permalink: /posts/2019/05/bioinf-resources
 tags:
@@ -95,11 +95,13 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [conda](https://conda.io/en/latest/): package, dependency, & environment manager.
     - [cheatsheet](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
     - [Tutorial: conda on the cluster](https://github.com/um-dang/conda_on_the_cluster) - Will Close
+- [How to Name Files](https://speakerdeck.com/jennybc/how-to-name-files) - Jenny Bryan
 
 ### Project organization
 - Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
 - [Scientific project template](https://github.com/SchlossLab/new_project).
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
+- [How to Name Files](https://speakerdeck.com/jennybc/how-to-name-files) - Jenny Bryan
 
 ### Literate programming
 
