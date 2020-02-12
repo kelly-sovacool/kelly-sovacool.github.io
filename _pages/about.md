@@ -20,7 +20,7 @@ attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).    
 &nbsp;
 
-<a href="https://github.com/kelly-sovacool/meta-repo"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" height="250" width="333"></a> <a href="https://github.com/kelly-sovacool/strava"><img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/bar_time_last_4_weeks.png" height="250" width="188"></a>
+<a href="https://github.com/kelly-sovacool/meta-repo"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" height="250" width="333"></a> <a href="https://github.com/kelly-sovacool/strava"><img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/bar_time_last_4_weeks.png" height="333" width="333"></a>
 
 <a href="http://umich.edu/~girlswc/"><img src="/images/logo_GWC-DCMB.png" height="200" width="333" class="inline"></a> <a href="https://umswc.github.io/"><img src="/images/logo_SWC.svg" height="200" width="314" class="inline"></a>
 
