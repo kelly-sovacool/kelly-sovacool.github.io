@@ -25,5 +25,3 @@ or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.p
 <a href="http://umich.edu/~girlswc/"><img src="/images/logo_GWC-DCMB.png" height="200" width="333" class="inline"></a> <a href="https://umswc.github.io/"><img src="/images/logo_SWC.svg" height="200" width="314" class="inline"></a>
 
 <a href="https://um-dang.github.io"><img src="/images/logo_DANG.png" height="200" width="200" class="inline"></a> <a href="http://www.schlosslab.org/"><img src="/images/logo_mothur.png" height="200" width="200" class="inline"></a> <a href="https://strava.com/athletes/kelly_sovacool"><img src="/images/bike.jpg" height="200" width="200" class="inline"></a>
-
-<a href="https://github.com/kelly-sovacool/strava"><img src="https://raw.githubusercontent.com/kelly-sovacool/strava/master/figures/plot_summary_4_weeks.png" height="300" width="800"></a>
