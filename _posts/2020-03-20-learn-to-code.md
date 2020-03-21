@@ -1,4 +1,5 @@
 ---
+layout: single
 title: Teach yourself to code
 date: 2020-03-30
 permalink: /posts/2030/03/learn-to-code
