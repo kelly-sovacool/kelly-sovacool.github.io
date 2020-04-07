@@ -78,7 +78,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 
 ### R
 - [Software Carpentry lesson](http://swcarpentry.github.io/r-novice-gapminder)
-- [RStudio's online learning resources](https://www.rstudio.com/online-learning/)
+- [RStudio's interactive tutorials](https://rstudio.cloud/learn/primers)
 - [Cheatsheets by RStudio](https://www.rstudio.com/resources/cheatsheets/)
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
 - [What is the Tidyverse?](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/)
