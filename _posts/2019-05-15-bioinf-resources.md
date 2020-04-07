@@ -50,6 +50,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh and haven't looked back! ([Why zsh is cooler than your shell](https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692))
 
 ### Git
+- [Software Carpentry lesson](http://swcarpentry.github.io/git-novice)
 - [git documentation](https://git-scm.com/doc)
 - [Version Control with Git](http://swcarpentry.github.io/git-novice/) - Software Carpentry
 - [Learn Git Branching](http://learngitbranching.js.org/?NODEMO): interactive git visualizer
@@ -59,6 +60,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [GitKraken](https://www.gitkraken.com/invite/xin2e3HK) has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)
 
 ### Python
+- [Software Carpentry lesson](http://swcarpentry.github.io/python-novice-inflammation)
 - [Project Rosalind](http://rosalind.info/problems/locations/): learn Python & practice solving bioinformatics problems.
 - [GWC Code demos](https://github.com/GWC-DCMB/codeDemos): introductory Python demos - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
 - [GWC Challenge Questions](https://github.com/GWC-DCMB/challengeQuestions): practice solving problems - [Girls Who Code @ UM-DCMB](http://umich.edu/~girlswc/)
@@ -75,6 +77,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
     - [Beyond PEP 8 -- Best practices for beautiful intelligible code](https://youtu.be/wf-BqAjZb8M) - Raymond Hettinger
 
 ### R
+- [Software Carpentry lesson](http://swcarpentry.github.io/r-novice-gapminder)
 - [RStudio's online learning resources](https://www.rstudio.com/online-learning/)
 - [Cheatsheets by RStudio](https://www.rstudio.com/resources/cheatsheets/)
 - [Riffomonas minimalR](http://www.riffomonas.org/minimalR/): Intro to R tutorial with applications in microbiology - Pat Schloss
