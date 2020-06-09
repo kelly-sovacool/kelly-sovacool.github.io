@@ -67,6 +67,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
 - [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) tutorial - RealPython
 - Books:
+    - [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126/) - Jake VanderPlas
     - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
     - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
     - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
