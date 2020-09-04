@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kelly L. Sovacool"
 title_separator          : "-"
 name                     : &name "Kelly L. Sovacool"
-description              : &description "Bioinformatics PhD Student at the University of Michigan"
+description              : &description "Bioinformatics PhD candidate at the University of Michigan"
 url                      : https://sovacool.dev
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kelly-sovacool/kelly-sovacool.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Kelly Sovacool"
   avatar           : "profile.png"
-  bio              : "Bioinformatics PhD Student at U-M"
+  bio              : "Bioinformatics PhD candidate at U-M"
   location         : "Ann Arbor, MI"
   employer         :
   pubmed           :
