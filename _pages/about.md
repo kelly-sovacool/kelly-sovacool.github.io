@@ -20,9 +20,9 @@ attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup,
 or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).    
 &nbsp;
 
-<a href="https://github.com/kelly-sovacool/"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n5.png" height="320" width="320"></a> <a href="http://www.schlosslab.org/">
+<a href="https://github.com/kelly-sovacool/"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n5.png" height="380" width="380"></a>
 
-<img src="/images/logo_mothur.png" height="200" width="200" class="inline"></a> <a href="https://um-dang.github.io"><img src="/images/logo_DANG.png" height="200" width="200" class="inline"></a>
+<a href="http://www.schlosslab.org/"><img src="/images/logo_mothur.png" height="250" width="250" class="inline"></a> <a href="https://um-dang.github.io"><img src="/images/logo_DANG.png" height="250" width="250" class="inline"></a>
 
 <a href="http://umich.edu/~girlswc/"><img src="/images/logo_GWC-DCMB.png" height="200" width="333" class="inline"></a> <a href="https://umswc.github.io/"><img src="/images/logo_SWC.svg" height="200" width="314" class="inline"></a>
 
