@@ -67,6 +67,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Python For Everybody](https://www.coursera.org/specializations/python) course on Coursera (free for UMich students) - Charles Severance
 - [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) tutorial - RealPython
 - Books:
+    - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) - Jake VanderPlas
     - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Al Sweigart
     - [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython/html/index.html) - Allen Downey
     - [Dive Into Python 3](https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html) - Mark Pilgrim
@@ -102,7 +103,7 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [How to Name Files](https://speakerdeck.com/jennybc/how-to-name-files) - Jenny Bryan
 
 ### Project organization
-- Noble WS. **A quick guide to organizing computational biology projects**. PLoS Comput Biol. 2009 Jul;5(7):e1000424. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
+- Noble WS. **A quick guide to organizing computational biology projects**. 2009. PLOS Comput Biol. doi: [10.1371/journal.pcbi.1000424](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).
 - [Scientific project template](https://github.com/SchlossLab/new_project).
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) project templating tool.
 - [How to Name Files](https://speakerdeck.com/jennybc/how-to-name-files) - Jenny Bryan
