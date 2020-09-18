@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi, I'm Kelly!
-I'm a [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics) PhD student in
+I'm a [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics) PhD candidate in
 [Pat Schloss' lab](http://www.schlosslab.org/) at the University of Michigan.
 I’m interested in developing bioinformatics tools and data analysis pipelines for microbial ecology.
 
