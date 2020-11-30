@@ -1,19 +1,40 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Kelly L. Sovacool",
-    "description": "Welcome to our new blog, Kelly L. Sovacool. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2020-03-20-learn-to-code/",
+    "title": "Learn to Code",
+    "description": {},
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Kelly L. Sovacool",
+        "url": "https://sovacool.dev/"
+      },
+      {
+        "name": "Zena M. Lapp",
+        "url": "https://zenalapp.github.io"
       }
     ],
-    "date": "2020-11-30",
+    "date": "2020-03-20",
     "categories": [],
-    "contents": "\n\n\n\n",
+    "contents": "\nAs most lab work at the University of Michigan comes to a temporary halt due to the ongoing COVID-19 pandemic, we’ve heard some of our fellow grad students and other researchers express an interest in learning how to code as they’re not able to conduct experimental work at this time. We thought we could help out by putting together this short guide on how to teach yourself to code.\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-11-30T13:18:54-05:00",
-    "input_file": {}
+    "last_modified": "2020-11-30T15:37:35-05:00",
+    "input_file": "2020-03-20-learn-to-code.utf8.md"
+  },
+  {
+    "path": "posts/2019-05-15-bioinf-resources/",
+    "title": "Resources for Bioinformatics Software Development & Data Analysis\n",
+    "description": {},
+    "author": [
+      {
+        "name": "Kelly L. Sovacool",
+        "url": {}
+      }
+    ],
+    "date": "2019-05-15",
+    "categories": [],
+    "contents": "\n\nContents\nProgramming\nReproducibility\nEditors\nMisc.\n\nI found myself sending some of the same links over and over again to people who asked questions related to bioinformatics. So it was time to compile all the links in one convenient place!\nAll of the resources linked below are free unless otherwise noted. This isn’t intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.\nLast updated: 2019-09-23\nProgramming\nSoftware Carpentry: Intro lessons on the Unix shell, git, R, & Python.\nLangmead Lab teaching materials: cover classic bioinformatics algorithms.\nAdvent of Code: small programming puzzles.\nStepik Bioinformatics Contest.\nShell\nIntroduction to the Unix Shell - Software Carpentry\nExtra Unix Shell Material - Software Carpentry\nIntroduction to the Command Line for Genomics - Data Carpentry\nOh My ZSH!: framework for managing your zsh configuration. I switched from bash to zsh and haven’t looked back! (Why zsh is cooler than your shell)\nGit\nSoftware Carpentry lesson\ngit documentation\nVersion Control with Git - Software Carpentry\nLearn Git Branching: interactive git visualizer\nHow to Write a Git Commit Message - Chris Beams\nLink your university email to GitHub to get pro/education features.\nAll users (Pro or free) get free unlimited private repositories on GitHub.\n\nGitKraken has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)\nPython\nSoftware Carpentry lesson\nProject Rosalind: learn Python & practice solving bioinformatics problems.\nGWC Code demos: introductory Python demos - Girls Who Code @ UM-DCMB\nGWC Challenge Questions: practice solving problems - Girls Who Code @ UM-DCMB\nPython For Everybody course on Coursera (free for UMich students) - Charles Severance\nObject-Oriented Programming (OOP) in Python tutorial - RealPython\nBooks:\nPython Data Science Handbook - Jake VanderPlas\nAutomate the Boring Stuff with Python - Al Sweigart\nThink Python: How to Think Like a Computer Scientist - Allen Downey\nDive Into Python 3 - Mark Pilgrim\nObject-Oriented Programming in Python - University of Cape Town\n\nVideos:\nOffice Hours for BIOINF 529: Bioinformatic Concepts & Algorithms - Marcus Sherman\nTransforming Code into Beautiful, Idiomatic Python - Raymond Hettinger\nBeyond PEP 8 – Best practices for beautiful intelligible code - Raymond Hettinger\n\nR\nSoftware Carpentry lesson\nRStudio’s interactive tutorials\nCheatsheets by RStudio\nRiffomonas minimalR: Intro to R tutorial with applications in microbiology - Pat Schloss\nWhat is the Tidyverse?\nGetting started with the Tidyverse\nBooks:\nR for Data Science - Hadley Wickham\nMastering Software Development in R - Roger Peng, Sean Kross, & Brooke Anderson\nAdvanced R - Hadley Wickham\nR Packages - Hadley Wickham\nWhat they forgot to teach you about R - Jenny Bryan & Jim Hester\nHappy Git and GitHub for the useR - Jenny Bryan & Jim Hester\nFundamentals of Data Visualization - Claus O. Wilke\nAn Introduction to Statistical Learning with Applications in R - Gareth James, Daniela Witten, Trevor Hastie, & Robert Tibshirani\n\nReproducibility\nRiffomonas reproducible research tutorial - Pat Schloss\nSnakemake: Python-based workflow management system.\nconda: package, dependency, & environment manager.\ncheatsheet\nTutorial: conda on the cluster - Will Close\n\nHow to Name Files - Jenny Bryan\nProject organization\nNoble WS. A quick guide to organizing computational biology projects. 2009. PLOS Comput Biol. doi: 10.1371/journal.pcbi.1000424.\nScientific project template.\ncookiecutter project templating tool.\nHow to Name Files - Jenny Bryan\nLiterate programming\nR Markdown\nHow I use R Markdown to document my bioinformatics analyses - Rachael Lappan\nRMarkdown for writing reproducible scientific papers - Mike Frank & Chris Hartgerink\nR Markdown: The Definitive Guide - Yihui Xie, J. J. Allaire, Garrett Grolemund\nCommunicating with R Markdown\nJupyter\nJupyter Notebooks for Performing and Sharing Bioinformatics Analyses - Jonathan Dursi\nJupyterLab Documentation\nGoogle Colab - free Jupyter notebook environment in the cloud.\nWe use this for teaching Python for data science in our Girls Who Code club.\n\nDocumentation\nLee BD (2018) Ten simple rules for documenting scientific software. PLoS Comput Biol 14(12): e1006561. doi: 10.1371/journal.pcbi.1006561.\ndocopt: easily create & parse command-line interfaces. Available for Python, R, C++, & more.\nSphinx for creating documentation.\nRead the Docs for hosting documentation.\nWriting R package documentation.\npkgdown: build a website for your R package.\nEditors\nAtom: text editor. Additional packages for atom:\nAutosave on change\nMarkdown Preview\nMarkdown TOC\nLanguage LaTeX\n\nPyCharm: IDE for Python.\nThe community edition is free, or link your university email to get the pro version for free.\nSupports Snakemake syntax highlighting & Jupyter notebooks.\n\nRStudio: IDE for R.\nKite: AI autocomplete for Python. Works in Atom, PyCharm, Vim, & more.\nMisc.\ncsvkit: command-line tool for working with and converting to CSV format from Excel, JSON, etc.\nHypothesis Python testing module.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-11-30T15:31:38-05:00",
+    "input_file": "2019-05-15-bioinf-resources.utf8.md"
   }
 ]

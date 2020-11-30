@@ -84,624 +84,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Kelly L. Sovacool</title>
+  <title>Resources for Bioinformatics Software Development &amp; Data Analysis
+  </title>
   
   
-  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
-  <link rel="icon" type="image/png" href="/images/favicon-32x32.png"/>
   
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2019-05-15"/>
+  <meta property="article:created" itemprop="dateCreated" content="2019-05-15"/>
+  <meta name="article:author" content="Kelly L. Sovacool"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Kelly L. Sovacool"/>
+  <meta property="og:title" content="Resources for Bioinformatics Software Development &amp; Data Analysis&#10;"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Kelly L. Sovacool"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Kelly L. Sovacool"/>
-  <meta property="twitter:site" content="@kelly_sovacool"/>
+  <meta property="twitter:title" content="Resources for Bioinformatics Software Development &amp; Data Analysis&#10;"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Kelly L. Sovacool"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","tags"]}},"value":[{"type":"character","attributes":{},"value":["Resources for Bioinformatics Software Development & Data Analysis\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Kelly L. Sovacool"]}]}]},{"type":"character","attributes":{},"value":["2019-05-15"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["Bioinformatics","Software Development","Data Analysis","Reproducibility"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"NULL"}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-  
-  <script type="application/javascript">
-  
-    window.headroom_prevent_pin = false;
-  
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-  
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-  
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-  
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-  
-  <style type="text/css">
-  
-  /* Theme (user-documented overrideables for nav appearance) */
-  
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .distill-site-nav a:hover {
-    color: white;
-  }
-  
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-  
-  .distill-site-header {
-  
-  }
-  
-  .distill-site-footer {
-  
-  }
-  
-  
-  /* Site Header */
-  
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-  
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-  
-  
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-  
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-  
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-  
-  .distill-site-header .logo {
-    padding: 0;
-  }
-  
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-  
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-  
-  
-  
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-  
-  
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-  
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-  
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-dropdown-active {
-    display: block;
-  }
-  
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-  
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-  
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  /* Site Footer */
-  
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  
-  /* Headroom */
-  
-  d-title {
-    padding-top: 6rem;
-  }
-  
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-  
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-  
-  .headroom--unpinned {
-    top: -100px;
-  }
-  
-  .headroom--pinned {
-    top: 0;
-  }
-  
-  </style>
-  
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-  
-  <script type="application/javascript">
-  
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-  
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-  
-  function createFuseIndex() {
-  
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-  
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-  
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-  
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-  
-    createFuseIndex()
-      .then(function(fuse) {
-  
-        // make search box visible
-        searchEl.classList.remove('hidden');
-  
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-              .filter(function(item) { return !!item.description; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description}
-                  </div>
-                  <div class="search-item-preview">
-                    <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  
-  });
-  
-  </script>
-  
-  <style type="text/css">
-  
-  /* Algolioa Autocomplete */
-  
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-  
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-  
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  </style>
-  
-  
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -1987,19 +1400,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="2019-05-15-bioinf-resources_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="2019-05-15-bioinf-resources_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="2019-05-15-bioinf-resources_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="2019-05-15-bioinf-resources_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="2019-05-15-bioinf-resources_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135472420-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-135472420-1');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2010,48 +1416,179 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Kelly L. Sovacool","authors":[]}
+{"title":"Resources for Bioinformatics Software Development & Data Analysis\n","authors":[{"author":"Kelly L. Sovacool","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2019-05-15T00:00:00.000-04:00","citationText":"Sovacool, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Kelly L. Sovacool</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="posts.html">Posts</a>
-<a href="/latex-cv/cv_KLS.pdf">CV</a>
-<a href="https://scholar.google.com/citations?hl=en&amp;user=TlglgLgAAAAJ">Publications</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Kelly L. Sovacool</h1>
+<h1>Resources for Bioinformatics Software Development &amp; Data Analysis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
 </div>
 
+<div class="d-byline">
+  Kelly L. Sovacool  
+  
+<br/>2019-05-15
+</div>
 
 <div class="d-article">
-<p>Hi, I’m Kelly! I’m a <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">Bioinformatics</a> PhD candidate in <a href="http://www.schlosslab.org/">Pat Schloss’ lab</a> at the University of Michigan. I’m interested in developing bioinformatics tools and data analysis pipelines for microbial ecology.</p>
-<p>When I’m not in the lab, you might find me volunteering with <a href="http://umich.edu/~girlswc/">Girls Who Code</a>, teaching at a <a href="https://umswc.github.io/">Software Carpentry</a> workshop, attending a <a href="https://um-dang.github.io">Data Analysis Networking Group</a> meetup, <a href="http://bit.ly/strava-kelly">running or cycling</a>, or moonlighting as a <a href="https://sovacool.dev/latex-cv/sound.pdf">live sound engineer</a>.<br />
- </p>
-<p><a href="http://www.schlosslab.org/"><img src="/images/logo_mothur.png" height="250" width="250" class="inline"></a> <a href="https://um-dang.github.io"><img src="/images/logo_DANG.png" height="250" width="250" class="inline"></a></p>
-<p><a href="http://umich.edu/~girlswc/"><img src="/images/logo_GWC-DCMB.png" height="200" width="333" class="inline"></a> <a href="https://umswc.github.io/"><img src="/images/logo_SWC.svg" height="200" width="314" class="inline"></a></p>
-<p><a href="https://strava.com/athletes/kelly_sovacool"><img src="/images/watermoo.jpg" height="400" width="600" class="inline"></a></p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#reproducibility">Reproducibility</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#misc.">Misc.</a></li>
+</ul>
+</nav>
+</div>
+<p>I found myself sending some of the same links over and over again to people who asked questions related to bioinformatics. So it was time to compile all the links in one convenient place!</p>
+<p>All of the resources linked below are free unless otherwise noted. This isn’t intended to be an exhaustive list of all the resources available, just some of the ones I have come across and have found useful.</p>
+<p><em>Last updated: 2019-09-23</em></p>
+<h2 id="programming">Programming</h2>
+<ul>
+<li><a href="https://software-carpentry.org/lessons/">Software Carpentry</a>: Intro lessons on the Unix shell, git, R, &amp; Python.</li>
+<li><a href="http://www.langmead-lab.org/teaching-materials/">Langmead Lab teaching materials</a>: cover classic bioinformatics algorithms.</li>
+<li><a href="https://adventofcode.com/">Advent of Code</a>: small programming puzzles.</li>
+<li><a href="https://bioinf.me/en/contest">Stepik Bioinformatics Contest</a>.</li>
+</ul>
+<h3 id="shell">Shell</h3>
+<ul>
+<li><a href="http://swcarpentry.github.io/shell-novice/">Introduction to the Unix Shell</a> - Software Carpentry</li>
+<li><a href="http://carpentries-incubator.github.io/shell-extras/">Extra Unix Shell Material</a> - Software Carpentry</li>
+<li><a href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for Genomics</a> - Data Carpentry</li>
+<li><a href="https://ohmyz.sh/">Oh My ZSH!</a>: framework for managing your zsh configuration. I switched from bash to zsh and haven’t looked back! (<a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">Why zsh is cooler than your shell</a>)</li>
+</ul>
+<h3 id="git">Git</h3>
+<ul>
+<li><a href="http://swcarpentry.github.io/git-novice">Software Carpentry lesson</a></li>
+<li><a href="https://git-scm.com/doc">git documentation</a></li>
+<li><a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a> - Software Carpentry</li>
+<li><a href="http://learngitbranching.js.org/?NODEMO">Learn Git Branching</a>: interactive git visualizer</li>
+<li><a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a> - Chris Beams</li>
+<li>Link your university email to <a href="https://education.github.com/benefits">GitHub</a> to get pro/education features.
+<ul>
+<li>All users (Pro or free) get free unlimited private repositories on GitHub.</li>
+</ul></li>
+<li><a href="https://www.gitkraken.com/invite/xin2e3HK">GitKraken</a> has a nice GUI for interacting with git, GitHub, GitLab, etc. (Note that this is a referral link to be entered to win a Nintendo Switch.)</li>
+</ul>
+<h3 id="python">Python</h3>
+<ul>
+<li><a href="http://swcarpentry.github.io/python-novice-inflammation">Software Carpentry lesson</a></li>
+<li><a href="http://rosalind.info/problems/locations/">Project Rosalind</a>: learn Python &amp; practice solving bioinformatics problems.</li>
+<li><a href="https://github.com/GWC-DCMB/codeDemos">GWC Code demos</a>: introductory Python demos - <a href="http://umich.edu/~girlswc/">Girls Who Code @ UM-DCMB</a></li>
+<li><a href="https://github.com/GWC-DCMB/challengeQuestions">GWC Challenge Questions</a>: practice solving problems - <a href="http://umich.edu/~girlswc/">Girls Who Code @ UM-DCMB</a></li>
+<li><a href="https://www.coursera.org/specializations/python">Python For Everybody</a> course on Coursera (free for UMich students) - Charles Severance</li>
+<li><a href="https://realpython.com/python3-object-oriented-programming/">Object-Oriented Programming (OOP) in Python</a> tutorial - RealPython</li>
+<li>Books:
+<ul>
+<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a> - Jake VanderPlas</li>
+<li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> - Al Sweigart</li>
+<li><a href="http://greenteapress.com/thinkpython/html/index.html">Think Python: How to Think Like a Computer Scientist</a> - Allen Downey</li>
+<li><a href="https://www.cmi.ac.in/~madhavan/courses/prog2-2012/docs/diveintopython3/index.html">Dive Into Python 3</a> - Mark Pilgrim</li>
+<li><a href="https://python-textbok.readthedocs.io">Object-Oriented Programming in Python</a> - University of Cape Town</li>
+</ul></li>
+<li>Videos:
+<ul>
+<li><a href="https://www.youtube.com/channel/UCewko4qgzTUZFmydW2shcEg">Office Hours for BIOINF 529: Bioinformatic Concepts &amp; Algorithms</a> - <a href="https://www.betteridiot.tech/">Marcus Sherman</a></li>
+<li><a href="https://pyvideo.org/pycon-us-2013/transforming-code-into-beautiful-idiomatic-pytho.html">Transforming Code into Beautiful, Idiomatic Python</a> - Raymond Hettinger</li>
+<li><a href="https://youtu.be/wf-BqAjZb8M">Beyond PEP 8 – Best practices for beautiful intelligible code</a> - Raymond Hettinger</li>
+</ul></li>
+</ul>
+<h3 id="r">R</h3>
+<ul>
+<li><a href="http://swcarpentry.github.io/r-novice-gapminder">Software Carpentry lesson</a></li>
+<li><a href="https://rstudio.cloud/learn/primers">RStudio’s interactive tutorials</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/">Cheatsheets by RStudio</a></li>
+<li><a href="http://www.riffomonas.org/minimalR/">Riffomonas minimalR</a>: Intro to R tutorial with applications in microbiology - Pat Schloss</li>
+<li><a href="https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/">What is the Tidyverse?</a></li>
+<li><a href="http://www.storybench.org/getting-started-with-tidyverse-in-r/">Getting started with the Tidyverse</a></li>
+<li>Books:
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a> - Hadley Wickham</li>
+<li><a href="https://bookdown.org/rdpeng/RProgDA/">Mastering Software Development in R</a> - Roger Peng, Sean Kross, &amp; Brooke Anderson</li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R</a> - Hadley Wickham</li>
+<li><a href="http://r-pkgs.had.co.nz/">R Packages</a> - Hadley Wickham</li>
+<li><a href="https://whattheyforgot.org/">What they forgot to teach you about R</a> - Jenny Bryan &amp; Jim Hester</li>
+<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a> - Jenny Bryan &amp; Jim Hester</li>
+<li><a href="https://serialmentor.com/dataviz/">Fundamentals of Data Visualization</a> - Claus O. Wilke</li>
+<li><a href="http://faculty.marshall.usc.edu/gareth-james/ISL/index.html">An Introduction to Statistical Learning with Applications in R</a> - Gareth James, Daniela Witten, Trevor Hastie, &amp; Robert Tibshirani</li>
+</ul></li>
+</ul>
+<h2 id="reproducibility">Reproducibility</h2>
+<ul>
+<li><a href="http://www.riffomonas.org/reproducible_research/">Riffomonas reproducible research tutorial</a> - Pat Schloss</li>
+<li><a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a>: Python-based workflow management system.</li>
+<li><a href="https://conda.io/en/latest/">conda</a>: package, dependency, &amp; environment manager.
+<ul>
+<li><a href="https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html">cheatsheet</a></li>
+<li><a href="https://github.com/um-dang/conda_on_the_cluster">Tutorial: conda on the cluster</a> - Will Close</li>
+</ul></li>
+<li><a href="https://speakerdeck.com/jennybc/how-to-name-files">How to Name Files</a> - Jenny Bryan</li>
+</ul>
+<h3 id="project-organization">Project organization</h3>
+<ul>
+<li>Noble WS. <strong>A quick guide to organizing computational biology projects</strong>. 2009. PLOS Comput Biol. doi: <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424">10.1371/journal.pcbi.1000424</a>.</li>
+<li><a href="https://github.com/SchlossLab/new_project">Scientific project template</a>.</li>
+<li><a href="https://cookiecutter.readthedocs.io/en/latest/">cookiecutter</a> project templating tool.</li>
+<li><a href="https://speakerdeck.com/jennybc/how-to-name-files">How to Name Files</a> - Jenny Bryan</li>
+</ul>
+<h3 id="literate-programming">Literate programming</h3>
+<h4 id="r-markdown">R Markdown</h4>
+<ul>
+<li><a href="https://rachaellappan.github.io/rmarkdown/">How I use R Markdown to document my bioinformatics analyses</a> - Rachael Lappan</li>
+<li><a href="https://libscie.github.io/rmarkdown-workshop/handout.html">RMarkdown for writing reproducible scientific papers</a> - Mike Frank &amp; Chris Hartgerink</li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a> - Yihui Xie, J. J. Allaire, Garrett Grolemund</li>
+<li><a href="https://ysc-rmarkdown.netlify.com/">Communicating with R Markdown</a></li>
+</ul>
+<h4 id="jupyter">Jupyter</h4>
+<ul>
+<li><a href="https://github.com/ljdursi/glbio-jupyter-workshop">Jupyter Notebooks for Performing and Sharing Bioinformatics Analyses</a> - Jonathan Dursi</li>
+<li><a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab Documentation</a></li>
+<li><a href="https://colab.research.google.com">Google Colab</a> - free Jupyter notebook environment in the cloud.
+<ul>
+<li>We use this for teaching Python for data science in our <a href="http://umich.edu/~girlswc/">Girls Who Code club</a>.</li>
+</ul></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li>Lee BD (2018) <strong>Ten simple rules for documenting scientific software</strong>. PLoS Comput Biol 14(12): e1006561. doi: <a href="https://doi.org/10.1371/journal.pcbi.1006561">10.1371/journal.pcbi.1006561</a>.</li>
+<li><a href="http://docopt.org/">docopt</a>: easily create &amp; parse command-line interfaces. Available for Python, R, C++, &amp; more.</li>
+<li><a href="http://www.sphinx-doc.org/en/master/">Sphinx</a> for creating documentation.</li>
+<li><a href="https://docs.readthedocs.io/en/stable/">Read the Docs</a> for hosting documentation.</li>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/200532317-Writing-Package-Documentation">Writing R package documentation</a>.</li>
+<li><a href="https://pkgdown.r-lib.org/">pkgdown</a>: build a website for your R package.</li>
+</ul>
+<h2 id="editors">Editors</h2>
+<ul>
+<li><a href="https://atom.io/">Atom</a>: text editor. Additional packages for atom:
+<ul>
+<li><a href="https://atom.io/packages/autosave-onchange">Autosave on change</a></li>
+<li><a href="https://atom.io/packages/markdown-preview-plus">Markdown Preview</a></li>
+<li><a href="https://atom.io/packages/markdown-toc">Markdown TOC</a></li>
+<li><a href="https://atom.io/packages/language-latex">Language LaTeX</a></li>
+</ul></li>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a>: IDE for Python.
+<ul>
+<li>The community edition is free, or link your university email to get the pro version for free.</li>
+<li>Supports Snakemake syntax highlighting &amp; Jupyter notebooks.</li>
+</ul></li>
+<li><a href="https://www.rstudio.com/">RStudio</a>: IDE for R.</li>
+<li><a href="https://kite.com/">Kite</a>: AI autocomplete for Python. Works in Atom, PyCharm, Vim, &amp; more.</li>
+</ul>
+<h2 id="misc.">Misc.</h2>
+<ul>
+<li><a href="https://csvkit.readthedocs.io/en/1.0.3/index.html">csvkit</a>: command-line tool for working with and converting to CSV format from Excel, JSON, etc.</li>
+<li><a href="https://hypothesis.readthedocs.io/en/latest/">Hypothesis</a> Python testing module.</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2064,12 +1601,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/kelly-sovacool/sovacool.dev/issues/new">create an issue</a> on the source repository.</p>
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Source code is available at <a href="https://github.com/kelly-sovacool/sovacool.dev">https://github.com/kelly-sovacool/sovacool.dev</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

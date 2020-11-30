@@ -1,19 +1,18 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
-      "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2020-11-30T13:18:59-05:00"
-    },
-    {
       "path": "index.html",
       "title": "Kelly L. Sovacool",
       "author": [],
+      "contents": "\nHi, I’m Kelly! I’m a Bioinformatics PhD candidate in Pat Schloss’ lab at the University of Michigan. I’m interested in developing bioinformatics tools and data analysis pipelines for microbial ecology.\nWhen I’m not in the lab, you might find me volunteering with Girls Who Code, teaching at a Software Carpentry workshop, attending a Data Analysis Networking Group meetup, running or cycling, or moonlighting as a live sound engineer.\n \n \n \n\n\n\n\n",
+      "last_modified": "2020-11-30T15:35:43-05:00"
+    },
+    {
+      "path": "posts.html",
+      "title": "Blog",
+      "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-11-30T13:19:01-05:00"
+      "last_modified": "2020-11-30T15:31:39-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
