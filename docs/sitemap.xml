@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://sovacool.dev/sovacool.dev/</loc>
-    <lastmod>2020-11-30T15:41:42-05:00</lastmod>
+    <loc>https://sovacool.dev/sovacool.dev/about.html</loc>
+    <lastmod>2020-11-30T16:43:28-05:00</lastmod>
   </url>
   <url>
-    <loc>https://sovacool.dev/sovacool.dev/posts.html</loc>
-    <lastmod>2020-11-30T13:58:27-05:00</lastmod>
+    <loc>https://sovacool.dev/sovacool.dev/</loc>
+    <lastmod>2020-11-30T16:39:59-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/sovacool.dev/posts/2020-03-20-learn-to-code/</loc>
+    <lastmod>2020-11-30T16:14:57-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/sovacool.dev/posts/2019-12-19-urssi-winterschool-notes/</loc>
+    <lastmod>2020-11-30T16:14:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/sovacool.dev/posts/2019-05-15-bioinf-resources/</loc>
+    <lastmod>2020-11-30T16:12:47-05:00</lastmod>
   </url>
 </urlset>
