@@ -4,6 +4,11 @@ description: |
   Kelly Sovacool's Personal Website
 base_url: https://sovacool.dev/sovacool.dev
 repository_url: https://github.com/kelly-sovacool/sovacool.dev
+creative_commons: CC BY-SA
+twitter:
+  site: "@kelly_sovacool"
+google_analytics: "UA-135472420-1"
+favicon: /images/favicon-32x32.png
 navbar:
   right:
     - text: "Home"
