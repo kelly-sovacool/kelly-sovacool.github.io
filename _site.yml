@@ -31,4 +31,3 @@ collections:
   posts:
     share: [twitter, linkedin, facebook]
     citations: false
-    custom: _sidebar.html
