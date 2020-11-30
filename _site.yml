@@ -8,8 +8,12 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Posts"
+      href: posts.html
+    - text: "CV"
+      href: /latex-cv/cv_KLS.pdf
+    - text: "Publications"
+      href: https://scholar.google.com/citations?hl=en&user=TlglgLgAAAAJ
     - icon: fa fa-rss
       href: index.xml
 output: distill::distill_article
