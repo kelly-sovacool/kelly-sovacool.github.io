@@ -1,14 +1,12 @@
 ---
-title: |
+title: "Bioinformatics Resources"
+description: |
   Resources for Bioinformatics Software Development & Data Analysis
-author:
-  - name: Kelly L. Sovacool
 date: 2019-05-15
 output:
   distill::distill_article:
     self_contained: false
     toc: true
-    toc_depth: 2
 tags:
   - Bioinformatics
   - Software Development
