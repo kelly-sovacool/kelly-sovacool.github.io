@@ -10,24 +10,24 @@ twitter:
 google_analytics: "UA-135472420-1"
 favicon: images/favicon-32x32.png
 navbar:
-  left:
+  right:
+    - text: "About"
+      href: index.html
+    - text: "Posts"
+      href: posts.html
+    - text: "CV"
+      href: /latex-cv/cv_KLS.pdf
+    - text: "Publications"
+      href: https://scholar.google.com/citations?hl=en&user=TlglgLgAAAAJ
     - icon: fab fa-github
       href: https://github.com/kelly-sovacool
     - icon: fab fa-twitter
       href: https://twitter.com/kelly_sovacool
     - icon: fa fa-rss
-      href: index.xml
-  right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
-    - text: "CV"
-      href: /latex-cv/cv_KLS.pdf
-    - text: "Publications"
-      href: https://scholar.google.com/citations?hl=en&user=TlglgLgAAAAJ
-output_dir: "docs"
+      href: posts.xml
 collections:
   posts:
     share: [twitter, linkedin, facebook]
     citations: false
+output: distill::distill_article
+output_dir: "docs"

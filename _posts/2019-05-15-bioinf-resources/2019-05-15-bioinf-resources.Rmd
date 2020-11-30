@@ -7,11 +7,14 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-tags:
+categories:
   - Bioinformatics
   - Software Development
   - Data Analysis
   - Reproducibility
+  - Python
+  - R
+  - git
 ---
 
 I found myself sending some of the same links over and over again to people who asked questions related to bioinformatics. So it was time to compile all the links in one convenient place!

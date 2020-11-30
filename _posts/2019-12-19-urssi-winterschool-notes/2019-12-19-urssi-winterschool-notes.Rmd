@@ -7,11 +7,12 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-tags:
+categories:
   - Research Software Engineering
   - Open Source Software
   - Reproducibility
   - Software Development
+  - Python
 ---
 
 All slides & other resources are available on GitHub: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
