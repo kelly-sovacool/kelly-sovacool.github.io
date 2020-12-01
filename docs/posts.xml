@@ -14,7 +14,7 @@
     <generator>Distill</generator>
     <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Learn to Code</title>
+      <title>Teach yourself to Code</title>
       <dc:creator>Kelly L. Sovacool</dc:creator>
       <dc:creator>Zena M. Lapp</dc:creator>
       <link>https://sovacool.dev/sovacool.dev/posts/2020-03-20-learn-to-code</link>
@@ -33,6 +33,7 @@
       <category>Reproducibility</category>
       <category>Software Development</category>
       <category>Python</category>
+      <category>git</category>
       <guid>https://sovacool.dev/sovacool.dev/posts/2019-12-19-urssi-winterschool-notes</guid>
       <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
     </item>
