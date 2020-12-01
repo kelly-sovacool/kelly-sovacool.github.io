@@ -1,5 +1,6 @@
 ---
 title: "Learn to Code"
+description: ""
 author:
   - name: Kelly L. Sovacool
     url: https://sovacool.dev/
