@@ -13,6 +13,7 @@ categories:
   - Reproducibility
   - Software Development
   - Python
+  - git
 ---
 
 All slides & other resources are available on GitHub: [si2-urssi/winterschool](https://github.com/si2-urssi/winterschool)
