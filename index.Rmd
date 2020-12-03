@@ -2,23 +2,28 @@
 title: "About"
 site: distill::distill_website
 ---
+<style>
+img.left {
+  float: left;
+}
+</style>
 
+<p>
+<img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px">
 Hi, I'm Kelly! I'm a
 [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics)
 PhD candidate in [Pat Schloss' lab](http://www.schlosslab.org/) at the
-University of Michigan. I’m interested in developing bioinformatics tools and
-data analysis pipelines for microbial ecology.
+University of Michigan. I develop bioinformatics tools and
+data analysis pipelines for microbial ecology and host-associated microbiome research.
+I'm a fan of open science, open source software, and reproducible research.
 <br><br>
-When I'm not in the lab, you might find me volunteering with 
-[Girls Who Code](http://umich.edu/~girlswc/), 
-teaching at a [Software Carpentry](https://umswc.github.io/) workshop, 
-attending a [Data Analysis Networking Group](https://um-dang.github.io) meetup, 
-[running or cycling](http://bit.ly/strava-kelly), 
-or moonlighting as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
-
-<aside>
-<img src="images/profile.jpeg" style="width:250px;height:250px">
-</aside>
+When I'm not in the dry lab, you might find me running, cycling, climbing, or 
+otherwise being active outside. 
+I also volunteer with [Girls Who Code](http://umich.edu/~girlswc/), 
+teach [Software Carpentry](https://umswc.github.io/) workshops, 
+organize events for the [Data Analysis Networking Group](https://um-dang.github.io), 
+and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
+</p>
 
 ---
 
