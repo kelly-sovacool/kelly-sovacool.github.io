@@ -20,26 +20,27 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -48,33 +49,33 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #b8003c; } /* Alert */
+code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
 code span.at { color: #20794d; } /* Attribute */
-code span.bn { color: #b8003c; } /* BaseN */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
-code span.cn { color: #a8602c; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
 code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
 code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #b8003c; } /* DataType */
-code span.dv { color: #b8003c; } /* DecVal */
-code span.er { color: #b8003c; } /* Error */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #b8003c; } /* Float */
+code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
 code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
-code span.pp { color: #b8003c; } /* Preprocessor */
+code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
@@ -1749,6 +1750,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.6/header-attrs.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
@@ -1772,7 +1774,7 @@ gtag('config', 'UA-135472420-1');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Teach yourself to Code","description":"","authors":[{"author":"Kelly L. Sovacool","authorURL":"https://sovacool.dev/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""},{"author":"Zena M. Lapp","authorURL":"https://zenalapp.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-03-20T00:00:00.000-04:00","citationText":"Sovacool & Lapp, 2020"}
+{"title":"Teach yourself to Code","description":"","authors":[{"author":"Kelly L. Sovacool","authorURL":"https://sovacool.dev/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""},{"author":"Zena M. Lapp","authorURL":"https://zenalapp.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-03-20T00:00:00.000+00:00","citationText":"Sovacool & Lapp, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1839,7 +1841,8 @@ gtag('config', 'UA-135472420-1');
 <li><a href="#what-language-to-learn">What language to learn?</a></li>
 <li><a href="#how-to-get-started">How to get started?</a></li>
 <li><a href="#how-to-use-it-in-the-real-world">How to use it in the real world?</a></li>
-<li><a href="#how-to-get-help">How to get help?</a><ul>
+<li><a href="#how-to-get-help">How to get help?</a>
+<ul>
 <li><a href="#further-reading">Further reading:</a></li>
 </ul></li>
 </ul>
@@ -1869,7 +1872,7 @@ gtag('config', 'UA-135472420-1');
 <ul>
 <li><a href="https://www.codecademy.com/">Code Academy</a> is a good place to start for their free beginner <a href="https://www.codecademy.com/learn/learn-r"><strong>R</strong></a> and <a href="https://www.codecademy.com/learn/learn-python"><strong>Python</strong></a> lessons in an interactive format. Note that the free version of the Python lessons teach Python 2 (not Python 3). You should <em>definitely</em> use Python 3 if you’re going to use Python in your work, but there are very few differences in how you code Python 2 and 3, so learning Python 2 is still very valuable because almost everything translates to using Python 3.</li>
 <li>Zena and her sister Maya created <a href="https://github.com/zenalapp/teach-yourself-r/wiki">a guide to teaching yourself <strong>R</strong></a>. It takes you through the Code Academy lesson and also has extra exercises to practice data analysis.</li>
-<li><a href="https://carpentries.org/">The Carpentries</a> is an organization that holds workshops to teach introductory programming skills to researchers. <a href="https://umswc.github.io/">U-M has a Carpentries chapter</a> that holds workshops regularly throughout the year (with the exception of during pandemics 😬). We highly recommend attending an in-person workshop if you get the opportunity, but you can access the lesson materials for <strong><a href="http://swcarpentry.github.io/r-novice-gapminder/">R</a></strong> and <a href="http://swcarpentry.github.io/python-novice-gapminder/"><strong>Python</strong></a> online if you’d like to learn on your own. The Carpentries has also translated <a href="https://swcarpentry.github.io/r-novice-gapminder-es/">their <strong>R</strong> lesson to Spanish</a>.</li>
+<li><a href="https://carpentries.org/">The Carpentries</a> is an organization that holds workshops to teach introductory programming skills to researchers. <a href="https://umcarpentries.github.io/">U-M has a Carpentries chapter</a> that holds workshops regularly throughout the year (with the exception of during pandemics 😬). We highly recommend attending an in-person workshop if you get the opportunity, but you can access the lesson materials for <strong><a href="http://swcarpentry.github.io/r-novice-gapminder/">R</a></strong> and <a href="http://swcarpentry.github.io/python-novice-gapminder/"><strong>Python</strong></a> online if you’d like to learn on your own. The Carpentries has also translated <a href="https://swcarpentry.github.io/r-novice-gapminder-es/">their <strong>R</strong> lesson to Spanish</a>.</li>
 <li>As part of <a href="http://umich.edu/~girlswc/">Girls Who Code at U-M</a>, Zena and Kelly have contributed to a curriculum teaching <strong>Python</strong> for Data Science aimed at high school students. You can find instructions for getting started <a href="https://github.com/GWC-DCMB/GWC-DCMB/blob/master/get-started.md">here</a>.-</li>
 <li>RStudio has <a href="https://rstudio.cloud/learn/primers">interactive tutorials</a> where you can learn everything from the basics to writing reports to building interactive web apps.</li>
 </ul>
