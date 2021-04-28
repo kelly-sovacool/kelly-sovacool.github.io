@@ -36,9 +36,8 @@ All of the resources linked below are free unless otherwise noted. This isn't in
 - [Oh My ZSH!](https://ohmyz.sh/): framework for managing your zsh configuration. I switched from bash to zsh and haven't looked back! ([Why zsh is cooler than your shell](https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692))
 
 ### Git
-- [Software Carpentry lesson](http://swcarpentry.github.io/git-novice)
-- [git documentation](https://git-scm.com/doc)
 - [Version Control with Git](http://swcarpentry.github.io/git-novice/) - Software Carpentry
+- [git documentation](https://git-scm.com/doc)
 - [Learn Git Branching](http://learngitbranching.js.org/?NODEMO): interactive git visualizer
 - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) - Chris Beams
 - Link your university email to [GitHub](https://education.github.com/benefits) to get pro/education features.
