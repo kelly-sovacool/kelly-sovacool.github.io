@@ -457,8 +457,15 @@ d-title {
   top: 0;
 }
 
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
 </style>
 
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -651,6 +658,11 @@ d-article pre a:hover {
   text-decoration: underline;
 }
 
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
 @media(min-width: 768px) {
 
 d-article pre,
@@ -805,6 +817,17 @@ d-article .citation {
 
 div.hanging-indent{
   margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
 }
 
 
@@ -1472,7 +1495,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('div.sourceCode, pre, script');
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1587,6 +1610,20 @@ function init_distill() {
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
 
     // clear polling timer
     clearInterval(tid);
@@ -1753,8 +1790,8 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135472420-1"></script>
-<script>
+<script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-135472420-1"></script>
+<script type="text/javascript" cookie-consent="tracking">
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -1770,7 +1807,7 @@ gtag('config', 'UA-135472420-1');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Bioinformatics Resources","description":"Resources for Bioinformatics Software Development & Data Analysis","authors":[],"publishedDate":"2019-05-15T00:00:00.000-04:00"}
+{"title":"Bioinformatics Resources","description":"Resources for Bioinformatics Software Development & Data Analysis","authors":[],"publishedDate":"2019-05-15T00:00:00.000+00:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1797,7 +1834,7 @@ gtag('config', 'UA-135472420-1');
 <a href="../../index.html">About</a>
 <a href="../../posts.html">Posts</a>
 <a href="../..//latex-cv/cv_KLS.pdf">CV</a>
-<a href="https://scholar.google.com/citations?hl=en&amp;user=TlglgLgAAAAJ">Publications</a>
+<a href="../../pubs.html">Publications</a>
 <a href="../../posts.xml">
 <i class="fa fa-rss" aria-hidden="true"></i>
 </a>
@@ -1813,13 +1850,13 @@ gtag('config', 'UA-135472420-1');
 <h1>Bioinformatics Resources</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../index.html#category:Bioinformatics" class="dt-tag">Bioinformatics</a>
-  <a href="../../index.html#category:Software_Development" class="dt-tag">Software Development</a>
-  <a href="../../index.html#category:Data_Analysis" class="dt-tag">Data Analysis</a>
-  <a href="../../index.html#category:Reproducibility" class="dt-tag">Reproducibility</a>
-  <a href="../../index.html#category:Python" class="dt-tag">Python</a>
-  <a href="../../index.html#category:R" class="dt-tag">R</a>
-  <a href="../../index.html#category:git" class="dt-tag">git</a>
+  <a href="../../posts.html#category:Bioinformatics" class="dt-tag">Bioinformatics</a>
+  <a href="../../posts.html#category:Software_Development" class="dt-tag">Software Development</a>
+  <a href="../../posts.html#category:Data_Analysis" class="dt-tag">Data Analysis</a>
+  <a href="../../posts.html#category:Reproducibility" class="dt-tag">Reproducibility</a>
+  <a href="../../posts.html#category:Python" class="dt-tag">Python</a>
+  <a href="../../posts.html#category:R" class="dt-tag">R</a>
+  <a href="../../posts.html#category:git" class="dt-tag">git</a>
 </div>
 <!--/radix_placeholder_categories-->
 <p><p>Resources for Bioinformatics Software Development &amp; Data Analysis</p></p>

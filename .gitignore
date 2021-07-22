@@ -3,3 +3,5 @@ Gemfile.lock
 .DS_Store
 .Rproj.user
 README.html
+.Rhistory
+__pycache__/

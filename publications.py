@@ -18,6 +18,8 @@ def parse_entries():
         bib_database = bibtexparser.load(bibtex_file, parser=parser)
     return sorted([BibEntry(record) for record in bib_database.entries], key = lambda x: x.year_mo, reverse = True)
 
+def get_bib_str():
+    return '\n'.join(f"{idx+1}. {entry.bib} {entry.altmetric_donut}" for idx, entry in enumerate(parse_entries()))
 
 # from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pepper
 # Let's define a function to customize our entries.
@@ -44,7 +46,7 @@ def format_author(name, bold = 'Sovacool, Kelly'):
     last_firstmi = name.split(',')
     lastname = last_firstmi[0]
     first_mi = last_firstmi[1].split()
-    first_inits = first_mi[0][0] + first_mi[1].strip('.') if len(first_mi) == 2 else first_mi[0][0]
+    first_inits = first_mi[0][0] + first_mi[1][0] if len(first_mi) == 2 else first_mi[0][0]
     author = f'{lastname} {first_inits}'
     if bold in name:
         author = f'**{author}**'
