@@ -19,7 +19,16 @@ def parse_entries():
     return sorted([BibEntry(record) for record in bib_database.entries], key = lambda x: x.year_mo, reverse = True)
 
 def get_bib_str():
-    return '\n'.join(f"{idx+1}. {entry.bib} {entry.altmetric_donut}" for idx, entry in enumerate(parse_entries()))
+    return '\n'.join(f"{idx+1}. {entry.bib} {entry.altmetric()}" for idx, entry in enumerate(parse_entries()))
+
+def get_markdown():
+    table = ['| | | |', '|---|---|---|']
+    entries = parse_entries()
+    idx = len(entries)
+    for entry in entries:
+        table.append(f"| {idx}. | {entry.bib} | {entry.altmetric()} |")
+        idx -= 1
+    return table
 
 # from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pepper
 # Let's define a function to customize our entries.
@@ -57,9 +66,9 @@ class BibEntry:
     def __init__(self, record):
         self.record = record
 
-    @property
-    def altmetric_donut(self):
-        return f'<div data-badge-popover="right" data-badge-type="donut" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>'
+    def altmetric(self, badge_type = '2'):
+        #badge_type = 'donut'
+        return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>'
 
     @property
     def authors(self):

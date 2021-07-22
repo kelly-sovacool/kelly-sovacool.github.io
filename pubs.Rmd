@@ -12,6 +12,11 @@ knitr::opts_chunk$set(echo = FALSE,
                       )
 ```
 
+last updated: `r Sys.Date()`
+
+See [my Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ) 
+for the most up-to-date list of publications.
+
 ```{r deps}
 library(reticulate)
 use_python('~/miniconda3/bin/python')
@@ -20,17 +25,17 @@ use_python('~/miniconda3/bin/python')
 ```{python pubs}
 from publications import *
 entries = parse_entries()
-bib = list()
+bibtable = []# ["| | | |", "|---|---|---|"]
 idx = len(entries)
 for entry in entries:
-    #bib.append(f"{idx}. {entry.bib}")
-    bib.append(f"1. {entry.bib} {entry.altmetric_donut}")
+    #bibtable.append(f"| {idx}. | {entry.bib} | {entry.altmetric()} |")
+    bibtable.append(f"{idx}. {entry.bib}\n")
+    bibtable.append(f"{entry.altmetric(badge_type = 'donut')}\n")
     idx -= 1
-#bib.append('{: reversed="reversed"}')
 ```
 
 
 ```{r, list, results='asis'}
-cat(paste0(py$bib, sep = '\n'))
+cat(paste0(py$bibtable, sep = '\n'))
 ```
 

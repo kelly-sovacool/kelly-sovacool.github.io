@@ -5,3 +5,4 @@ Gemfile.lock
 README.html
 .Rhistory
 __pycache__/
+docs/publications.py
