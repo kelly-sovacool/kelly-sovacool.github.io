@@ -29,7 +29,7 @@ navbar:
     - text: "CV"
       href: /latex-cv/cv_KLS.pdf
     - text: "Publications"
-      href: https://scholar.google.com/citations?hl=en&user=TlglgLgAAAAJ
+      href: pubs.html
     - icon: fa fa-rss
       href: posts.xml
 collections:
