@@ -8,34 +8,40 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
-                      message = FALSE
+                      message = FALSE,
+                      warning = FALSE
                       )
 ```
 
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> <!-- for altmetrics badges -->
+
+[Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ).
+
 last updated: `r Sys.Date()`
 
-See [my Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ) 
-for the most up-to-date list of publications.
+**\*** Indicates co-first author.
 
 ```{r deps}
 library(reticulate)
 use_python('~/miniconda3/bin/python')
 ```
 
-```{python pubs}
+```{bash download_bib, results = FALSE}
+wget https://raw.githubusercontent.com/kelly-sovacool/latex-cv/master/cv_KLS.bib -O cv_KLS.bib
+```
+
+
+```{python import_pubs}
 from publications import *
 entries = parse_entries()
-bibtable = []# ["| | | |", "|---|---|---|"]
+end = "\n\n<span style = 'color:white;'>break</span>\n\n"
+```
+
+
+```{python publist, results = 'asis'}
 idx = len(entries)
 for entry in entries:
-    #bibtable.append(f"| {idx}. | {entry.bib} | {entry.altmetric()} |")
-    bibtable.append(f"{idx}. {entry.bib}\n")
-    bibtable.append(f"{entry.altmetric(badge_type = 'donut')}\n")
+    print(f"{idx}. {entry.bib}\n\n",
+          f"\t{entry.altmetric(badge_type = 'donut')}\n")
     idx -= 1
 ```
-
-
-```{r, list, results='asis'}
-cat(paste0(py$bibtable, sep = '\n'))
-```
-

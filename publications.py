@@ -66,9 +66,9 @@ class BibEntry:
     def __init__(self, record):
         self.record = record
 
-    def altmetric(self, badge_type = '2'):
+    def altmetric(self, badge_type = '2', data_hide = "false"):
         #badge_type = 'donut'
-        return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>'
+        return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="{data_hide}" class="altmetric-embed"></div>'
 
     @property
     def authors(self):
