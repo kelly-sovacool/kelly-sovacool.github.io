@@ -15,11 +15,11 @@ knitr::opts_chunk$set(echo = FALSE,
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> <!-- for altmetrics badges -->
 
-[Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ).
+<!-- 
+[Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ)-->
 
-last updated: `r Sys.Date()`
+**\*** Indicates co-first author. Last updated: `r Sys.Date()`
 
-**\*** Indicates co-first author.
 
 ```{r deps}
 library(reticulate)
@@ -35,14 +35,24 @@ from publications import *
 entries = parse_entries()
 ```
 
-<ol reversed>
-```{python publist, results = 'asis'}
-
+<table style="width:100%">
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th> </th> 
+    <th> </th>
+  </tr>
+```{python pubtable, results = 'asis'}
+idx = len(entries)
 for entry in entries:
-    print(f"<li>{entry.bib}",
-          f"\t{entry.altmetric(badge_type = 'donut')}",
-          sep = "\n",
-          end = "</li>\n\n")
+    print("<tr>\n",
+          f'<td  style="vertical-align:top">{idx}.',
+          f'<td>{entry.bib}',
+          f'<td>{entry.altmetric(badge_type = "donut")}',
+          f'<td>{entry.github_badge(font_size_px = 48)}',
+          sep = "</td>\n",
+          end = "</tr>\n")
+    idx -= 1
 
 ```
-</ol>
+</table>

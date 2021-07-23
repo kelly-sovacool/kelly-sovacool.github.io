@@ -66,9 +66,16 @@ class BibEntry:
     def __init__(self, record):
         self.record = record
 
-    def altmetric(self, badge_type = '2', data_hide = "false"):
+    def altmetric(self, badge_type = 'donut', data_hide = "false"):
         #badge_type = 'donut'
         return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="{data_hide}" class="altmetric-embed"></div>'
+
+    def github_badge(self, font_size_px=48):
+        return f'<a href="{self.github_link}"> <i class="fab fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
+
+    @property
+    def github_link(self):
+        return self.record['github'] if 'github' in self.record else ''
 
     @property
     def authors(self):
