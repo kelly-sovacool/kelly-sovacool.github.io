@@ -30,18 +30,19 @@ use_python('~/miniconda3/bin/python')
 wget https://raw.githubusercontent.com/kelly-sovacool/latex-cv/master/cv_KLS.bib -O cv_KLS.bib
 ```
 
-
 ```{python import_pubs}
 from publications import *
 entries = parse_entries()
-end = "\n\n<span style = 'color:white;'>break</span>\n\n"
 ```
 
-
+<ol reversed>
 ```{python publist, results = 'asis'}
-idx = len(entries)
+
 for entry in entries:
-    print(f"{idx}. {entry.bib}\n\n",
-          f"\t{entry.altmetric(badge_type = 'donut')}\n")
-    idx -= 1
+    print(f"<li>{entry.bib}",
+          f"\t{entry.altmetric(badge_type = 'donut')}",
+          sep = "\n",
+          end = "</li>\n\n")
+
 ```
+</ol>
