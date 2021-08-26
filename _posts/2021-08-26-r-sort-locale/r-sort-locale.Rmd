@@ -2,8 +2,15 @@
 title: "Base R's `sort()` order changes with locale"
 description: |
   And that can cause frustrating test failures in `devtools::check()`!
-date: "`r Sys.Date()`"
-output: distill::distill_article
+date: 2021-08-26
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+categories:
+  - Software Development
+  - R
+  - R Packages
 ---
 
 ```{r setup, include=FALSE}
