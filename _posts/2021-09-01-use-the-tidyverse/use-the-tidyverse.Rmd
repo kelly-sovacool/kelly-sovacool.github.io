@@ -1,0 +1,57 @@
+---
+title: "Use the tidyverse"
+description: |
+  ...or else...
+date: "`r Sys.Date()`"
+output: distill::distill_article
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+R has a LOT of idiosyncrasies which have been well-documented in various books and angry blog posts on the web.
+
+This is another one to add to the pile.
+
+I'm really tired of dealing with bugs in base R code.
+In many cases, the wonderful developers of the tidyverse have addressed problems in base R by writing new functions that are much more well-behaved.
+Here are some examples of problems I've run into and how to avoid them.
+
+### Subsetting columns of a data frame
+
+Subsetting a single column of a data frame with square brackets yields a vector,
+while subsetting multiple columns yields a data frame.
+What a horrible design; the type of output that a function returns should always be stable regardless of input.
+When you subset a single column of a tibble with square brackets, it yields a tibble with a single column.
+The discrepancy in these behaviors can lead to very annoying bugs!
+I've started writing unit tests that use both data frames and tibbles to make sure the behavior doesn't change, and also stopped using square brackets to subset dataframes.
+Instead, you should use:
+
+- dplyr::pull() if you want a vector
+- dplyr::select() if you want a one-column data frame
+
+### Sort order depends on your locale
+
+see https://sovacool.dev/posts/2021-08-26-r-sort-locale/
+
+### Weird factors stuff
+
+Steph's plot example?
+
+### strings as factors
+
+Thankfully, `stringsAsFactors=FALSE` is the default as of R 4.0. 
+If you're still using R < 4, GO ON AND UPDATE YOUR R VERSION ALREADY!
+
+But even before this, I seldom ran into this problem because I always used 
+`readr::read_csv()` rather than the base `read.csv()` and their cousins.
+Functions from the `readr` package don't read in strings as factors unless you explicitly tell them to with the `col_types` argument.
+If for some reason you find yourself absolutely needing to use a version of R prior to 4.0, switch to using `readr` to avoid that bullshit behavior.
+
+## TLDR
+
+If there's a base R way of doing something, check whether the tidyverse has a
+different way of doing the same thing, and just go with the tidyverse way.
+Chances are it'll be better for you in the long run.
