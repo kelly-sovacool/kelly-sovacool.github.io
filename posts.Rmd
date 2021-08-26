@@ -2,3 +2,9 @@
 title: "Blog Posts"
 listing: posts
 ---
+
+```{bash, echo=FALSE}
+mkdir -p docs/posts/2019/05/bioinf-resources/
+cp redirect-old-post.html docs/posts/2019/05/bioinf-resources/index.html
+```
+
