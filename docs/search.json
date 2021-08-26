@@ -11,8 +11,8 @@
       "path": "posts.html",
       "title": "Blog Posts",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-08-26T12:02:41-04:00"
+      "contents": "\n\n\n\n\n\n\n",
+      "last_modified": "2021-08-26T12:41:44-04:00"
     },
     {
       "path": "pubs.html",
@@ -26,14 +26,14 @@
       "path": "README.html",
       "author": [],
       "contents": "\n\n\n\nMy personal website, created with {distill} by RStudio.\nThe first iteration of my website is preserved here for posterity.\n\n\n\n",
-      "last_modified": "2021-08-26T12:02:41-04:00"
+      "last_modified": "2021-08-26T12:41:44-04:00"
     },
     {
       "path": "README.html",
       "title": "sovacool.dev",
       "author": [],
       "contents": "\n\n\n\nMy personal website, created with {distill} by RStudio.\nThe first iteration of my website is preserved here for posterity.\n\n\n\n",
-      "last_modified": "2021-08-26T12:02:41-04:00"
+      "last_modified": "2021-08-26T12:41:44-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

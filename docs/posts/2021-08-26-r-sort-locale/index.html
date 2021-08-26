@@ -102,26 +102,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="And that can cause frustrating test failures in devtools::check()!"/>
 <meta property="og:url" content="https://sovacool.dev/posts/2021-08-26-r-sort-locale/"/>
+<meta property="og:image" content="https://sovacool.dev/posts/2021-08-26-r-sort-locale/commit_cleanup.png"/>
+<meta property="og:image:width" content="870"/>
+<meta property="og:image:height" content="332"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Kelly L. Sovacool"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Kelly L. Sovacool: Base R&#39;s sort() order changes with locale"/>
 <meta property="twitter:description" content="And that can cause frustrating test failures in devtools::check()!"/>
 <meta property="twitter:url" content="https://sovacool.dev/posts/2021-08-26-r-sort-locale/"/>
+<meta property="twitter:image" content="https://sovacool.dev/posts/2021-08-26-r-sort-locale/commit_cleanup.png"/>
+<meta property="twitter:image:width" content="870"/>
+<meta property="twitter:image:height" content="332"/>
 <meta property="twitter:site" content="@kelly_sovacool"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output","categories","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Base R's sort() order changes with locale"]},{"type":"character","attributes":{},"value":["And that can cause frustrating test failures in devtools::check()!"]},{"type":"character","attributes":{},"value":["2021-08-26"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["Software Development","R","R Packages"]},{"type":"character","attributes":{},"value":["https://sovacool.dev/posts/2021-08-26-r-sort-locale/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output","categories","preview","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Base R's sort() order changes with locale"]},{"type":"character","attributes":{},"value":["And that can cause frustrating test failures in devtools::check()!"]},{"type":"character","attributes":{},"value":["2021-08-26"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["Software Development","R","R Packages"]},{"type":"character","attributes":{},"value":["commit_cleanup.png"]},{"type":"character","attributes":{},"value":["https://sovacool.dev/posts/2021-08-26-r-sort-locale/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["commit_cleanup.png","commit_exploding-head.png","r-sort-locale_files/anchor-4.2.2/anchor.min.js","r-sort-locale_files/bowser-1.9.3/bowser.min.js","r-sort-locale_files/distill-2.2.21/template.v2.js","r-sort-locale_files/header-attrs-2.10/header-attrs.js","r-sort-locale_files/jquery-1.11.3/jquery.min.js","r-sort-locale_files/popper-2.6.0/popper.min.js","r-sort-locale_files/tippy-6.2.7/tippy-bundle.umd.min.js","r-sort-locale_files/tippy-6.2.7/tippy-light-border.css","r-sort-locale_files/tippy-6.2.7/tippy.css","r-sort-locale_files/tippy-6.2.7/tippy.umd.min.js","r-sort-locale_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1877,10 +1883,13 @@ gtag('config', 'UA-135472420-1');
 <li><a href="#sortmethodradix">1. <code>sort(method="radix")</code></a></li>
 <li><a href="#stringrstr_sort">2. <code>stringr::str_sort()</code></a></li>
 </ul></li>
+<li><a href="#wrap-up">Wrap-up</a></li>
 </ul>
 </nav>
 </div>
-<p>Unit tests for <a href="https://github.com/SchlossLab/mikropml">a package I help maintain</a> were passing when I ran them with <code>devtools::test()</code>, but failing when I ran them with <code>devtools::check()</code>. Eventually I found <a href="https://irene.rbind.io/post/two-test-env/">this blog post</a> which linked to <a href="https://stackoverflow.com/questions/42272119/r-cmd-check-fails-devtoolstest-works-fine">a StackOverflow post</a> that had this same problem, and in their case it was caused by the base <code>sort()</code> function. It dawned on me that I recently started using <code>sort()</code> in the branch I was working on!</p>
+<p>Unit tests for <a href="https://github.com/SchlossLab/mikropml">a package I help maintain</a> were passing when I ran them with <code>devtools::test()</code>, but failing when I ran them with <code>devtools::check()</code>.</p>
+<p><img src="commit_exploding-head.png" style="width:60.0%" /></p>
+<p>Eventually I found <a href="https://irene.rbind.io/post/two-test-env/">this blog post</a> which linked to <a href="https://stackoverflow.com/questions/42272119/r-cmd-check-fails-devtoolstest-works-fine">a StackOverflow post</a> that had this same problem, and in their case it was caused by the base <code>sort()</code> function. It dawned on me that I recently started using <code>sort()</code> in the branch I was working on!</p>
 <p>When sorting character vectors, the sort order depends on the user’s locale, which is set by the environment variable <code>LC_COLLATE</code>. <code>devtools::check()</code> and <code>devtools::test()</code> were using different values for that environment variable, thus causing different output orders for some of the unit tests.</p>
 <h2 id="sort-order-depends-on-locale">Sort order depends on locale</h2>
 <div class="layout-chunk" data-layout="l-body">
@@ -1978,7 +1987,15 @@ gtag('config', 'UA-135472420-1');
 [33] &quot;p&quot; &quot;P&quot; &quot;q&quot; &quot;Q&quot; &quot;r&quot; &quot;R&quot; &quot;s&quot; &quot;S&quot; &quot;t&quot; &quot;T&quot; &quot;v&quot; &quot;V&quot; &quot;w&quot; &quot;W&quot; &quot;x&quot; &quot;X&quot;
 [49] &quot;y&quot; &quot;Y&quot; &quot;z&quot; &quot;Z&quot;</code></pre>
 </div>
-<p>Our package doesn’t use any other functions from <code>stringr</code>, so I went with option 1 to avoiding adding a new dependency for only one function. I wrote a helper function called <a href="https://github.com/SchlossLab/mikropml/blob/04adac4588fae239fdaa8b2669c431f2268dc08f/R/utils.R#L195-L212"><code>radix_sort()</code></a> that simply calls base <code>sort()</code> with radix, and <a href="https://github.com/SchlossLab/mikropml/blob/04adac4588fae239fdaa8b2669c431f2268dc08f/tests/testthat/test-utils.R#L89-L99">a test case</a> to make sure it actually produces a stable sort order when the default does not.</p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>Our package doesn’t use any other functions from <code>stringr</code>, so I went with <a href="file:///Users/kelly/projects/personal/kelly-sovacool.github.io/_posts/2021-08-26-r-sort-locale/r-sort-locale.html#sortmethodradix">option 1</a> to avoiding adding a new dependency for only one function. I wrote a helper function called <a href="https://github.com/SchlossLab/mikropml/blob/04adac4588fae239fdaa8b2669c431f2268dc08f/R/utils.R#L195-L212"><code>radix_sort()</code></a> that simply calls base <code>sort()</code> with radix, and <a href="https://github.com/SchlossLab/mikropml/blob/04adac4588fae239fdaa8b2669c431f2268dc08f/tests/testthat/test-utils.R#L89-L99">a test case</a> to make sure it actually produces a stable sort order when the default does not.</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+It's one of those debugging days… <a href="https://t.co/PQQmJXOMit">pic.twitter.com/PQQmJXOMit</a>
+</p>
+— Kelly Sovacool (<span class="citation" data-cites="kelly_sovacool">@kelly_sovacool</span>) <a href="https://twitter.com/kelly_sovacool/status/1430645976830709760?ref_src=twsrc%5Etfw">August 25, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
