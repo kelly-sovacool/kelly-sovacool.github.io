@@ -14,9 +14,12 @@
     <generator>Distill</generator>
     <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Base R's `sort()` order changes with locale</title>
+      <title>Base R's sort() order changes with locale</title>
       <link>https://sovacool.dev/posts/2021-08-26-r-sort-locale</link>
-      <description>And that can cause frustrating test failures in `devtools::check()`!</description>
+      <description>And that can cause frustrating test failures in devtools::check()!</description>
+      <category>Software Development</category>
+      <category>R</category>
+      <category>R Packages</category>
       <guid>https://sovacool.dev/posts/2021-08-26-r-sort-locale</guid>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
     </item>

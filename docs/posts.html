@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://sovacool.dev/posts.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -86,28 +87,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Kelly L. Sovacool: About</title>
+  <title>Kelly L. Sovacool: Blog Posts</title>
 
 
   <link rel="icon" type="image/png" href="images/favicon-32x32.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Kelly L. Sovacool: About"/>
+  <meta property="og:title" content="Kelly L. Sovacool: Blog Posts"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Kelly L. Sovacool"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Kelly L. Sovacool: About"/>
+  <meta property="twitter:title" content="Kelly L. Sovacool: Blog Posts"/>
   <meta property="twitter:site" content="@kelly_sovacool"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["About"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog Posts"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1795,12 +1796,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About","authors":[]}
+{"title":"Blog Posts","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1838,9 +1839,304 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Blog Posts">Blog Posts</h1>
+<a href="posts/2021-08-26-r-sort-locale/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Software Development","R","R Packages"]}</script>
+<div class="metadata">
+<div class="publishedDate">Aug. 26, 2021</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Base R's sort() order changes with locale</h2>
+<div class="dt-tags">
+<div class="dt-tag">Software Development</div>
+<div class="dt-tag">R</div>
+<div class="dt-tag">R Packages</div>
+</div>
+<p>And that can cause frustrating test failures in devtools::check()!</p>
+</div>
+</a>
+<a href="posts/2020-03-20-learn-to-code/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["R","Python"]}</script>
+<div class="metadata">
+<div class="publishedDate">March 20, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Kelly L. Sovacool</div>
+<div class="dt-author">Zena M. Lapp</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Teach yourself to Code</h2>
+<div class="dt-tags">
+<div class="dt-tag">R</div>
+<div class="dt-tag">Python</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts/2019-12-19-urssi-winterschool-notes/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Research Software Engineering","Open Source Software","Reproducibility","Software Development","Python","git"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 19, 2019</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>URSSI Winter School</h2>
+<div class="dt-tags">
+<div class="dt-tag">Research Software Engineering</div>
+<div class="dt-tag">Open Source Software</div>
+<div class="dt-tag">Reproducibility</div>
+<div class="dt-tag">Software Development</div>
+<div class="dt-tag">Python</div>
+<div class="dt-tag">git</div>
+</div>
+<p>My notes from the URSSI Winter School</p>
+</div>
+</a>
+<a href="posts/2019-05-15-bioinf-resources/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Bioinformatics","Software Development","Data Analysis","Reproducibility","Python","R","git"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 15, 2019</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Bioinformatics Resources</h2>
+<div class="dt-tags">
+<div class="dt-tag">Bioinformatics</div>
+<div class="dt-tag">Software Development</div>
+<div class="dt-tag">Data Analysis</div>
+<div class="dt-tag">Reproducibility</div>
+<div class="dt-tag">Python</div>
+<div class="dt-tag">R</div>
+<div class="dt-tag">git</div>
+</div>
+<p>Resources for Bioinformatics Software Development &amp; Data Analysis</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div><div class="sidebar-section custom">
+  <h3>About</h3>
+  <p>Kelly is a Bioinformatics PhD Candidate at the University of Michigan.
+  Read more about her <a href=index.html>here</a>.</p>
+  <br>
+  <a href=index.html><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n6.png" height="300" width="300" class="inline"></a>
+</div>
+
+<div class="sidebar-section custom">
+  <h3>Search</h3>
+  <form action="https://google.com/">
+    <input type="text" name="q" placeholder="Search...">
+    <input type="hidden" name="sites"
+      value="https://sovacool.dev/"> <!-- Replace with your blog URL -->
+    <!--<button type="submit">Search</button>-->
+  </form>
+</div>
+</div>
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(4)</span>
+</li>
+<li>
+<a href="#category:Bioinformatics">Bioinformatics</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Data_Analysis">Data Analysis</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:git">git</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Open_Source_Software">Open Source Software</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Python">Python</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:R">R</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:R_Packages">R Packages</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Reproducibility">Reproducibility</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Research_Software_Engineering">Research Software Engineering</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Software_Development">Software Development</a>
+<span class="category-count">(3)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>About</h1>
+<h1>Blog Posts</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -1848,17 +2144,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<style>
-img.left {
-  float: left;
-}
-</style>
-<p>
-<img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px"> Hi, I’m Kelly! I’m a <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">Bioinformatics</a> PhD candidate in <a href="http://www.schlosslab.org/">Pat Schloss’ lab</a> at the University of Michigan. I develop bioinformatics tools and data analysis pipelines for microbial ecology and host-associated microbiome research. I’m a fan of open science, open source software, and reproducible research. <br><br> When I’m not in the dry lab, you might find me running, cycling, climbing, or otherwise being active outside. I also volunteer with <a href="http://umich.edu/~girlswc/">Girls Who Code</a>, teach <a href="https://umcarpentries.github.io/">Software Carpentry</a> workshops, organize events for the <a href="https://um-dang.github.io">Data Analysis Networking Group</a>, and moonlight as a <a href="https://sovacool.dev/latex-cv/sound.pdf">live sound engineer</a>.
-</p>
-<hr />
-<p><a href="http://www.schlosslab.org/"><img src="images/logo_mothur.png" width="250"></a> <a href="https://um-dang.github.io"><img src="images/logo_DANG.png" width="250"></a> <a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" width="250"></a> <a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" width="250"></a></p>
-<p><a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n6.png" width="500"></a> <a href="http://bit.ly/strava-kelly"><img src="images/watermoo.jpg" width="500"></a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
