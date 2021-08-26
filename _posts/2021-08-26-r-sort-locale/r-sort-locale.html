@@ -1493,7 +1493,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <p>Unit tests for <a href="https://github.com/SchlossLab/mikropml">a package I help maintain</a> were passing when I ran them with <code>devtools::test()</code>, but failing when I ran them with <code>devtools::check()</code>.</p>
 <p><img src="commit_exploding-head.png" style="width:60.0%" /></p>
-<p>Eventually I found <a href="https://irene.rbind.io/post/two-test-env/">this blog post</a> which linked to <a href="https://stackoverflow.com/questions/42272119/r-cmd-check-fails-devtoolstest-works-fine">a StackOverflow post</a> that had this same problem, and in their case it was caused by the base <code>sort()</code> function. It dawned on me that I recently started using <code>sort()</code> in the branch I was working on!</p>
+<p>Eventually I found <a href="https://irene.rbind.io/post/two-test-env/">this blog post</a> which linked to <a href="https://stackoverflow.com/questions/42272119/r-cmd-check-fails-devtoolstest-works-fine">a StackOverflow post</a> that had this same problem, and in their case it was caused by the base <code>sort()</code> function. It dawned on me that I recently started using <code>sort()</code> in <a href="https://github.com/SchlossLab/mikropml/pull/276">the branch I was working on</a>!</p>
 <p>When sorting character vectors, the sort order depends on the user’s locale, which is set by the environment variable <code>LC_COLLATE</code>. <code>devtools::check()</code> and <code>devtools::test()</code> were using different values for that environment variable, thus causing different output orders for some of the unit tests.</p>
 <h2 id="sort-order-depends-on-locale">Sort order depends on locale</h2>
 <div class="layout-chunk" data-layout="l-body">

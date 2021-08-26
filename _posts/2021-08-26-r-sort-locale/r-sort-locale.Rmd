@@ -29,7 +29,8 @@ Eventually I found [this blog post](https://irene.rbind.io/post/two-test-env/)
 which linked to 
 [a StackOverflow post](https://stackoverflow.com/questions/42272119/r-cmd-check-fails-devtoolstest-works-fine) 
 that had this same problem, and in their case it was caused by the base `sort()` function.
-It dawned on me that I recently started using `sort()` in the branch I was working on!
+It dawned on me that I recently started using `sort()` in 
+[the branch I was working on](https://github.com/SchlossLab/mikropml/pull/276)!
 
 When sorting character vectors, the sort order depends on the user's locale,
 which is set by the environment variable `LC_COLLATE`.
