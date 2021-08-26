@@ -77,7 +77,7 @@ all(sorted_eng_radix == sorted_c_radix)
 
 ### 2. `stringr::str_sort()`
 
-Use `str_sort()` from the `stringr` package. 
+Use `str_sort()` from [the `stringr` package](https://stringr.tidyverse.org/reference/str_order.html). 
 It has a `locale` parameter that defaults to `"eng"`, so the sort order will
 be stable by default, but you can override it if you need to. 
 
@@ -89,8 +89,7 @@ stringr::str_sort(char_vect, locale = 'haw')
 ## Wrap-up
 
 Our package doesn't use any other functions from `stringr`, so I went with
-[option 1](file:///Users/kelly/projects/personal/kelly-sovacool.github.io/_posts/2021-08-26-r-sort-locale/r-sort-locale.html#sortmethodradix) 
-to avoiding adding a new dependency for only one function.
+option 1 to avoid adding a new dependency.
 I wrote a helper function called 
 [`radix_sort()`](https://github.com/SchlossLab/mikropml/blob/04adac4588fae239fdaa8b2669c431f2268dc08f/R/utils.R#L195-L212) 
 that simply calls base `sort()` with radix, and 
