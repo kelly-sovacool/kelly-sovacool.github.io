@@ -50,6 +50,9 @@ But even before this, I seldom ran into this problem because I always used
 Functions from the `readr` package don't read in strings as factors unless you explicitly tell them to with the `col_types` argument.
 If for some reason you find yourself absolutely needing to use a version of R prior to 4.0, switch to using `readr` to avoid that bullshit behavior.
 
+
+### ifelse() vs if_else()
+
 ## TLDR
 
 If there's a base R way of doing something, check whether the tidyverse has a
