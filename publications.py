@@ -54,6 +54,8 @@ def customizations(record):
 def format_author(name, bold = 'Sovacool, Kelly'):
     last_firstmi = name.split(',')
     lastname = last_firstmi[0]
+    if lastname.startswith('*'):
+        lastname = f'\{lastname}' # escape asterisks for co-first authorship
     first_mi = last_firstmi[1].split()
     first_inits = first_mi[0][0] + first_mi[1][0] if len(first_mi) == 2 else first_mi[0][0]
     author = f'{lastname} {first_inits}'
@@ -83,7 +85,7 @@ class BibEntry:
 
     @property
     def month_num(self):
-        return MONTHS[self.record['month']]
+        return MONTHS[self.record['month'].lower()]
 
     @property
     def year_mo(self):
