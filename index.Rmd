@@ -21,16 +21,18 @@ When I'm not in the dry lab, you might find me running, cycling, climbing, or
 otherwise being active outside. 
 I also volunteer with [Girls Who Code](http://umich.edu/~girlswc/), 
 teach [Software Carpentry](https://umcarpentries.github.io/) workshops, 
-organize events for the [Data Analysis Networking Group](https://um-dang.github.io), 
+host [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/),
 and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
 </p>
 
 ---
 
-<a href="http://www.schlosslab.org/"><img src="images/logo_mothur.png" width="250"></a> 
-<a href="https://um-dang.github.io"><img src="images/logo_DANG.png" width="250"></a> 
-<a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" width="250"></a> 
-<a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" width="250"></a> 
+<a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" height="120"></a> 
+<a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" height="120"></a> 
+
+<a href="http://www.schlosslab.org/"><img src="images/logo_mothur.png" width="120"></a> 
+<a href="https://github.com/SchlossLab/mikropml"><img src="images/logo_mikropml.png" width="120"></a>
+<a href="https://um-dang.github.io"><img src="images/logo_DANG.png" width="120"></a> 
 
 <a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" width="500"></a> 
 <a href="http://bit.ly/strava-kelly"><img src="images/watermoo.jpg" width="500"></a>
