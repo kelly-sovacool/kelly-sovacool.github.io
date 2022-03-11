@@ -27,12 +27,15 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 
 ---
 
-<a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" height="120"></a> 
-<a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" height="120"></a> 
-
 <a href="http://www.schlosslab.org/"><img src="images/logo_mothur.png" width="120"></a> 
 <a href="https://github.com/SchlossLab/mikropml"><img src="images/logo_mikropml.png" width="120"></a>
+<a href="https://github.com/SchlossLab/schtools"><img src="images/logo_schtools.png" height="120"></a>
+
+<br>
+
+<a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" height="120"></a> 
 <a href="https://um-dang.github.io"><img src="images/logo_DANG.png" width="120"></a> 
+<a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" height="120"></a> 
 
 <br>
 
