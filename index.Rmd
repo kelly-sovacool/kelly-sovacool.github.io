@@ -2,6 +2,15 @@
 title: "About"
 site: distill::distill_website
 ---
+<style>
+d-article a {
+  border-bottom: none;
+  text-decoration: none;
+  color: #002935;
+} /* remove hyperlink underlines until hover */
+d-article a:hover { border-bottom:1px dotted; }
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
