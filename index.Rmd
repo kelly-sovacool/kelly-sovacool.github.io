@@ -2,11 +2,6 @@
 title: "About"
 site: distill::distill_website
 ---
-<style>
-img.left {
-  float: left;
-}
-</style>
 
 <p>
 <img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px">
@@ -27,17 +22,12 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 
 ---
 
-<a href="http://www.schlosslab.org/"><img src="images/logo_mothur.png" width="120"></a> 
-<a href="https://github.com/SchlossLab/mikropml"><img src="images/logo_mikropml.png" width="120"></a>
-<a href="https://github.com/SchlossLab/schtools"><img src="images/logo_schtools.png" height="120"></a>
 
-<br>
-
-<a href="http://umich.edu/~girlswc/"><img src="images/logo_GWC-DCMB.png" height="120"></a> 
-<a href="https://um-dang.github.io"><img src="images/logo_DANG.png" width="120"></a> 
-<a href="http://umcarpentries.github.io/"><img src="images/logo_SWC.svg" height="120"></a> 
+```{r hexagons, results='asis', echo = FALSE}
+hex_html <- readr::read_lines(here::here('_hex.html'))
+print(paste(hex_html, collapse = '\n'), quote = FALSE)
+```
 
 <br>
 
 <a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" width="500"></a> 
-<a href="http://bit.ly/strava-kelly"><img src="images/watermoo.jpg" width="500"></a>

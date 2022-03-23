@@ -39,5 +39,7 @@ collections:
     custom: _sidebar.html
   index:
     custom: _sidebar.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    css: styles.css
 output_dir: "docs"
