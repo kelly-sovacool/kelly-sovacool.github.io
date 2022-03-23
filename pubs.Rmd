@@ -9,7 +9,7 @@ output:
 d-article a {
   border-bottom: none;
   text-decoration: none;
-  color: #002935;
+  color: #2f65a7;
 } /* remove hyperlink underlines until hover */
 d-article a:hover { border-bottom:1px dotted; }
 </style>

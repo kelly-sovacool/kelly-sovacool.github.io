@@ -1791,52 +1791,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   gtag('config', 'UA-135472420-1');
   </script>
   <style type="text/css">
-  /* float my profile image to the left */
-  .left {
-    float: left;
-  }
-
-  /* remove hyperlink underlines until hover */
-  a { text-decoration: none; }
-  a:hover { border-bottom:1px dotted; }
-
-  /* hexagons adapted from:
-      - https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
-      - http://jsfiddle.net/kizu/bhGn4/
-  */
-  .main {
-    display:flex;
-    --s: 100px;  /* size  */
-    --m: 4px;    /* margin */
-    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
-  }
-
-  .container {
-    font-size: 0; /*disable white space between inline block element */
-  }
-
-  .container div {
-    width: var(--s);
-    margin: var(--m);
-    height: calc(var(--s)*1.1547);
-    display: inline-block;
-    font-size:initial;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-    margin-bottom: calc(var(--m) - var(--s)*0.2885);
-    background-image: none;
-    background-position: 50%;
-    background-size: 115%;
-    background-repeat: no-repeat;
-  }
-  .container::before {
-    content: "";
-    width: calc(var(--s)/2 + var(--m));
-    float: left;
-    height: 120%;
-    shape-outside: repeating-linear-gradient(
-                     #0000 0 calc(var(--f) - 3px),
-                     #000  0 var(--f));
-  }
 
   </style>
   <!--/radix_placeholder_site_in_header-->
@@ -1899,10 +1853,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <style>
+.left { /* float my profile image to the left */
+  float: left;
+}
 d-article a {
   border-bottom: none;
   text-decoration: none;
-  color: #002935;
+  color: #2f65a7;
 } /* remove hyperlink underlines until hover */
 d-article a:hover { border-bottom:1px dotted; }
 </style>
