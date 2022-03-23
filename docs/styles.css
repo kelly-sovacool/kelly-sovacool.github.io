@@ -1,12 +1,16 @@
-img.left {
+/* float my profile image to the left */
+.left {
   float: left;
 }
+
+/* remove hyperlink underlines until hover */
+a { text-decoration: none; }
+a:hover { border-bottom:1px dotted; }
 
 /* hexagons adapted from:
     - https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
     - http://jsfiddle.net/kizu/bhGn4/
 */
-
 .main {
   display:flex;
   --s: 100px;  /* size  */

@@ -2,6 +2,12 @@
 title: "About"
 site: distill::distill_website
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE
+                      )
+```
 
 <p>
 <img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px">
@@ -23,9 +29,15 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 ---
 
 
-```{r hexagons, results='asis', echo = FALSE}
-hex_html <- readr::read_lines(here::here('_hex.html'))
-print(paste(hex_html, collapse = '\n'), quote = FALSE)
+```{r deps}
+library(reticulate)
+use_python('~/miniconda3/bin/python')
+```
+
+```{python hexagons, results='asis'}
+with open('_hex.html', 'r') as infile:
+    for line in infile:
+        print(line.strip())
 ```
 
 <br>

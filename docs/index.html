@@ -1791,15 +1791,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   gtag('config', 'UA-135472420-1');
   </script>
   <style type="text/css">
-  img.left {
+  /* float my profile image to the left */
+  .left {
     float: left;
   }
+
+  /* remove hyperlink underlines until hover */
+  a { text-decoration: none; }
+  a:hover { border-bottom:1px dotted; }
 
   /* hexagons adapted from:
       - https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
       - http://jsfiddle.net/kizu/bhGn4/
   */
-
   .main {
     display:flex;
     --s: 100px;  /* size  */
@@ -1899,43 +1903,83 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </p>
 <hr />
 <div class="layout-chunk" data-layout="l-body">
-[1]
-<style>\n\n/* hexagons adapted from:\n    - https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/\n    - http://jsfiddle.net/kizu/bhGn4/\n*/\n\n.main {\n  display:flex;\n  --s: 100px;  /* size  */\n  --m: 4px;    /* margin */\n  --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);\n}\n\n.container {\n  font-size: 0; /*disable white space between inline block element */\n}\n\n.container div {\n  width: var(--s);\n  margin: var(--m);\n  height: calc(var(--s)*1.1547);\n  display: inline-block;\n  font-size:initial;\n  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);\n  margin-bottom: calc(var(--m) - var(--s)*0.2885);\n  background-image: none;\n  background-position: 50%;\n  background-size: 115%;\n  background-repeat: no-repeat;\n}\n.container::before {\n  content: "";\n  width: calc(var(--s)/2 + var(--m));\n  float: left;\n  height: 120%;\n  shape-outside: repeating-linear-gradient(\n                   #0000 0 calc(var(--f) - 3px),\n                   #000  0 var(--f));\n}\n</style>
 
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<style>
+
+/* hexagons adapted from:
+- https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
+- http://jsfiddle.net/kizu/bhGn4/
+*/
+
+.main {
+display:flex;
+--s: 100px;  /* size  */
+--m: 4px;    /* margin */
+--f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+}
+
+.container {
+font-size: 0; /*disable white space between inline block element */
+}
+
+.container div {
+width: var(--s);
+margin: var(--m);
+height: calc(var(--s)*1.1547);
+display: inline-block;
+font-size:initial;
+clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+margin-bottom: calc(var(--m) - var(--s)*0.2885);
+background-image: none;
+background-position: 50%;
+background-size: 115%;
+background-repeat: no-repeat;
+}
+.container::before {
+content: "";
+width: calc(var(--s)/2 + var(--m));
+float: left;
+height: 120%;
+shape-outside: repeating-linear-gradient(
+#0000 0 calc(var(--f) - 3px),
+#000  0 var(--f));
+}
+</style>
 <div class="main">
-
 <div class="container">
 <a href="https://github.com/mothur/mothur">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/mothur/logo/master/mothur_RGB.png&quot;)">
 
 </div>
-</a><a href="https://github.com/SchlossLab/mikropml">
+</a> <a href="https://github.com/SchlossLab/mikropml">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/mikropml/main/man/figures/logo.png&quot;)">
 
 </div>
-</a><a href="https://github.com/SchlossLab/schtools">
+</a> <a href="https://github.com/SchlossLab/schtools">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/schtools/main/man/figures/logo.png&quot;); background-size:100%">
 
 </div>
-</a><a href="https://github.com/umcarpentries/intro-curriculum-r">
+</a> <a href="https://github.com/umcarpentries/intro-curriculum-r">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/swcarpentry/communications/main/misc/logo/swc-hex-logo.png&quot;); background-size:100%">
 
 </div>
-</a><a href="http://websites.umich.edu/~girlswc/">
+</a> <a href="http://websites.umich.edu/~girlswc/">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/GWC-DCMB/logos-stickers/main/output/hex-sticker-1.png&quot;); background-size:100%">
 
 </div>
-</a><a href="https://um-dang.github.io">
+</a> <a href="https://um-dang.github.io">
 <div style="background-image: url(&quot;https://raw.githubusercontent.com/um-dang/um-dang.github.io/main/images/logo1_AK_hexagon.png&quot;); background-size:100%">
 
 </div>
-</a><a href="http://bit.ly/strava-kelly">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/kelly-sovacool/kelly-sovacool.github.io/main/images/watermoo.jpg&quot;); background-size:250%;\n  background-position:50%;">
+</a> <a href="http://bit.ly/strava-kelly">
+<div style="background-image: url(&quot;https://raw.githubusercontent.com/kelly-sovacool/kelly-sovacool.github.io/main/images/watermoo.jpg&quot;); background-size:250%;
+background-position:50%;">
 
 </div>
-</a>
+<p></a></p>
 </div>
-
 </div>
 </div>
 <p><br></p>
