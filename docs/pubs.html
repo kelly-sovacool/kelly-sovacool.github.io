@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Kelly L. Sovacool: Publications</title>
@@ -92,8 +94,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <link rel="icon" type="image/png" href="images/favicon-32x32.png"/>
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2022-03-23"/>
-  <meta property="article:created" itemprop="dateCreated" content="2022-03-23"/>
+  <meta property="article:published" itemprop="datePublished" content="2022-06-01"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-06-01"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Kelly L. Sovacool: Publications"/>
@@ -110,7 +112,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Publications"]},{"type":"character","attributes":{},"value":["2022-03-23"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Publications"]},{"type":"character","attributes":{},"value":["2022-06-01"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -770,10 +772,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1605,7 +1603,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1616,6 +1623,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1715,6 +1747,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1737,7 +1771,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1776,7 +1810,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1807,7 +1841,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Publications","authors":[],"publishedDate":"2022-03-23T00:00:00.000+00:00"}
+{"title":"Publications","authors":[],"publishedDate":"2022-06-01T00:00:00.000-04:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1863,11 +1897,14 @@ d-article a {
 } /* remove hyperlink underlines until hover */
 d-article a:hover { border-bottom:1px dotted; }
 </style>
+<!-- for dimensions badges -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<!-- for altmetrics badges -->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-<p><!-- for altmetrics badges --></p>
-<!-- 
+<!--
 [Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ)-->
-<p><strong>*</strong> Indicates co-first author. Last updated: 2022-03-23</p>
+<p><strong>*</strong> Indicates co-first author. Last updated:
+2022-06-01</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
@@ -1892,18 +1929,55 @@ d-article a:hover { border-bottom:1px dotted; }
 <tr>
 </td>
 <td style="vertical-align:top">
-7.
+8.
 </td>
 <td>
-<strong>Sovacool KL</strong>, Westcott SL, Mumphrey MB, Dotson GA, Schloss PD. 2022. OptiFit: An Improved Method for Fitting Amplicon Sequences to Existing OTUs. <em>mSphere</em>. <a href="http://dx.doi.org/10.1128/msphere.00916-21">10.1128/msphere.00916-21</a>
+Barron MR, <strong>Sovacool KL</strong>, Abernathy-Close L, Vendrov KC,
+Standke AK, Bergin IL, Schloss PD, Young VB. 2022. Intestinal
+Inflammation Reversibly Alters the Microbiota to Drive Susceptibility to
+Difficile Colonization in a Mouse Model of Colitis. <em>bioRxiv</em>. <a
+href="http://dx.doi.org/10.1101/2022.04.07.487579">10.1101/2022.04.07.487579</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1128/msphere.00916-21" data-condensed="true" data-hide-no-mentions="false">
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.1101/2022.04.07.487579"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
-<a href="https://github.com/SchlossLab/Sovacool_OptiFit_mSphere_2022"> <i class="fab fa-github" style="font-size:48px;"></i> </a>
+<span class="__dimensions_badge_embed__"
+data-doi="10.1101/2022.04.07.487579" data-hide-zero-citations="true"
+data-style="small_circle"></span>
+</tr>
+<tr>
+</td>
+<td style="vertical-align:top">
+7.
+</td>
+<td>
+<strong>Sovacool KL</strong>, Westcott SL, Mumphrey MB, Dotson GA,
+Schloss PD. 2022. OptiFit: An Improved Method for Fitting Amplicon
+Sequences to Existing OTUs. <em>mSphere</em>. <a
+href="http://dx.doi.org/10.1128/msphere.00916-21">10.1128/msphere.00916-21</a>
+</td>
+<td>
+<a href="https://github.com/SchlossLab/Sovacool_OptiFit_mSphere_2022">
+<i class="fab fa-github" style="font-size:48px;"></i> </a>
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.1128/msphere.00916-21"
+data-condensed="true" data-hide-no-mentions="false">
+
+</div>
+</td>
+<td>
+<span class="__dimensions_badge_embed__"
+data-doi="10.1128/msphere.00916-21" data-hide-zero-citations="true"
+data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1911,15 +1985,27 @@ d-article a:hover { border-bottom:1px dotted; }
 6.
 </td>
 <td>
-*Lapp Z, <strong>*Sovacool KL</strong>, Lesniak N, King D, Barnier C, Flickinger M, Krüger J, Armour CR, Lapp MM, Tallant J, Diao R, Oneka M, Tomkovich S, Anderson JM, Lucas SK, Schloss PD. 2022. Developing and Deploying an Integrated Workshop Curriculum Teaching Computational Skills for Reproducible Research. <em>JOSE</em>. <a href="http://dx.doi.org/10.21105/jose.00144">10.21105/jose.00144</a>
+*Lapp Z, <strong>*Sovacool KL</strong>, Lesniak N, King D, Barnier C,
+Flickinger M, Krüger J, Armour CR, Lapp MM, Tallant J, Diao R, Oneka M,
+Tomkovich S, Anderson JM, Lucas SK, Schloss PD. 2022. Developing and
+Deploying an Integrated Workshop Curriculum Teaching Computational
+Skills for Reproducible Research. <em>JOSE</em>. <a
+href="http://dx.doi.org/10.21105/jose.00144">10.21105/jose.00144</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.21105/jose.00144" data-condensed="true" data-hide-no-mentions="false">
+<a href="https://github.com/UMCarpentries/intro-curriculum-r/">
+<i class="fab fa-github" style="font-size:48px;"></i> </a>
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.21105/jose.00144"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
-<a href="https://github.com/UMCarpentries/intro-curriculum-r/"> <i class="fab fa-github" style="font-size:48px;"></i> </a>
+<span class="__dimensions_badge_embed__" data-doi="10.21105/jose.00144"
+data-hide-zero-citations="true" data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1927,15 +2013,27 @@ d-article a:hover { border-bottom:1px dotted; }
 5.
 </td>
 <td>
-*Duda M, <strong>*Sovacool KL</strong>, Farzaneh N, Nguyen VK, Haynes SE, Falk H, Furman KL, Walker LA, Diao R, Oneka M, Drotos AC, Woloshin A, Dotson GA, Kriebel A, Meng L, Thiede SN, Lapp Z, Wolford BN. 2021. Teaching Python for Data Science: Collaborative Development of a Modular &amp; Interactive Curriculum. <em>JOSE</em>. <a href="http://dx.doi.org/10.21105/jose.00138">10.21105/jose.00138</a>
+*Duda M, <strong>*Sovacool KL</strong>, Farzaneh N, Nguyen VK, Haynes
+SE, Falk H, Furman KL, Walker LA, Diao R, Oneka M, Drotos AC, Woloshin
+A, Dotson GA, Kriebel A, Meng L, Thiede SN, Lapp Z, Wolford BN. 2021.
+Teaching Python for Data Science: Collaborative Development of a Modular
+&amp; Interactive Curriculum. <em>JOSE</em>. <a
+href="http://dx.doi.org/10.21105/jose.00138">10.21105/jose.00138</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.21105/jose.00138" data-condensed="true" data-hide-no-mentions="false">
+<a href="https://github.com/GWC-DCMB/curriculum-notebooks">
+<i class="fab fa-github" style="font-size:48px;"></i> </a>
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.21105/jose.00138"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
-<a href="https://github.com/GWC-DCMB/curriculum-notebooks"> <i class="fab fa-github" style="font-size:48px;"></i> </a>
+<span class="__dimensions_badge_embed__" data-doi="10.21105/jose.00138"
+data-hide-zero-citations="true" data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1943,15 +2041,25 @@ d-article a:hover { border-bottom:1px dotted; }
 4.
 </td>
 <td>
-*Topçuoğlu BD, *Lapp Z, <strong>*Sovacool KL</strong>, Snitkin E, Wiens J, Schloss PD. 2021. Mikropml: User-Friendly R Package for Supervised Machine Learning Pipelines. <em>JOSS</em>. <a href="http://dx.doi.org/10.21105/joss.03073">10.21105/joss.03073</a>
+*Topçuoğlu BD, *Lapp Z, <strong>*Sovacool KL</strong>, Snitkin E, Wiens
+J, Schloss PD. 2021. Mikropml: User-Friendly R Package for Supervised
+Machine Learning Pipelines. <em>JOSS</em>. <a
+href="http://dx.doi.org/10.21105/joss.03073">10.21105/joss.03073</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.21105/joss.03073" data-condensed="true" data-hide-no-mentions="false">
+<a href="https://github.com/SchlossLab/mikRopML">
+<i class="fab fa-github" style="font-size:48px;"></i> </a>
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.21105/joss.03073"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
-<a href="https://github.com/SchlossLab/mikRopML"> <i class="fab fa-github" style="font-size:48px;"></i> </a>
+<span class="__dimensions_badge_embed__" data-doi="10.21105/joss.03073"
+data-hide-zero-citations="true" data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1959,14 +2067,27 @@ d-article a:hover { border-bottom:1px dotted; }
 3.
 </td>
 <td>
-Everson KM, Gray LN, Jones AG, Lawrence NM, Foley ME, <strong>Sovacool KL</strong>, Kratovil JD, Hotaling S, Hime PM, Storfer A, Parra-Olea G, Percino-Daniel R, Aguilar-Miguel X, O’Neill EM, Zambrano L, Shaffer HB, Weisrock DW. 2021. Geography Is More Important than Life History in the Recent Diversification of the Tiger Salamander Complex. <em>PNAS</em>. <a href="http://dx.doi.org/10.1073/pnas.2014719118">10.1073/pnas.2014719118</a>
+Everson KM, Gray LN, Jones AG, Lawrence NM, Foley ME, <strong>Sovacool
+KL</strong>, Kratovil JD, Hotaling S, Hime PM, Storfer A, Parra-Olea G,
+Percino-Daniel R, Aguilar-Miguel X, O’Neill EM, Zambrano L, Shaffer HB,
+Weisrock DW. 2021. Geography Is More Important than Life History in the
+Recent Diversification of the Tiger Salamander Complex. <em>PNAS</em>.
+<a
+href="http://dx.doi.org/10.1073/pnas.2014719118">10.1073/pnas.2014719118</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1073/pnas.2014719118" data-condensed="true" data-hide-no-mentions="false">
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.1073/pnas.2014719118"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
+<span class="__dimensions_badge_embed__"
+data-doi="10.1073/pnas.2014719118" data-hide-zero-citations="true"
+data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1974,15 +2095,29 @@ Everson KM, Gray LN, Jones AG, Lawrence NM, Foley ME, <strong>Sovacool KL</stron
 2.
 </td>
 <td>
-Hagan AK, Lesniak NA, Balunas MJ, Bishop L, Close WL, Doherty MD, Elmore AG, Flynn KJ, Hannigan GD, Koumpouras CC, Jenior ML, Kozik AJ, McBride K, Rifkin SB, Stough J, <strong>Sovacool KL</strong>, Sze MA, Tomkovich S, Topcuoglu BD, Schloss PD. 2020. Ten Simple Rules to Increase Computational Skills among Biologists with Code Clubs. <em>PLOS Computational Biology</em>. <a href="http://dx.doi.org/10.1371/journal.pcbi.1008119">10.1371/journal.pcbi.1008119</a>
+Hagan AK, Lesniak NA, Balunas MJ, Bishop L, Close WL, Doherty MD, Elmore
+AG, Flynn KJ, Hannigan GD, Koumpouras CC, Jenior ML, Kozik AJ, McBride
+K, Rifkin SB, Stough J, <strong>Sovacool KL</strong>, Sze MA, Tomkovich
+S, Topcuoglu BD, Schloss PD. 2020. Ten Simple Rules to Increase
+Computational Skills among Biologists with Code Clubs. <em>PLOS
+Computational Biology</em>. <a
+href="http://dx.doi.org/10.1371/journal.pcbi.1008119">10.1371/journal.pcbi.1008119</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1371/journal.pcbi.1008119" data-condensed="true" data-hide-no-mentions="false">
+<a href="https://github.com/SchlossLab/Hagan_CodeClub_PLOSComp">
+<i class="fab fa-github" style="font-size:48px;"></i> </a>
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.1371/journal.pcbi.1008119"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
-<a href="https://github.com/SchlossLab/Hagan_CodeClub_PLOSComp"> <i class="fab fa-github" style="font-size:48px;"></i> </a>
+<span class="__dimensions_badge_embed__"
+data-doi="10.1371/journal.pcbi.1008119" data-hide-zero-citations="true"
+data-style="small_circle"></span>
 </tr>
 <tr>
 </td>
@@ -1990,18 +2125,29 @@ Hagan AK, Lesniak NA, Balunas MJ, Bishop L, Close WL, Doherty MD, Elmore AG, Fly
 1.
 </td>
 <td>
-Goodin MM, Farman M, Inocencio H, Jang C, Jaromczyk JW, Moore N, <strong>Sovacool KL</strong>. 2016. Processing RNA-Seq Data of Plants Infected with Coffee Ringspot Virus. <em>BMC Bioinformatics</em>. <a href="http://dx.doi.org/10.1186/s12859-016-1154-y">10.1186/s12859-016-1154-y</a>
+Goodin MM, Farman M, Inocencio H, Jang C, Jaromczyk JW, Moore N,
+<strong>Sovacool KL</strong>. 2016. Processing RNA-Seq Data of Plants
+Infected with Coffee Ringspot Virus. <em>BMC Bioinformatics</em>. <a
+href="http://dx.doi.org/10.1186/s12859-016-1154-y">10.1186/s12859-016-1154-y</a>
 </td>
 <td>
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1186/s12859-016-1154-y" data-condensed="true" data-hide-no-mentions="false">
+</td>
+<td>
+<div class="altmetric-embed" data-badge-popover="right"
+data-badge-type="donut" data-doi="10.1186/s12859-016-1154-y"
+data-condensed="true" data-hide-no-mentions="false">
 
 </div>
 </td>
 <td>
+<span class="__dimensions_badge_embed__"
+data-doi="10.1186/s12859-016-1154-y" data-hide-zero-citations="true"
+data-style="small_circle"></span>
 </tr>
 </div>
 </table>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

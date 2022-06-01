@@ -14,6 +14,12 @@ d-article a {
 d-article a:hover { border-bottom:1px dotted; }
 </style>
 
+<!-- for dimensions badges -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<!-- for altmetrics badges -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
@@ -21,9 +27,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       )
 ```
 
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> <!-- for altmetrics badges -->
 
-<!-- 
+<!--
 [Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ)-->
 
 **\*** Indicates co-first author. Last updated: `r Sys.Date()`
@@ -47,7 +52,7 @@ entries = parse_entries()
   <tr>
     <th> </th>
     <th> </th>
-    <th> </th> 
+    <th> </th>
     <th> </th>
   </tr>
 ```{python pubtable, results = 'asis'}
@@ -56,8 +61,9 @@ for entry in entries:
     print("<tr>\n",
           f'<td  style="vertical-align:top">{idx}.',
           f'<td>{entry.bib}',
-          f'<td>{entry.altmetric(badge_type = "donut")}',
-          f'<td>{entry.github_badge(font_size_px = 48)}',
+          f'<td>{entry.github_badge()}',
+          f'<td>{entry.altmetric()}',
+          f'<td>{entry.dimensions_badge()}',
           sep = "</td>\n",
           end = "</tr>\n")
     idx -= 1
