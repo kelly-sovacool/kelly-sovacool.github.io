@@ -74,9 +74,12 @@ class BibEntry:
     def github_badge(self, font_size_px=48):
         return f'<a href="{self.github_link}"> <i class="fab fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
 
-    def dimensions_badge(self, data_hide = "true", data_style = "small_circle"):
+    def dimensions_badge(self,
+                         data_hide = "true",
+                         data_style = "small_circle",
+                         data_legend = 'hover-right'):
         # https://badge.dimensions.ai/
-        return f'<span class="__dimensions_badge_embed__" data-doi="{self.record["doi"]}" data-hide-zero-citations="{data_hide}" data-style="{data_style}"></span>'
+        return f'<span class="__dimensions_badge_embed__" data-doi="{self.record["doi"]}" data-hide-zero-citations="{data_hide}" data-style="{data_style}" data-legend="{data_legend}"></span>'
 
     @property
     def github_link(self):
