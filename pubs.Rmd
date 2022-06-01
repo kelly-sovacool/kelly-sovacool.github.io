@@ -27,9 +27,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       )
 ```
 
-
-<!--
-[Google Scholar profile](https://scholar.google.com/citations?user=TlglgLgAAAAJ)-->
+[![Google Scholar profile](https://img.shields.io/static/v1?style=flat&logo=google-scholar&label=+&message=GoogleScholar&color=white)](https://scholar.google.com/citations?user=TlglgLgAAAAJ)
 
 **\*** Indicates co-first author. Last updated: `r Sys.Date()`
 
