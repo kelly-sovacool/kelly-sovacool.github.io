@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Kelly L. Sovacool: About</title>
@@ -767,10 +769,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1602,7 +1600,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1613,6 +1620,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1712,6 +1744,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1734,7 +1768,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1773,7 +1807,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1822,9 +1856,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="mailto:kelly@sovacool.dev">
 <i class="far fa-envelope" aria-hidden="true"></i>
 </a>
-<a href="https://orcid.org/0000-0003-3283-829X">ORCiD</a>
 <a href="https://orcid.org/0000-0003-3283-829X">
-<i class="fab fa-orcid" aria-hidden="true"></i>
+<i class="fa fa-brands fa-orcid" aria-hidden="true"></i>
 </a>
 </div>
 <div class="nav-right">
@@ -1864,7 +1897,22 @@ d-article a {
 d-article a:hover { border-bottom:1px dotted; }
 </style>
 <p>
-<img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px"> Hi, I’m Kelly! I’m a <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">Bioinformatics</a> PhD candidate in <a href="http://www.schlosslab.org/">Pat Schloss’ lab</a> at the University of Michigan. I develop bioinformatics tools and data analysis pipelines for microbial ecology and host-associated microbiome research. I’m a fan of open science, open source software, and reproducible research. <br><br> When I’m not in the dry lab, you might find me running, cycling, climbing, or otherwise being active outside. I also volunteer with <a href="http://umich.edu/~girlswc/">Girls Who Code</a>, teach <a href="https://umcarpentries.github.io/">Software Carpentry</a> workshops, host <a href="https://datascience.isr.umich.edu/events/coderspaces/">CoderSpaces office hours</a>, and moonlight as a <a href="https://sovacool.dev/latex-cv/sound.pdf">live sound engineer</a>.
+<img src="images/pibs_profile.jpg" class="left"  style="width:200px;height:200px;margin-right:15px">
+Hi, I’m Kelly! I’m a <a
+href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">Bioinformatics</a>
+PhD candidate in <a href="http://www.schlosslab.org/">Pat Schloss’
+lab</a> at the University of Michigan. I develop bioinformatics tools
+and data analysis pipelines for microbial ecology and host-associated
+microbiome research. I’m a fan of open science, open source software,
+and reproducible research. <br><br> When I’m not in the dry lab, you
+might find me running, cycling, climbing, or otherwise being active
+outside. I also volunteer with <a
+href="http://umich.edu/~girlswc/">Girls Who Code</a>, teach <a
+href="https://umcarpentries.github.io/">Software Carpentry</a>
+workshops, host <a
+href="https://datascience.isr.umich.edu/events/coderspaces/">CoderSpaces
+office hours</a>, and moonlight as a <a
+href="https://sovacool.dev/latex-cv/sound.pdf">live sound engineer</a>.
 </p>
 <hr />
 <div class="layout-chunk" data-layout="l-body">
@@ -1915,31 +1963,38 @@ shape-outside: repeating-linear-gradient(
 <div class="main">
 <div class="container">
 <a href="https://github.com/mothur/mothur">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/mothur/logo/master/mothur_hex.png&quot;)">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/mothur/logo/master/mothur_hex.png&quot;)">
 
 </div>
 </a> <a href="https://github.com/SchlossLab/mikropml">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/mikropml/main/man/figures/logo.png&quot;)">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/mikropml/main/man/figures/logo.png&quot;)">
 
 </div>
 </a> <a href="https://github.com/SchlossLab/schtools">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/schtools/main/man/figures/logo.png&quot;); background-size:100%">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/schtools/main/man/figures/logo.png&quot;); background-size:100%">
 
 </div>
 </a> <a href="https://github.com/umcarpentries/intro-curriculum-r">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/swcarpentry/communications/main/misc/logo/swc-hex-logo.png&quot;); background-size:100%">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/swcarpentry/communications/main/misc/logo/swc-hex-logo.png&quot;); background-size:100%">
 
 </div>
 </a> <a href="http://websites.umich.edu/~girlswc/">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/GWC-DCMB/logos-stickers/main/output/hex-sticker-1.png&quot;); background-size:100%">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/GWC-DCMB/logos-stickers/main/output/hex-sticker-1.png&quot;); background-size:100%">
 
 </div>
 </a> <a href="https://um-dang.github.io">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/um-dang/um-dang.github.io/main/images/logo1_AK_hexagon.png&quot;); background-size:100%">
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/um-dang/um-dang.github.io/main/images/logo1_AK_hexagon.png&quot;); background-size:100%">
 
 </div>
 </a> <a href="http://bit.ly/strava-kelly">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/kelly-sovacool/kelly-sovacool.github.io/main/images/watermoo.jpg&quot;); background-size:250%;
+<div
+style="background-image: url(&quot;https://raw.githubusercontent.com/kelly-sovacool/kelly-sovacool.github.io/main/images/watermoo.jpg&quot;); background-size:250%;
 background-position:50%;">
 
 </div>
@@ -1949,7 +2004,8 @@ background-position:50%;">
 </div>
 <p><br></p>
 <p><a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/master/figures/language_all_bytes_n7.png" width="500"></a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
