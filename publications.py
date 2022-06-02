@@ -1,9 +1,15 @@
+"""
+Format publication entries for my personal website
+"""
+
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import *
 import datetime
 
-MONTHS = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}
+MONTHS = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6, 
+          'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
+          }
 
 
 def main():
@@ -68,10 +74,13 @@ class BibEntry:
     def __init__(self, record):
         self.record = record
 
-    def altmetric(self, badge_type = 'donut', data_hide = "false"):
+    def altmetric(self, 
+                  badge_type = 'donut', 
+                  data_hide = "false"):
         return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="{data_hide}" class="altmetric-embed"></div>'
 
-    def github_badge(self, font_size_px=48):
+    def github_badge(self, 
+                     font_size_px=48):
         return f'<a href="{self.github_link}"> <i class="fab fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
 
     def dimensions_badge(self,
@@ -107,7 +116,9 @@ class BibEntry:
 
     @property
     def bib(self):
-        return f"{self.authors}. {self.record['year']}. {self.record['title']}. {self.journal}. {self.link}"
+        return f"{self.authors}. {self.record['month'].capitalize()} {self.record['year']}. " \
+               f"{self.record['title']}. {self.journal}. {self.link} &ensp; " \
+               f"{self.github_badge(font_size_px=16)}"
 
     def __repr__(self):
         return self.bib

@@ -27,10 +27,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       )
 ```
 
-[![Google Scholar profile](https://img.shields.io/static/v1?style=flat&logo=google-scholar&label=+&message=GoogleScholar&color=white)](https://scholar.google.com/citations?user=TlglgLgAAAAJ)
-
 **\*** Indicates co-first author. Last updated: `r Sys.Date()`
-
 
 ```{r deps}
 library(reticulate)
@@ -51,7 +48,6 @@ entries = parse_entries()
     <th> </th>
     <th> </th>
     <th> </th>
-    <th> </th>
   </tr>
 ```{python pubtable, results = 'asis'}
 idx = len(entries)
@@ -59,12 +55,17 @@ for entry in entries:
     print("<tr>\n",
           f'<td  style="vertical-align:top">{idx}.',
           f'<td>{entry.bib}',
-          f'<td>{entry.github_badge()}',
-          f'<td>{entry.altmetric()}',
-          f'<td>{entry.dimensions_badge()}',
+          f"<td>{entry.dimensions_badge(data_style = 'small_rectangle')} \n\n {entry.altmetric(badge_type = 'medium_badge')}",
           sep = "</td>\n",
           end = "</tr>\n")
     idx -= 1
 
 ```
 </table>
+
+<a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ">
+<img alt="Google Scholar logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1280px-Google_Scholar_logo.svg.png?20200110094142" width="24" height="24" />
+</a>
+<a href="https://orcid.org/0000-0003-3283-829X">
+<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_32x32.png" width="24" height="24" />
+</a>

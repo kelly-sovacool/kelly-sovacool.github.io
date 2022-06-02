@@ -17,9 +17,7 @@ navbar:
       href: https://twitter.com/kelly_sovacool
     - icon: far fa-envelope
       href: mailto:kelly@sovacool.dev
-    - text: ORCiD
-      href: https://orcid.org/0000-0003-3283-829X
-    - icon: fab fa-orcid # https://github.com/rstudio/rmarkdown/issues/1554
+    - icon: fa-brands fa-orcid # https://github.com/rstudio/rmarkdown/issues/1554
       href: https://orcid.org/0000-0003-3283-829X
   right:
     - text: "About"
