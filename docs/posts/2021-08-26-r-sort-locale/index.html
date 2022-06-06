@@ -788,10 +788,6 @@ figure img.external {
   margin-top: 1.5em;
 }
 
-.figure img {
-  width: 100%;
-}
-
 .figure .caption {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
@@ -1621,7 +1617,16 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+        var fn = $(this).children()[0]
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -1632,6 +1637,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1731,6 +1761,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -1753,7 +1785,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -1810,6 +1842,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-135472420-1');
 </script>
+<style type="text/css">
+
+</style>
 <!--/radix_placeholder_site_in_header-->
 
 
@@ -1820,7 +1855,7 @@ gtag('config', 'UA-135472420-1');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Base R's sort() order changes with locale","description":"And that can cause frustrating test failures in devtools::check()!","authors":[],"publishedDate":"2021-08-26T00:00:00.000+00:00"}
+{"title":"Base R's sort() order changes with locale","description":"And that can cause frustrating test failures in devtools::check()!","authors":[],"publishedDate":"2021-08-26T00:00:00.000-04:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1838,9 +1873,8 @@ gtag('config', 'UA-135472420-1');
 <a href="mailto:kelly@sovacool.dev">
 <i class="far fa-envelope" aria-hidden="true"></i>
 </a>
-<a href="https://orcid.org/0000-0003-3283-829X">ORCiD</a>
 <a href="https://orcid.org/0000-0003-3283-829X">
-<i class="fab fa-orcid" aria-hidden="true"></i>
+<i class="fa fa-brands fa-orcid" aria-hidden="true"></i>
 </a>
 </div>
 <div class="nav-right">
@@ -2002,14 +2036,14 @@ It's one of those debugging days… <a href="https://t.co/PQQmJXOMit">pic.twitte
   <p class="social_footer">
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://twitter.com/share?text=Base%20R%27s%20sort%28%29%20order%20changes%20with%20locale&amp;url=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F">
-        <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/share?text=Base%20R%27s%20sort%28%29%20order%20changes%20with%20locale&amp;url=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F&amp;title=Base%20R%27s%20sort%28%29%20order%20changes%20with%20locale">
-        <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F&amp;title=Base%20R%27s%20sort%28%29%20order%20changes%20with%20locale" aria-label="share on linkedin">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
       </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F">
-        <i class="fab fa-facebook"></i>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fsovacool.dev%2Fposts%2F2021-08-26-r-sort-locale%2F" aria-label="share on facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </span>
   </p>
