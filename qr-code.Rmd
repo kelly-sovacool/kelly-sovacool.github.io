@@ -1,0 +1,9 @@
+---
+title: "QR Code"
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    self_contained: true
+---
+
+<img alt="QR Code" src="images/qr-code_personal-website.png"/>
