@@ -31,7 +31,8 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ```{r deps}
 library(reticulate)
-use_python('~/miniconda3/bin/python')
+#use_python('/usr/local/bin/python')
+# need bibtexparser python package
 ```
 
 ```{bash download_bib, results = FALSE}
