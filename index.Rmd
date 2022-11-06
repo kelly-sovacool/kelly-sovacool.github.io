@@ -43,7 +43,7 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 
 ```{r deps}
 library(reticulate)
-use_python('~/miniconda3/bin/python')
+use_python('~/bin/miniconda3/bin/python')
 ```
 
 ```{python hexagons, results='asis'}
