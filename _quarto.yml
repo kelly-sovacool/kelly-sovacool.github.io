@@ -16,6 +16,17 @@ website:
     left:
       - icon: github
         href: https://github.com/kelly-sovacool
+    right:
+      - text: "About"
+        href: index.html
+      - text: "Posts"
+        href: posts.html
+      - text: "CV"
+        href: /latex-cv/cv_KLS.pdf
+      - text: "Publications"
+        href: pubs.html
+      - icon: fa fa-rss
+        href: posts.xml 
 
 format:
   html:
