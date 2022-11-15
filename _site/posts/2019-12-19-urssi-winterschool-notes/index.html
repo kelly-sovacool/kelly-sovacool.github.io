@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2019-12-19">
+<meta name="description" content="My notes from the URSSI Winter School">
+
+<title>sovacool.dev - URSSI Winter School</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon-32x32.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4XQKSHWZY6"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-4XQKSHWZY6', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">sovacool.dev</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/kelly-sovacool"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:kelly@sovacool.dev"><i class="bi bi-envelope" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@kelly_sovacool"><i class="bi bi-mastodon" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/kelly_sovacool"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/kelly-sovacool"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0003-3283-829X">ORCiD</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html">Posts</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../latex-cv/cv_KLS.pdf">CV</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pubs.html">Publications</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml"><i class="bi bi-rss" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">URSSI Winter School</h1>
+                  <div>
+        <div class="description">
+          <p>My notes from the URSSI Winter School</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Research Software Engineering</div>
+                <div class="quarto-category">Open Source Software</div>
+                <div class="quarto-category">Reproducibility</div>
+                <div class="quarto-category">Software Development</div>
+                <div class="quarto-category">Python</div>
+                <div class="quarto-category">git</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 19, 2019</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>All slides &amp; other resources are available on GitHub: <a href="https://github.com/si2-urssi/winterschool">si2-urssi/winterschool</a></p>
+<section id="day-1" class="level2">
+<h2 class="anchored" data-anchor-id="day-1">Day 1</h2>
+<section id="intro-to-software-design-jeffrey-carver" class="level3">
+<h3 class="anchored" data-anchor-id="intro-to-software-design-jeffrey-carver">Intro to Software Design (Jeffrey Carver)</h3>
+<ul>
+<li>Whether you know it or not, you’re doing software design. Make those decisions with intent &amp; purpose.</li>
+<li>Characteristics of good design
+<ul>
+<li>Firmness: hard to write bugs accidentally</li>
+<li>Suitable for intended purpose</li>
+<li>Interesting &amp; useful to users</li>
+</ul></li>
+<li>Principles of design:
+<ul>
+<li>Traceability - easy to understand what the software is supposed to do.</li>
+<li>Minimize intellectual distance - as close to the real-world as possible</li>
+<li>Don’t reinvent the wheel. Re-use good design if it’s already a solved problem.</li>
+<li>Accommodate change.</li>
+<li>Fail gracefully.</li>
+</ul></li>
+</ul>
+</section>
+<section id="think-like-a-programmer-andy-loftus" class="level3">
+<h3 class="anchored" data-anchor-id="think-like-a-programmer-andy-loftus">Think like a programmer (Andy Loftus)</h3>
+<ul>
+<li>Solve easy problems; defer hard ones until they are easy.
+<ul>
+<li>Zen of Python (<code>import this</code>) excerpt: “If the implementation is hard to explain, it’s a bad idea. If the implementation is easy to explain, it may be a good idea.”</li>
+</ul></li>
+<li>Think about code before you write it
+<ol type="1">
+<li>Identify use cases</li>
+<li>Define goals from use cases</li>
+<li>Split into small, easy pieces</li>
+<li>Define one piece at a time</li>
+</ol></li>
+<li>Thinking about use-cases before the goal helps you focus on the small, easy-to-solve pieces (exact problem at hand, limit the scope of the problem) without getting bogged down in any grandiose, big-picture ideas.</li>
+<li>Encapsulation
+<ul>
+<li>Isolate unrelated concerns.</li>
+<li>Hide changing things.</li>
+<li>Python details:
+<ul>
+<li>Use the <code>@property</code> &amp; <code>@var.setter</code> decorators for getters &amp; setters.</li>
+<li><code>@classmethod</code> decorator for different constructors &amp; other methods that work on the class but not instances of the class.</li>
+</ul></li>
+</ul></li>
+<li>Environment variables
+<ul>
+<li><code>collections.ChainMap</code>: use it to prioritize program options.
+<ul>
+<li><code>os.environ</code> to access shell environment variables.</li>
+<li>Defaults = some dict</li>
+<li><code>combined = ChainMap(cmdline_args, os.environ, defaults)</code>
+<ul>
+<li>Equivalent of stringing together <code>dictionary.update</code> but in reverse</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Structuring code for readability: Trey Hunner blog post: craft your python like poetry.</li>
+<li>Low barrier to entry. Make your code usable &amp; accessible to lots of people.
+<ul>
+<li>Make a runnable sample
+<ul>
+<li>Keep it short; one command if possible.
+<ul>
+<li>slick example: <code>curl URL/quickstart.sh | bash</code> (see slides for contents of <code>quickstart.sh</code>)</li>
+</ul></li>
+<li>Clean up after running</li>
+<li>Run it multiple times in a row &amp; it does the exact same thing every time</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="intro-to-design-patterns-jeffrey-carver" class="level3">
+<h3 class="anchored" data-anchor-id="intro-to-design-patterns-jeffrey-carver">Intro to Design Patterns (Jeffrey Carver)</h3>
+<ul>
+<li>Chain of responsibility
+<ul>
+<li>Common interface to handle requests, but user doesn’t need to know which specific method handles the request.</li>
+</ul></li>
+<li>Creational pattern: Builder
+<ul>
+<li>Create various representations of the same object. Abstract construction steps with different implementations of methods for different object variants.</li>
+</ul></li>
+<li>Structural pattern: Proxy
+<ul>
+<li>Only load something when you actually need it if it takes a long time to load or is expensive to create. e.g.&nbsp;when loading webpage, it’ll display the text before images have finished loading, with blank placeholder where image will load.</li>
+</ul></li>
+<li>More resources
+<ul>
+<li>“Gang of four” original book on design patterns</li>
+<li>toptal.com python design patterns book</li>
+</ul></li>
+</ul>
+</section>
+<section id="basics-of-packaging-python-programs-kyle-niemeyer" class="level3">
+<h3 class="anchored" data-anchor-id="basics-of-packaging-python-programs-kyle-niemeyer">Basics of packaging Python programs (Kyle Niemeyer)</h3>
+<ul>
+<li>Module: any python file that contains definitions &amp; statements.</li>
+<li>Package: a collection of modules in the same directory.
+<ul>
+<li>Must contain the <code>__init__.py</code> file. (Except for namespace packages…)
+<ul>
+<li>Often this file is empty.</li>
+<li>Python executes this file before anything else when imported.</li>
+</ul></li>
+<li>Can contain subdirectories with “submodules” containing more Python files and another <code>__init__.py</code> file.</li>
+<li>Tests subdirectory for test files (more on pytest later).</li>
+</ul></li>
+<li>Lots of different ways to import modules.
+<ul>
+<li>Kyle’s preferred way: explicit relative imports
+<ul>
+<li>Uses dot notation (<code>.</code> for current path, <code>..</code> for one level up)</li>
+</ul></li>
+</ul></li>
+<li>DON’T REINVENT THE WHEEL
+<ul>
+<li>Rely on the standard library, numpy, scipy, etc.</li>
+</ul></li>
+<li>main() &amp; <code>__main__</code> (Bryan Weber, writes for RealPython)
+<ul>
+<li>Can use a module both as a module AND a script.</li>
+<li>main() is the entry point to the program.</li>
+<li>Import guard example: realpython.com/python-main-function</li>
+<li><code>__main__.py</code>: special use case to execute your package as a script. e.g.&nbsp;pip.</li>
+</ul></li>
+<li>Package management
+<ul>
+<li>pip to install packages on PyPI or from source.
+<ul>
+<li><code>-e</code> flag for development version.</li>
+</ul></li>
+<li>The <code>setup.py</code> file (at same level as source directory) tells pip how to install your package.
+<ul>
+<li>See slides for example use.</li>
+</ul></li>
+<li>See Kyle’s “better example” slide for cool use of <code>path.abspath</code> &amp; <code>path.join</code> with <code>here</code> variable (kinda like R’s <code>here</code> pkg)</li>
+<li><a href="https://keepachangelog.com">Keep a Changelog</a></li>
+<li><a href="https://semver.org">Semantic versioning</a> (PEP 440)
+<ul>
+<li><code>MAJOR.MINOR.PATCH</code></li>
+</ul></li>
+<li>Problem with <code>setup.py</code>: could have malicious code.
+<ul>
+<li>PyPA has come up with <code>pyproject.toml</code> &amp; <code>flit</code> to get around that. Also easier than using <code>setup.py</code>.</li>
+<li>Also look into <code>cookiecutter</code> templates.</li>
+</ul></li>
+</ul></li>
+<li>Think about this at the very beginning so you don’t have to re-organize everything later.</li>
+</ul>
+</section>
+</section>
+<section id="day-2" class="level2">
+<h2 class="anchored" data-anchor-id="day-2">Day 2</h2>
+<section id="collaboration-with-git-and-github-karthik-ram" class="level3">
+<h3 class="anchored" data-anchor-id="collaboration-with-git-and-github-karthik-ram">Collaboration with Git and GitHub (Karthik Ram)</h3>
+<ul>
+<li>Workflows
+<ul>
+<li>Centralized workflow
+<ul>
+<li>Only works for really small projects</li>
+<li>Everyone just commits to master 😬</li>
+</ul></li>
+<li>Feature branching workflow
+<ul>
+<li>All work in a feature branch (not master).</li>
+<li>Start a pull request before merging to master.</li>
+<li>Delete branches after they’re merged.</li>
+</ul></li>
+<li>Forking workflow
+<ul>
+<li>Only reason to fork is if you don’t have write access to someone else’s project / when you’re not a core contributor.</li>
+<li>Create a PR when ready to merge.</li>
+</ul></li>
+</ul></li>
+<li>Alias <code>git</code> to <a href="https://hub.github.com/"><code>hub</code></a>
+<ul>
+<li>Extensions to interface with GitHub from the command line.</li>
+<li>Create a GitHub repo from a local git repo: <code>git create username/reponame</code></li>
+<li>Open up the repo in your browser: <code>git browse</code></li>
+<li>Open a new PR: <code>git pull-request</code></li>
+<li>Compare 2 branches: <code>git compare master..feature-branch</code></li>
+<li>If you clone a repo but realize you wanted to fork it: <code>git fork</code></li>
+</ul></li>
+<li>On branches:
+<ul>
+<li>A branch is just a pointer to a commit. Commits are linked nodes.</li>
+</ul></li>
+<li>Use pull requests as much as possible.
+<ul>
+<li>Fosters code review.</li>
+<li>Facilitates discussion.</li>
+<li>Can use continuous integration to run tests automatically.</li>
+<li>Someone else should merge your code into master so two sets of eyeballs review each feature.
+<ul>
+<li>Pick one or two people to do a technical review &amp; an end-user review.</li>
+</ul></li>
+<li>Instead of creating a merge commit, could use rebase to squash all the commits from that branch into one.</li>
+<li>NEVER SEND A PULL REQUEST FROM MASTER.
+<ul>
+<li>Master branches will become incompatible.</li>
+<li>GitHub now warns you if you attempt to do this.</li>
+</ul></li>
+<li>Never send a large pull request without notice.
+<ul>
+<li>Read the contributing doc.</li>
+<li>Common practice is to ask whether the maintainers want the feature before you work on it.</li>
+<li>Pull requests should be small, digestible changes.
+<ul>
+<li>Make each unit of code simple enough for someone to review &amp; accept.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Tips:
+<ul>
+<li>Always <code>git pull</code> before you start new work.</li>
+<li>Keep branch names descriptive.</li>
+<li>Generously use branches, but delete them when you’re done.</li>
+<li>Use the <code>hub</code> extension to make your life easier.</li>
+</ul></li>
+</ul>
+</section>
+<section id="git-exercises-james-howison" class="level3">
+<h3 class="anchored" data-anchor-id="git-exercises-james-howison">Git Exercises (James Howison)</h3>
+<ul>
+<li>Group activity <a href="https://jameshowison.github.io/peer_production_course/docs/additional_git_exercises.html#split_a_pull_request">here</a>.</li>
+<li>Pull requests are communication; make them digestible.</li>
+<li>Note: any time you edit files, that’s a feature, so you should always do that in a branch.</li>
+<li>Maintainer as developer AND champion of the community.
+<ul>
+<li>Create a welcoming &amp; active environment.</li>
+<li>How long ago was the last commit is really important: is the project active?
+<ul>
+<li>“Turn the music on — make it feel like a party!”</li>
+</ul></li>
+<li>Even when you’re working with people face-to-face, you should document discussions on GitHub.</li>
+</ul></li>
+<li>How to split pull requests.</li>
+</ul>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+We’re learning so many useful tips &amp; tricks for research software sustainability at <a href="https://twitter.com/hashtag/urssi_winterschool?src=hash&amp;ref_src=twsrc%5Etfw">#urssi_winterschool</a> <br>…and having fun along the way! <a href="https://t.co/FMApXXj9wL">pic.twitter.com/FMApXXj9wL</a>
+</p>
+— Kelly Sovacool (<span class="citation" data-cites="kelly_sovacool">@kelly_sovacool</span>) <a href="https://twitter.com/kelly_sovacool/status/1207708578561179648?ref_src=twsrc%5Etfw">December 19, 2019</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<section id="software-testing-and-continuous-integration-kyle-niemeyer" class="level3">
+<h3 class="anchored" data-anchor-id="software-testing-and-continuous-integration-kyle-niemeyer">Software Testing and Continuous Integration (Kyle Niemeyer)</h3>
+<ul>
+<li>How do you know your code gives the right answers? …what about after you make changes to the code?</li>
+<li>When: ALWAYS</li>
+<li>Where: external test suite
+<ul>
+<li>e.g.&nbsp;inside <code>tests/</code> subdir in package repo.</li>
+<li>Some tests are better than no tests. But a rigorous test suite is best!</li>
+</ul></li>
+<li>Why: make sure our results are trustworthy.
+<ul>
+<li>It’s really easy to make subtle mistakes.</li>
+<li>Helps us know that a PR won’t break anything.</li>
+<li>Unit tests are good examples of how a package works.</li>
+</ul></li>
+<li>What and how
+<ul>
+<li>Tests compare expected vs observed outputs for known inputs.</li>
+<li>You don’t have to have a function written in order to write a test.</li>
+<li>Use assertions (e.g.&nbsp;<code>assert exp == obs</code>).</li>
+<li>Use <code>math.isclose()</code> or <code>np.allclose()</code> to get around floating point precision.</li>
+<li>Use <code>pytest</code> package.
+<ul>
+<li><code>-s</code> to keep standard output.</li>
+<li><code>-k</code> to run tests matching a substring.</li>
+<li><code>-q</code> run specific test file &amp; test function.</li>
+</ul></li>
+</ul></li>
+<li>What cases to test
+<ul>
+<li>Interior: precise values don’t matter (just test one of these).</li>
+<li>Edge: beginning or end of range of inputs (test all of these).</li>
+<li>Corner cases: 2 or more edge cases that intersect.</li>
+</ul></li>
+<li>Pytest test generators
+<ul>
+<li>Decorator to feed lots of inputs to one test function: <code>@pytest.mark.parametrize</code></li>
+</ul></li>
+<li>Types of tests
+<ul>
+<li>Unit test: test individual functions &amp; methods.
+<ul>
+<li>Have to break up your code into small functions.</li>
+</ul></li>
+<li>Integration test: verify that multiple pieces of the code work together.</li>
+<li>Regression test: confirm that new results match prior results (which are assumed correct).</li>
+</ul></li>
+<li>Test-driven development (TDD): write your tests before you implement the functions.</li>
+<li>More tips
+<ul>
+<li>Test for consistency with PEP8.
+<ul>
+<li>e.g.&nbsp;<code>flake8</code>: linter &amp; style-checker. <code>black</code> auto-formatter (not mentioned by Kyle).</li>
+<li>Plugins for your favorite IDE to run it continuously.</li>
+</ul></li>
+<li>Test that exceptions are raised: <code>pytest.raises(ExceptionClass)</code></li>
+<li>Mocking
+<ul>
+<li>Replace parts of the system with precisely controllable code to specify return values &amp; throw exceptions.</li>
+</ul></li>
+</ul></li>
+<li>Test coverage
+<ul>
+<li>Percentage of code (in number of lines) that are touched by tests.</li>
+<li>100% test coverage doesn’t guarantee that you catch all potential errors; it means every line of code is run by at least one test.</li>
+<li><code>pytest-cov</code> creates a coverage report.</li>
+<li>codecov.io integrates with GitHub.</li>
+</ul></li>
+<li>Continuous integration
+<ul>
+<li>Ensure all changes to your project pass tests through automated test &amp; build process.</li>
+<li>Services: GitHub Actions, travis, CircleCI, AppVeyor, Jenkins (not mentioned by Kyle but used by <a href="https://github.com/mothur/mothur">mothur</a>)</li>
+<li>Add the CI badge to your readme: it signals that your tool is being actively maintained.</li>
+<li>See <a href="https://github.com/pr-omethe-us/PyTeCK/">PyTeCK</a> as an example of useful badges &amp; tests in the wild.</li>
+</ul></li>
+</ul>
+</section>
+<section id="git-exercises-ctd-james-howison" class="level3">
+<h3 class="anchored" data-anchor-id="git-exercises-ctd-james-howison">Git Exercises ctd (James Howison)</h3>
+<ul>
+<li><a href="https://jameshowison.github.io/peer_production_course/docs/additional_git_exercises.html#split_a_pull_request">The “split a pull request” activity.</a></li>
+<li><a href="https://learngitbranching.js.org/?NODEMO">LearnGitBranching</a> visualizer.</li>
+<li>Note: <code>git cherry-pick</code> keeps the original author information. 😄</li>
+<li><code>git rebase</code> re-writes history to move the branch point. Obviates merge commits, instead makes them fast-forwards.</li>
+<li><code>git rebase -i</code> in interactive mode is a good idea. Allows you to squash commits and clean things up.</li>
+</ul>
+</section>
+</section>
+<section id="day-3" class="level2">
+<h2 class="anchored" data-anchor-id="day-3">Day 3</h2>
+<section id="code-review-jeffrey-carver" class="level3">
+<h3 class="anchored" data-anchor-id="code-review-jeffrey-carver">Code Review (Jeffrey Carver)</h3>
+<ul>
+<li>Code review augments testing, but doesn’t replace testing.
+<ul>
+<li>Efficiency, readability, etc. can’t be tested for.</li>
+</ul></li>
+<li>The purpose is to make the code better. Everyone makes mistakes. There’s no expectation that you’ll do it exactly right the first time.</li>
+<li>By doing code review, you save time down the road.</li>
+<li>Goals:
+<ul>
+<li>Team cohesion.
+<ul>
+<li>Gain shared understanding of the project.</li>
+<li>Get to know teammates skills’ better.</li>
+</ul></li>
+<li>Code quality.
+<ul>
+<li>Find problems early.</li>
+<li>Get different perspectives.</li>
+<li>Consistency &amp; readability.</li>
+<li>Makes code easier to maintain.</li>
+</ul></li>
+<li>Personal learning.
+<ul>
+<li>Reading other people’s code &amp; having your code reviewed.</li>
+</ul></li>
+</ul></li>
+<li>Mindset:
+<ul>
+<li>Developer:
+<ul>
+<li>Recognize that a code critique is not a personal attack. You are not your code.</li>
+<li>Be ready &amp; willing to learn new things.</li>
+<li>Expect that there will be changes. Remove the fear of making mistakes.</li>
+<li>Be humble.</li>
+</ul></li>
+<li>Reviewer:
+<ul>
+<li>Don’t assume that your way is the best.</li>
+<li>Make positive comments, not only negative ones.</li>
+<li>Understand why the developer asked you to review the code.</li>
+<li>Focus on the code, not on the author.</li>
+<li>Pick your battles.</li>
+</ul></li>
+</ul></li>
+<li>Techniques
+<ul>
+<li>Prioritize things that humans can spot that automated testing can’t.
+<ul>
+<li>Readability</li>
+<li>Algorithms</li>
+</ul></li>
+</ul></li>
+<li>How we communicate matters (applies in all types of feedback-giving)
+<ul>
+<li>Ask questions where possible.
+<ul>
+<li>e.g.&nbsp;“Have you considered…” – Maybe they have and there’s a good reason for it.</li>
+</ul></li>
+<li>No personal attacks. It’s about the code, not the person!</li>
+<li>Be as specific as possible about how the code could be improved instead of making general statements.</li>
+<li>Put yourself in others’ shoes.
+<ul>
+<li>If you wouldn’t want to get the comment, you probably shouldn’t give it to someone else.</li>
+</ul></li>
+<li>Explain <em>why</em> you’re making the suggestion.</li>
+</ul></li>
+<li>Checklist
+<ul>
+<li>Before you ask someone to review your code:
+<ul>
+<li>Write tests.</li>
+<li>Make sure the code runs &amp; passes the tests.</li>
+<li>Write comments &amp; other documentation.
+<ul>
+<li>Document any weird edge cases &amp; work-arounds</li>
+</ul></li>
+<li>Follow the style guide.</li>
+</ul></li>
+<li>When you review someone else’s code:
+<ul>
+<li>Comments are understandable &amp; appropriate.</li>
+<li>DRY up repetitive code.</li>
+<li>Code runs &amp; passes tests.</li>
+<li>Exceptions are handled appropriately.</li>
+</ul></li>
+</ul></li>
+<li>Best practices
+<ul>
+<li>Communicate goals of code review.</li>
+<li>Do it early &amp; often.</li>
+<li>Review a small amount of code.
+<ul>
+<li>If it takes longer than 60 minutes to review, that’s too much.</li>
+</ul></li>
+<li>Establish a process for what to do after reviews.
+<ul>
+<li>Is it a hard gate that you have to make the reviewer happy, or are they just suggestions you could choose not to follow?</li>
+</ul></li>
+</ul></li>
+<li>Issues you might identify in code review
+<ul>
+<li>Inconsistent style</li>
+<li>Inefficiency</li>
+<li>Unvalidated inputs</li>
+<li>Lack of exception handling</li>
+</ul></li>
+<li>Why is code review important for research software specifically?
+<ul>
+<li>Just like peer-reviewing publications, we want to make sure the code underlying the science is sound.</li>
+<li>Science depends on the correctness of your code.</li>
+<li>Help spread best-practices &amp; high-level understanding in the scientific community.</li>
+<li>Results may not always be known. There’s not always “ground truth” (e.g.&nbsp;in simulations).</li>
+</ul></li>
+<li>GitHub-specific tips: using Pull Requests for code review (examples: <a href="https://github.com/pr-omethe-us/PyKED">pr-omethe-us/PyKED</a> &amp; <a href="https://github.com/astropy/astropy">astropy</a>) (Kyle Niemeyer)
+<ul>
+<li>Use pull request templates.
+<ul>
+<li>Could enforce check boxes like which issue(s) it resolves, that test cases were added, etc.</li>
+</ul></li>
+<li>Easily view file diffs &amp; add comments right alongside the code. Facilitates conversation.
+<ul>
+<li>You can leave comments at multiple lines.</li>
+<li>Make suggestions for small, easy changes. There’s an “insert suggestion” button! (Don’t do this for design changes.)</li>
+</ul></li>
+<li>Under settings &gt; branches, you can protect branches
+<ul>
+<li>e.g.&nbsp;require that a PR has to be reviewed before merging into master.</li>
+<li>More on code owners in <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners">github docs</a></li>
+</ul></li>
+<li>Tool: <a href="https://octobox.io">octobox.io</a> for managing GitHub notifications.</li>
+</ul></li>
+</ul>
+</section>
+<section id="open-science-and-software-citation-kyle-niemeyer" class="level3">
+<h3 class="anchored" data-anchor-id="open-science-and-software-citation-kyle-niemeyer">Open Science and Software Citation (Kyle Niemeyer)</h3>
+<ul>
+<li>TLDR: if you make your code public, pick a license and put a <code>LICENSE</code> file in your repo.</li>
+<li>Copyright
+<ul>
+<li>Facts &amp; ideas are <strong>not</strong> copyrightable.</li>
+<li><em>Expressions</em> of ideas <strong>are</strong> copyrightable.</li>
+<li>Right of first publication: goes to the first creator even if not explicitly specified.</li>
+<li>You should include a license with all publicly available software code so people know how they can (or can’t) use it.
+<ul>
+<li>Or, you can explicitly put work into the public domain, then it’s free for anyone &amp; everyone to use &amp; modify.</li>
+</ul></li>
+</ul></li>
+<li>Software Licenses
+<ul>
+<li>Types:
+<ul>
+<li>Proprietary</li>
+<li>Free/open source (FOSS, FLOSS, OSS)
+<ul>
+<li>Permissive: BSD 3-clause, MIT</li>
+<li>Copyleft: GPL (the license is “viral”)</li>
+</ul></li>
+</ul></li>
+<li>Pick an existing license; don’t make your own!</li>
+<li><a href="https://choosealicense.com">choosealicense.com</a></li>
+<li>Open Source Initiative (OSI) Licenses
+<ul>
+<li>To call your work “open-source”, you have to release it under one of the OSI licenses.</li>
+</ul></li>
+</ul></li>
+<li>Non-software: Creative Commons
+<ul>
+<li>Codes:
+<ul>
+<li>BY: Attribution (similar to permissive)</li>
+<li>SA: ShareAlike (similar to copyleft)</li>
+<li>ND: NoDerivatives</li>
+<li>NC: NonCommercial</li>
+</ul></li>
+<li>e.g.&nbsp;CC BY, CC BY-SA</li>
+<li>CC0: like the public domain version of creative commons.</li>
+</ul></li>
+<li>More concepts
+<ul>
+<li>Patents: cover ideas &amp; concepts (which copyright doesn’t).</li>
+<li>Trademarks: symbols that represent a business or organization.</li>
+<li>Export control: gov’t may forbid transfer of code/data/ideas to another country or foreign national.</li>
+<li>HIPAA: cannot share human patient data.</li>
+</ul></li>
+<li>Archiving &amp; Citing Software
+<ul>
+<li>Services: Zenodo, figshare, something within your University’s library (UMich has one)
+<ul>
+<li>Archives your stuff forever and makes it citable with a DOI.</li>
+<li>figshare: company, for-profit…</li>
+<li>Zenodo: run by CERN. Will be around as long as the EU exists.
+<ul>
+<li>Free! Good file size limits.</li>
+<li>Connects with GitHub! When you turn on Zenodo for your repo, it creates a new DOI when you cut a new release.</li>
+</ul></li>
+</ul></li>
+<li>Without proper citations, your work is not reproducible.</li>
+<li>Academia relies on citations for credit.</li>
+<li>Paper: <a href="https://peerj.com/articles/cs-86/">Software Citation Principles</a>
+<ul>
+<li>Software should be “first-class” citations just like other publications.</li>
+<li>How? name, author(s), DOI or other persistent identifier.
+<ul>
+<li>A GitHub link is <strong>not</strong> a persistent identifier, but it’s better than nothing.</li>
+</ul></li>
+<li>If there’s a paper describing it, cite both the paper &amp; the code DOI.</li>
+</ul></li>
+<li>How can we make our software easily citable?
+<ul>
+<li>Create a DOI (e.g.&nbsp;via Zenodo)</li>
+<li>Include a <code>CITATION</code> file in your GitHub repo.</li>
+</ul></li>
+<li>Tool in development: <a href="https://citeas.org">cite as</a> (James Howison)
+<ul>
+<li>Web scraper to find the right citation given a package name or website.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="reproducibility">Reproducibility</h3>
+<ul>
+<li>repro-packs (Kyle Niemeyer)
+<ul>
+<li>Lorena Barbra: “reproducibility packages (repro-pack)” – packages associated with papers shared under CC-BY.</li>
+<li>Produce a single repro-pack for an entire paper
+<ul>
+<li>containing:
+<ul>
+<li>Code, results, input data (if small enough)</li>
+<li>Figures (vector format)</li>
+<li>Config file, etc</li>
+</ul></li>
+<li>Upload to FigShare/Zenodo under CC-BY license.</li>
+<li>Cite using the resulting DOI in the associated papers.</li>
+</ul></li>
+<li>Benefits
+<ul>
+<li>Improve reproducibility &amp; impact of your work.</li>
+<li>Reviewers love it.</li>
+<li>Lets you reuse your figures without violating a journal copyright.
+<ul>
+<li>When published, the journal (one that isn’t open access) owns the paper &amp; everything in it that isn’t licensed from somewhere else.</li>
+</ul></li>
+</ul></li>
+<li>Can include an appendix with statement about the availability of material. Or put it in the methods section.</li>
+<li><a href="https://github.com/ropensci/rrrpkg">Research compendium</a>: make your paper like a package so it’s easily-installable. Uses lightweight packaging structure.</li>
+</ul></li>
+<li>rOpenSci (Karthik Ram)
+<ul>
+<li>rOpenSci: Scientific software for R. Helping researchers write sustainable software tools.</li>
+<li><a href="https://github.com/ropensci/software-review">software-review</a>: rOpenSci Software Peer Review of community-contributed packages</li>
+<li>JOSS got started when rOpenSci realized the need extends beyond R packages.</li>
+<li>rOpenSci’s <a href="https://devguide.ropensci.org/">dev-guide</a></li>
+<li>PyOpenSci recently got started as the Python version of ROpenSci. (<a href="https://twitter.com/nicholdav">David Nicholson</a>)</li>
+</ul></li>
+<li>JOSS: Journal of Open Source Software (Kyle Niemeyer)
+<ul>
+<li>Open, no fees.</li>
+<li>If you’ve already licensed your code &amp; have good documentation, it should take under an hour to submit to JOSS.</li>
+<li>Very short paper to describe the software.</li>
+<li>All the conversation happens on GitHub. Uses same structure as JOSE (Journal of Open Source Education).</li>
+<li>Questions from the audience: when to submit as a package (e.g.&nbsp;to JOSS) versus in a repro-pack (to your society journal)?
+<ul>
+<li>If anyone else would ever use it, it should probably be a package.</li>
+<li>If the code is only used for creating a paper, it should just be in the repro-pack.</li>
+<li>If your goal is to write a methods paper, it probably wouldn’t go to JOSS.</li>
+<li><strong>If you have the option to submit to a domain journal, do that first instead of JOSS.</strong> (Karthik’s take)
+<ul>
+<li>JOSS is meant to fill in the gap for people who don’t have a place to publish their software.</li>
+</ul></li>
+</ul></li>
+<li>This is for getting research credit. <em>But</em> you still need to cite the specific version you used (e.g.&nbsp;from Zotero) for reproducibility purposes.</li>
+</ul></li>
+<li>Sidney Bell at the Chan Zuckerberg Initiative.
+<ul>
+<li>CZI started funding scientific software.
+<ul>
+<li>foundational packages (e.g.&nbsp;scikit-learn, matplotlib, pandas).</li>
+<li>biology domain-specific packages.</li>
+</ul></li>
+<li>First cycle of funding awarded. Second round closes in Feb.</li>
+<li>Funding awarded to organizations (e.g.&nbsp;NumFocus, Universities), not people.</li>
+</ul></li>
+</ul>
+</section>
+<section id="documentation-kyle-niemeyer" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-kyle-niemeyer">Documentation (Kyle Niemeyer)</h3>
+<ul>
+<li>Value of documentation.
+<ul>
+<li>The value &amp; extent of your work if it’s understandable by your colleagues.</li>
+<li>Provides provenance for your scientific process.</li>
+<li>Demonstrates your skill &amp; professionalism.</li>
+<li>“A love-letter that you write to your future self.”</li>
+</ul></li>
+<li>It’s easier than you think!</li>
+<li>Types:
+<ul>
+<li>User &amp; developer guides
+<ul>
+<li><code>README</code> file accompanied by <code>LICENSE</code>, <code>CITATION</code>, <code>CHANGELOG</code>, etc.</li>
+</ul></li>
+<li>Code comments
+<ul>
+<li>docstring
+<ul>
+<li>Write them for functions &amp; classes.</li>
+<li>Available within Python via <code>help()</code> &amp; easy to parse by Sphinx.</li>
+</ul></li>
+<li>in-line
+<ul>
+<li>Bad: polluting the code with unnecessary information that’s already evident from reading the code.</li>
+<li>Good: use sparingly to explain reasons behind choices &amp; complicated sections.</li>
+</ul></li>
+</ul></li>
+<li>Self-documenting code
+<ul>
+<li>Intelligently name things that tells you why it exists, what it does, and how it’s used.</li>
+<li>Write really simple functions that do only one thing.
+<ul>
+<li>“A <code>function</code> should have <em>a function</em>, not <em>multiple functions</em>.”</li>
+</ul></li>
+<li>Follow consistent style.</li>
+</ul></li>
+<li>Generated API documentation</li>
+</ul></li>
+<li>Tools
+<ul>
+<li>Sphinx: automatically generate documentation
+<ul>
+<li>Set it up with CI to automatically build your documentation website when you make changes.</li>
+<li>Writing docstrings that are compatible with Sphinx:
+<ul>
+<li>Styles: NumPy, Google, reStructuredText… (note: PyCharm can insert doc scaffolds automatically).</li>
+<li>Specify parameters, returns, &amp; include a short description.</li>
+</ul></li>
+<li>Easy to get started quickly. See slides for more details. <code># at top-level of repo, same level as package dir       mkdir docs/       cd docs/       sphinx-quickstart       make html</code></li>
+</ul></li>
+<li><code>doctr</code>: auto-deploy docs to GitHub pages using TravisCI.</li>
+<li><a href="https://readthedocs.org">Read the Docs</a> to host your documentation.
+<ul>
+<li>Simple example: <a href="https://github.com/kyleniemeyer/ME373">Kyle’s MechE course</a></li>
+<li>More complex example: <a href="https://github.com/astropy/astropy">astropy</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

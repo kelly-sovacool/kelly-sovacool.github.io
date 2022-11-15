@@ -1,0 +1,5 @@
+---
+title: "QR Code"
+---
+
+<img alt="QR Code" src="images/qr-code_personal-website.png"/>

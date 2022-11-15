@@ -1,0 +1,60 @@
+---
+title: "Publications"
+date: today
+execute:
+  echo: false
+  output: false
+  freeze: auto
+engine: jupyter
+---
+<style>
+d-article a {
+  border-bottom: none;
+  text-decoration: none;
+  color: #2f65a7;
+} /* remove hyperlink underlines until hover */
+d-article a:hover { border-bottom:1px dotted; }
+</style>
+
+<!-- for dimensions badges -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<!-- for altmetrics badges -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
+
+
+**\*** Indicates co-first author.
+
+```{python import_pubs}
+from publications import *
+entries = parse_entries()
+```
+
+
+<table style="width:100%">
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th> </th>
+  </tr>
+
+```{python pubtable}
+#| output: asis
+idx = len(entries)
+for entry in entries:
+    print("<tr>\n",
+          f'<td  style="vertical-align:top">{idx}. ',
+          f'<td>{entry.bib}',
+          f"<td>{entry.dimensions_badge(data_style = 'small_rectangle')} \n\n {entry.altmetric(badge_type = 'medium_badge')}",
+          sep = "</td>\n",
+          end = "</tr>\n")
+    idx -= 1
+```
+</table>
+
+<a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ">
+<img alt="Google Scholar logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1280px-Google_Scholar_logo.svg.png?20200110094142" width="24" height="24" />
+</a>
+<a href="https://orcid.org/0000-0003-3283-829X">
+<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_32x32.png" width="24" height="24" />
+</a>

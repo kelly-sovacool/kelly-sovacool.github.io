@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kelly L. Sovacool">
+<meta name="author" content="Zena M. Lapp">
+<meta name="dcterms.date" content="2020-03-20">
+
+<title>sovacool.dev - Teach yourself to Code</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon-32x32.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4XQKSHWZY6"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-4XQKSHWZY6', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">sovacool.dev</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/kelly-sovacool"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:kelly@sovacool.dev"><i class="bi bi-envelope" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@kelly_sovacool"><i class="bi bi-mastodon" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/kelly_sovacool"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/kelly-sovacool"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0003-3283-829X">ORCiD</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html">Posts</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../latex-cv/cv_KLS.pdf">CV</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pubs.html">Publications</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml"><i class="bi bi-rss" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Teach yourself to Code</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Python</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>Kelly L. Sovacool </p>
+               <p>Zena M. Lapp </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 20, 2020</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><strong>This post was originally published on <a href="https://um-dang.github.io/posts/2020/03/learn-to-code/">the <em>DANG!</em> blog</a></strong></p>
+<p>As most lab work at the University of Michigan comes to a temporary halt due to the ongoing COVID-19 pandemic, we’ve heard some of our fellow grad students and other researchers express an interest in learning how to code as they’re not able to conduct experimental work at this time. We thought we could help out by putting together this short guide on how to teach yourself to code.</p>
+<p>First above all, take care of yourself and your loved ones! We don’t want to contribute to the voices pressuring academics to be productive at a time when we should all be prioritizing our mental and physical health and that of our families. If you <em>also</em> have found the motivation and time to teach yourself how to code, then this guide is for you.</p>
+<p>We wrote this guide with grad students, postdocs, and other scientists who have never written code before in mind, but most of the content applies to just about anyone wanting to learn.</p>
+<blockquote class="blockquote">
+<p>📣 <strong>UPDATE</strong> 25 Mar.&nbsp;2020: <a href="http://www.schlosslab.org/labbies/schloss.html">Pat Schloss</a> is running a weekly Code Club via Zoom for those who want to learn R and improve their data analysis skills. All experience levels are welcome! See details here: <a href="http://www.riffomonas.org/code_club/">riffomonas.org/code_club</a>.</p>
+</blockquote>
+<section id="why-learn-to-code" class="level2">
+<h2 class="anchored" data-anchor-id="why-learn-to-code">Why learn to code?</h2>
+<ul>
+<li>Perform exploratory data analysis.</li>
+<li>Analyze &amp; visualize your data.</li>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/205368677-R-Markdown-Dynamic-Documents-for-R">Create automated reports</a>.</li>
+<li>Automate everything.</li>
+<li><a href="https://emilyriederer.netlify.com/post/resource-round-up-reproducible-research-edition/">Make your work reproducible</a>.</li>
+<li><a href="https://serialmentor.com/dataviz/">Create publication-quality figures</a>.</li>
+</ul>
+</section>
+<section id="what-language-to-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-language-to-learn">What language to learn?</h2>
+<p>If there’s a single popular language that everyone else in your lab, department, or field uses, just start with that one. <a href="https://www.riffomonas.org/minimalR/00_introduction.html#why-r">Why?</a> You will want to be able to learn from others and ask for help when you need it. For scientific research, both <strong>R</strong> and <strong>Python</strong> are popular languages and great for getting started quickly with data analysis. R and Python are <strong>open source</strong>, meaning they are free as in <em>libre</em> and free as in <em>free food at the department seminar</em>! So you don’t need to buy a license to use them, you’ll have access after you leave the university, and anyone else with a computer will be able to run your code too.</p>
+<p>Scientists in the <em>DANG!</em> community use R, Python, and/or other languages, but R seems to be the most common. If you’re not sure which one to pick and you’d like to get help from the <em>DANG!</em> community, try R. We also particularly like R for a package called R Markdown for turning code into analysis reports, manuscripts, and even presentations to easily &amp; reproducibly share our work with others.</p>
+<p>The logic of programming is the most important thing to learn, so deciding to pick up another language once you have experience in one should be easier. And it’s definitely not an “either/or” scenario; many experienced programmers use multiple languages regularly in their work. However, we recommend sticking to learning just one language at first so you don’t get overwhelmed.</p>
+</section>
+<section id="how-to-get-started" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-get-started">How to get started?</h2>
+<ul>
+<li><a href="https://www.codecademy.com/">Code Academy</a> is a good place to start for their free beginner <a href="https://www.codecademy.com/learn/learn-r"><strong>R</strong></a> and <a href="https://www.codecademy.com/learn/learn-python"><strong>Python</strong></a> lessons in an interactive format. Note that the free version of the Python lessons teach Python 2 (not Python 3). You should <em>definitely</em> use Python 3 if you’re going to use Python in your work, but there are very few differences in how you code Python 2 and 3, so learning Python 2 is still very valuable because almost everything translates to using Python 3.</li>
+<li>Zena and her sister Maya created <a href="https://github.com/zenalapp/teach-yourself-r/wiki">a guide to teaching yourself <strong>R</strong></a>. It takes you through the Code Academy lesson and also has extra exercises to practice data analysis.</li>
+<li><a href="https://carpentries.org/">The Carpentries</a> is an organization that holds workshops to teach introductory programming skills to researchers. <a href="https://umcarpentries.github.io/">U-M has a Carpentries chapter</a> that holds workshops regularly throughout the year (with the exception of during pandemics 😬). We highly recommend attending an in-person workshop if you get the opportunity, but you can access the lesson materials for <strong><a href="http://swcarpentry.github.io/r-novice-gapminder/">R</a></strong> and <a href="http://swcarpentry.github.io/python-novice-gapminder/"><strong>Python</strong></a> online if you’d like to learn on your own. The Carpentries has also translated <a href="https://swcarpentry.github.io/r-novice-gapminder-es/">their <strong>R</strong> lesson to Spanish</a>.</li>
+<li>As part of <a href="http://umich.edu/~girlswc/">Girls Who Code at U-M</a>, Zena and Kelly have contributed to a curriculum teaching <strong>Python</strong> for Data Science aimed at high school students. You can find instructions for getting started <a href="https://github.com/GWC-DCMB/GWC-DCMB/blob/master/get-started.md">here</a>.-</li>
+<li>RStudio has <a href="https://rstudio.cloud/learn/primers">interactive tutorials</a> where you can learn everything from the basics to writing reports to building interactive web apps.</li>
+</ul>
+<p>If you’ve exhausted these options, here’s an <a href="https://sovacool.dev/posts/2019/05/bioinf-resources">overwhelmingly long list of links</a> to even more resources and tools you might like to learn.</p>
+</section>
+<section id="how-to-use-it-in-the-real-world" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-it-in-the-real-world">How to use it in the real world?</h2>
+<p>If you want to automate tasks, run your code on supercomputers, and make your friends think you’re a hacker, you should definitely learn the <strong>Unix Shell</strong>. You can find The Carpentries’ lesson on the Unix Shell <a href="http://swcarpentry.github.io/shell-novice/">here</a>.</p>
+<p>The Carpentries has instructions for installing the tools you’ll need: - <a href="http://swcarpentry.github.io/python-novice-gapminder/setup/">Python</a> - <a href="http://swcarpentry.github.io/r-novice-gapminder/setup.html">R</a> - <a href="http://swcarpentry.github.io/shell-novice/setup.html">Unix Shell</a></p>
+</section>
+<section id="how-to-get-help" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-get-help">How to get help?</h2>
+<ol type="1">
+<li>Google is your best friend. No, really. We Google questions every day!</li>
+<li>Ask your friends, colleagues, etc. Especially when you’re just starting out, it can be difficult to know <em>what</em> to Google to get the answers you need. Ask a more advanced programmer as soon as you hit a wall.</li>
+<li>Join the <a href="https://join.slack.com/t/umich-dang/shared_invite/enQtNjEzMTU5MDU3MDU2LTdhNGZjMzJmNDc0NTFkZDVkMjBmMjFhM2ZjN2QzMGY2ZDcwMTU4ZTcwOTdjZTJmMGI3MTExMGIxOTljMjllMzA"><em>DANG!</em> Slack workspace</a> and use the <code>#analysis_questions</code> channel. <em>DANG!</em> exists because we think it’s important to have a <a href="https://teachtogether.tech/#s:community">community of practice</a> so you can learn from other people, get personalized help when you need it, and help others.</li>
+</ol>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading:</h3>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pcbi.1005871">Ten simple rules for biologists learning to program</a></li>
+<li><a href="http://www.academichermit.com/2016/01/04/Suck-until-you-dont.html">Suck until you don’t</a></li>
+</ul>
+<p><br><br> <em>Written by Zena Lapp &amp; Kelly Sovacool. Edited by <a href="https://kozimicrobe.com/">Ari Kozik</a>.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

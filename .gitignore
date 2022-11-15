@@ -1,8 +1,4 @@
-_site/
-Gemfile.lock
-.DS_Store
-.Rproj.user
-README.html
-.Rhistory
-__pycache__/
-docs/publications.py
+/.quarto/
+/.Rhistory
+/.Rproj.user/
+/__pycache__/

@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
+
+website:
+  title: "sovacool.dev"
+  favicon: images/favicon-32x32.png
+  google-analytics: G-4XQKSHWZY6
+  search:
+    location: navbar
+    type: textbox
+  navbar:
+    left:
+      - icon: github
+        href: https://github.com/kelly-sovacool
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css

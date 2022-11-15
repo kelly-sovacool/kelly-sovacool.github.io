@@ -1,0 +1,63 @@
+---
+title: "About"
+#description: "Bioinformatician"
+aliases:
+    - index.html
+image: images/pibs_profile.jpg
+about:
+  template: trestles
+  links:
+    - icon: github
+      href: https://github.com/kelly-sovacool
+    - icon: envelope
+      href: mailto:kelly@sovacool.dev
+    - icon: mastodon
+      href: https://mastodon.social/@kelly_sovacool
+    - icon: twitter
+      href: https://twitter.com/kelly_sovacool
+    - icon: linkedin
+      href: https://linkedin.com/in/kelly-sovacool
+    - text: ORCiD # https://github.com/rstudio/rmarkdown/issues/1554
+      href: https://orcid.org/0000-0003-3283-829X
+execute:
+  echo: false
+---
+
+:::{#hero-heading}
+
+Hi, I'm Kelly! I'm a
+[Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics)
+PhD candidate in [Pat Schloss' lab](http://www.schlosslab.org/) at the
+University of Michigan. I develop bioinformatics tools and
+data analysis pipelines for microbial ecology and host-associated microbiome research.
+I'm a fan of open science, open source software, and reproducible research.
+
+When I'm not in the dry lab, you might find me running, cycling, climbing, or 
+otherwise being active outside. 
+I also volunteer with [Girls Who Code](http://umich.edu/~girlswc/), 
+teach [Software Carpentry](https://umcarpentries.github.io/) workshops, 
+host [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/),
+and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
+
+:::
+
+```{r}
+#| eval: false
+library(reticulate)
+```
+
+<br>
+
+```{python hexagons}
+#| output: 'asis'
+with open('_hex.html', 'r') as infile:
+    for line in infile:
+        print(line.strip())
+```
+
+
+<!--
+<br>
+
+<a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/main/figures/language_all_bytes_top-5.png" width="500"></a> 
+-->
