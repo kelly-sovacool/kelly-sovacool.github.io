@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sovacool.dev - About</title>
+<title>sovacool.dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,9 +31,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/favicon-32x32.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -60,6 +63,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4XQKSHWZY6"></script>
 
 <script type="text/javascript">
@@ -70,11 +102,12 @@ gtag('js', new Date());
 gtag('config', 'G-4XQKSHWZY6', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,48 +128,6 @@ gtag('config', 'G-4XQKSHWZY6', { 'anonymize_ip': true});
 </i> 
  </a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:kelly@sovacool.dev"><i class="bi bi-envelope" role="img">
-</i> 
- </a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://mastodon.social/@kelly_sovacool"><i class="bi bi-mastodon" role="img">
-</i> 
- </a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/kelly_sovacool"><i class="bi bi-twitter" role="img">
-</i> 
- </a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/kelly-sovacool"><i class="bi bi-linkedin" role="img">
-</i> 
- </a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://orcid.org/0000-0003-3283-829X">ORCiD</a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">About</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./posts.html">Posts</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./latex-cv/cv_KLS.pdf">CV</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./pubs.html">Publications</a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"><i class="bi bi-rss" role="img">
-</i> 
- </a>
-  </li>  
 </ul>
               <div class="quarto-toggle-container">
                   <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -147,128 +138,229 @@ gtag('config', 'G-4XQKSHWZY6', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">sovacool.dev</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Bioinformatics">Bioinformatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Open Source Software">Open Source Software <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="R Packages">R Packages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Reproducibility">Reproducibility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Research Software Engineering">Research Software Engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Software Development">Software Development <span class="quarto-category-count">(3)</span></div><div class="category" data-category="git">git <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/pibs_profile.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://github.com/kelly-sovacool" class="about-link">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="mailto:kelly@sovacool.dev" class="about-link">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://mastodon.social/@kelly_sovacool" class="about-link">
-    <i class="bi bi-mastodon"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://twitter.com/kelly_sovacool" class="about-link">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://linkedin.com/in/kelly-sovacool" class="about-link">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://orcid.org/0000-0003-3283-829X" class="about-link">
-     <span class="about-link-text">ORCiD</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<div id="hero-heading">
-<p>Hi, I’m Kelly! I’m a <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">Bioinformatics</a> PhD candidate in <a href="http://www.schlosslab.org/">Pat Schloss’ lab</a> at the University of Michigan. I develop bioinformatics tools and data analysis pipelines for microbial ecology and host-associated microbiome research. I’m a fan of open science, open source software, and reproducible research.</p>
-<p>When I’m not in the dry lab, you might find me running, cycling, climbing, or otherwise being active outside. I also volunteer with <a href="http://umich.edu/~girlswc/">Girls Who Code</a>, teach <a href="https://umcarpentries.github.io/">Software Carpentry</a> workshops, host <a href="https://datascience.isr.umich.edu/events/coderspaces/">CoderSpaces office hours</a>, and moonlight as a <a href="https://sovacool.dev/latex-cv/sound.pdf">live sound engineer</a>.</p>
-</div>
-<div class="cell">
-</div>
-<p><br></p>
-<style>
-/* hexagons adapted from:
-- https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
-- http://jsfiddle.net/kizu/bhGn4/
-*/
-.main {
-display:flex;
---s: 100px;  /* size  */
---m: 4px;    /* margin */
---f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
-}
-.container {
-font-size: 0; /*disable white space between inline block element */
-}
-.container div {
-width: var(--s);
-margin: var(--m);
-height: calc(var(--s)*1.1547);
-display: inline-block;
-font-size:initial;
-clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-margin-bottom: calc(var(--m) - var(--s)*0.2885);
-background-image: none;
-background-position: 50%;
-background-size: 115%;
-background-repeat: no-repeat;
-}
-.container::before {
-content: "";
-width: calc(var(--s)/2 + var(--m));
-float: left;
-height: 120%;
-shape-outside: repeating-linear-gradient(
-#0000 0 calc(var(--f) - 3px),
-#000  0 var(--f));
-}
-</style>
-<div class="main">
-<div class="container">
-<a href="https://github.com/mothur/mothur">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/mothur/logo/master/mothur_hex.png&quot;)">
-</div>
-</a> <a href="https://github.com/SchlossLab/mikropml">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/mikropml/main/man/figures/logo.png&quot;)">
-</div>
-</a> <a href="https://github.com/SchlossLab/schtools">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/SchlossLab/schtools/main/man/figures/logo.png&quot;); background-size:100%">
-</div>
-</a> <a href="https://github.com/umcarpentries/intro-curriculum-r">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/swcarpentry/communications/main/misc/logo/swc-hex-logo.png&quot;); background-size:100%">
-</div>
-</a> <a href="http://websites.umich.edu/~girlswc/">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/GWC-DCMB/logos-stickers/main/output/hex-sticker-1.png&quot;); background-size:100%">
-</div>
-</a> <a href="https://um-dang.github.io">
-<div style="background-image: url(&quot;https://raw.githubusercontent.com/um-dang/um-dang.github.io/main/images/logo1_AK_hexagon.png&quot;); background-size:100%">
-</div>
-</a><p><a href="https://um-dang.github.io"></a> <!--    <a href="http://bit.ly/strava-kelly">
-<div style='background-image: url("https://raw.githubusercontent.com/kelly-sovacool/kelly-sovacool.github.io/main/images/watermoo.jpg"); background-size:250%;
-background-position:50%;'></div>
-</a>--></p>
-</div>
-</div>
-<!--
-<br>
-<a href="https://github.com/kelly-sovacool"><img src="https://raw.githubusercontent.com/kelly-sovacool/meta-repo/main/figures/language_all_bytes_top-5.png" width="500"></a> 
--->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
-</main></div>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Software Development,R,R Packages" data-listing-date-sort="1629950400000" data-listing-file-modified-sort="1668553546571" data-listing-reading-time-sort="1.42">
+<div class="thumbnail">
+<p><a href="./posts/2021-08-26-r-sort-locale/index.html"> <img src="./posts/2021-08-26-r-sort-locale/commit_exploding-head.png" class="thumnail-image"> </a></p>
 </div>
- <!-- /main -->
+<div class="body">
+<a href="./posts/2021-08-26-r-sort-locale/index.html">
+<h3 class="no-anchor listing-title">
+Base R’s sort() order changes with locale
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Software Development'); return false;">
+Software Development
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R Packages'); return false;">
+R Packages
+</div>
+</div>
+<a href="./posts/2021-08-26-r-sort-locale/index.html">
+<div class="listing-description">
+<p>And that can cause frustrating test failures in devtools::check()!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2021-08-26-r-sort-locale/index.html">
+<div class="listing-date">
+Aug 26, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="R,Python" data-listing-date-sort="1584676800000" data-listing-file-modified-sort="1668553546570" data-listing-reading-time-sort="4.44">
+<div class="thumbnail">
+<a href="./posts/2020-03-20-learn-to-code/index.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./posts/2020-03-20-learn-to-code/index.html"></a></p>
+</div>
+<div class="body">
+<a href="./posts/2020-03-20-learn-to-code/index.html">
+<h3 class="no-anchor listing-title">
+Teach yourself to Code
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+</div>
+<a href="./posts/2020-03-20-learn-to-code/index.html">
+<div class="listing-description">
+<strong>This post was originally published on the <em>DANG!</em> blog</strong>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2020-03-20-learn-to-code/index.html">
+<div class="listing-date">
+Mar 20, 2020
+</div>
+<div class="listing-author">
+Kelly L. Sovacool, Zena M. Lapp
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Research Software Engineering,Open Source Software,Reproducibility,Software Development,Python,git" data-listing-date-sort="1576731600000" data-listing-file-modified-sort="1668553546570" data-listing-reading-time-sort="25.65">
+<div class="thumbnail">
+<a href="./posts/2019-12-19-urssi-winterschool-notes/index.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./posts/2019-12-19-urssi-winterschool-notes/index.html"></a></p>
+</div>
+<div class="body">
+<a href="./posts/2019-12-19-urssi-winterschool-notes/index.html">
+<h3 class="no-anchor listing-title">
+URSSI Winter School
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Research Software Engineering'); return false;">
+Research Software Engineering
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Open Source Software'); return false;">
+Open Source Software
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
+Reproducibility
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Software Development'); return false;">
+Software Development
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
+git
+</div>
+</div>
+<a href="./posts/2019-12-19-urssi-winterschool-notes/index.html">
+<div class="listing-description">
+<p>My notes from the URSSI Winter School</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2019-12-19-urssi-winterschool-notes/index.html">
+<div class="listing-date">
+Dec 19, 2019
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Bioinformatics,Software Development,Data Analysis,Reproducibility,Python,R,git" data-listing-date-sort="1557892800000" data-listing-file-modified-sort="1668553546569" data-listing-reading-time-sort="4.36">
+<div class="thumbnail">
+<a href="./posts/2019-05-15-bioinf-resources/index.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./posts/2019-05-15-bioinf-resources/index.html"></a></p>
+</div>
+<div class="body">
+<a href="./posts/2019-05-15-bioinf-resources/index.html">
+<h3 class="no-anchor listing-title">
+Bioinformatics Resources
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Bioinformatics'); return false;">
+Bioinformatics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Software Development'); return false;">
+Software Development
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
+Reproducibility
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
+git
+</div>
+</div>
+<a href="./posts/2019-05-15-bioinf-resources/index.html">
+<div class="listing-description">
+<p>Resources for Bioinformatics Software Development &amp; Data Analysis</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2019-05-15-bioinf-resources/index.html">
+<div class="listing-date">
+May 15, 2019
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -402,6 +494,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
   } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
