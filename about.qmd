@@ -17,7 +17,7 @@ about:
       href: https://twitter.com/kelly_sovacool
     - icon: linkedin
       href: https://linkedin.com/in/kelly-sovacool
-    - text: ORCiD # https://github.com/rstudio/rmarkdown/issues/1554
+    - text: "{{< fa brands orcid >}}" # https://github.com/quarto-ext/fontawesome/issues/6
       href: https://orcid.org/0000-0003-3283-829X
 execute:
   echo: false

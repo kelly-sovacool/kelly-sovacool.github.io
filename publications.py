@@ -80,8 +80,8 @@ class BibEntry:
         return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="{data_hide}" class="altmetric-embed"></div>'
 
     def github_badge(self, 
-                     font_size_px=48):
-        return f'<a href="{self.github_link}"> <i class="fab fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
+                     font_size_px=20):
+        return f'<a href="{self.github_link}"> <i class="fa-brands fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
 
     def dimensions_badge(self,
                          data_hide = "true",
@@ -117,8 +117,7 @@ class BibEntry:
     @property
     def bib(self):
         return f"{self.authors}. {self.record['month'].capitalize()} {self.record['year']}. " \
-               f"{self.record['title']}. {self.journal}. {self.link} &ensp; " \
-               f"{self.github_badge(font_size_px=16)}"
+               f"{self.record['title']}. {self.journal}. {self.link} &ensp; "
 
     def __repr__(self):
         return self.bib
