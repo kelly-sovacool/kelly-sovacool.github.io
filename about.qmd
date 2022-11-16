@@ -6,7 +6,7 @@ aliases:
 image: images/pibs_profile.jpg
 about:
   template: trestles
-  id: hero-heading
+  id: about
   image-width: 10em
   image-shape: round
   links:
@@ -27,7 +27,7 @@ execute:
 engine: jupyter
 ---
 
-:::{#hero-heading}
+:::{#about}
 
 Hi, I'm Kelly! I'm a
 [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics)
@@ -48,11 +48,11 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 :::: {.grid}
 
 ::: {.g-col-2 .g-col-md-2 style="text-align: left;"}
-<!-- empty column taking up 1/8th of the space-->
+<!-- left 1/8th  -->
 :::
 
 ::: {.g-col-8 .g-col-md-8 }
-
+<!-- center 2/3 -->
 ```{python hexagons}
 #| output: 'asis'
 with open('_hex.html', 'r') as infile:
@@ -63,6 +63,7 @@ with open('_hex.html', 'r') as infile:
 :::
 
 ::: {.g-col-2 .g-col-md-2 style="text-align: left;"}
+<!-- right 1/8th -->
 :::
 
 ::::
