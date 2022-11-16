@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+description: "[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)"
 date-modified: today
 execute:
   echo: false
@@ -21,8 +22,6 @@ d-article a:hover { border-bottom:1px dotted; }
 
 <!-- for altmetrics badges -->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
-
-[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)
 
 
 **\*** Indicates co-first author.
