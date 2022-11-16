@@ -1,11 +1,14 @@
 ---
-title: "About"
+title: "Kelly L. Sovacool"
 #description: "Bioinformatician"
 aliases:
     - index.html
 image: images/pibs_profile.jpg
 about:
   template: trestles
+  id: hero-heading
+  image-width: 10em
+  image-shape: round
   links:
     - icon: github
       href: https://github.com/kelly-sovacool
@@ -21,6 +24,7 @@ about:
       href: https://orcid.org/0000-0003-3283-829X
 execute:
   echo: false
+engine: jupyter
 ---
 
 :::{#hero-heading}
@@ -41,12 +45,13 @@ and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf
 
 :::
 
-```{r}
-#| eval: false
-library(reticulate)
-```
+:::: {.grid}
 
-<br>
+::: {.g-col-2 .g-col-md-2 style="text-align: left;"}
+<!-- empty column taking up 1/8th of the space-->
+:::
+
+::: {.g-col-8 .g-col-md-8 }
 
 ```{python hexagons}
 #| output: 'asis'
@@ -55,7 +60,12 @@ with open('_hex.html', 'r') as infile:
         print(line.strip())
 ```
 
+:::
 
+::: {.g-col-2 .g-col-md-2 style="text-align: left;"}
+:::
+
+::::
 <!--
 <br>
 
