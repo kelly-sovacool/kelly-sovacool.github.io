@@ -2,7 +2,7 @@
 title: "Use the tidyverse"
 description: |
   ...or else...
-date: "`r Sys.Date()`"
+date: "TBD"
 draft: true
 ---
 
@@ -37,6 +37,7 @@ see https://sovacool.dev/posts/2021-08-26-r-sort-locale/
 
 ### Weird factors stuff
 
+TODO
 Steph's plot example?
 
 ### strings as factors
@@ -51,6 +52,8 @@ If for some reason you find yourself absolutely needing to use a version of R pr
 
 
 ### ifelse() vs if_else()
+
+TODO
 
 ## TLDR
 
