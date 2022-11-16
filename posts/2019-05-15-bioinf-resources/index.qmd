@@ -3,8 +3,7 @@ title: "Bioinformatics Resources"
 description: |
   Resources for Bioinformatics Software Development & Data Analysis
 aliases: 
-    - posts/2019/05/bioinf-resources/index.html
-    - posts/2019-05-15-bioinf-resources/index.html
+    - /posts/2019/05/bioinf-resources/index.html
 date: 2019-05-15
 categories:
   - Bioinformatics
