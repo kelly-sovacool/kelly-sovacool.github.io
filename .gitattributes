@@ -1,2 +1,2 @@
-* linguist-vendored=true
-run-local.sh linguist-vendored=false
+/_extensions/ linguist-vendored=true
+/docs/ linguist-vendored=true
