@@ -7,7 +7,7 @@ categories:
   - Software Development
   - R
   - R Packages
-preview: commit_cleanup.png
+image: commit_cleanup.png
 ---
 
 ```{r setup, include=FALSE}

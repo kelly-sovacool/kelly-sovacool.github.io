@@ -1,5 +1,5 @@
 ---
-title: "sovacool.dev"
+title: "Blog Posts"
 listing:
   contents: posts
   sort: "date desc"

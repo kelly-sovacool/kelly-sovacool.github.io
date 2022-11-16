@@ -3,6 +3,7 @@ title: "URSSI Winter School"
 description: |
   My notes from the URSSI Winter School
 date: 2019-12-19
+image: urssi-winter-school.jpeg
 categories:
   - Research Software Engineering
   - Open Source Software

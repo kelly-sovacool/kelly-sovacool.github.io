@@ -1,6 +1,6 @@
 ---
 title: "Teach yourself to Code"
-description: ""
+description: "Lab work paused due to covid? You could learn how to code!"
 author:
   - name: Kelly L. Sovacool
     url: https://sovacool.dev/
