@@ -16,6 +16,7 @@ about:
       href: mailto:kelly@sovacool.dev
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
+      rel: me
     - icon: twitter
       href: https://twitter.com/kelly_sovacool
     - icon: linkedin
