@@ -55,5 +55,5 @@ for entry in entries:
 </table>
 
 <a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ">
-<img alt="Google Scholar logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1280px-Google_Scholar_logo.svg.png?20200110094142" width="20px" height="20px" />
+<img alt="Google Scholar logo" src="/images/Google_Scholar_logo.png" width="20px" height="20px" />
 </a>
