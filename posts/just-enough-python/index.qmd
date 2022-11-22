@@ -1,13 +1,13 @@
 ---
 title: "Just enough Python for Snakemake"
 description: |
-  A code club for R users who want to write Snakemake workflows
+  A tutorial for R users who want to write advanced Snakemake workflows
 date: 2022-11-21
 categories:
-  - code club
   - R
   - Python
   - Snakemake
+  - code club
 draft: true
 #image: TODO
 ---
