@@ -14,38 +14,57 @@ draft: true
 
 **TLDR: I made a tutorial: 
 [Just enough Python for R users to write advanced Snakemake workflows](https://www.schlosslab.org/just-enough-python/). 
-The original intended audience is Schloss Labbies, but anyone who has basic Snakemake
-expereince but lacks Python knowledge may find it useful.**
+The original intended audience is the Schloss Lab, but anyone with basic Snakemake
+experience may find it useful.**
 
-For almost everyone in the Schloss Lab, R is their primary programming language.
+For almost everyone in the [Schloss Lab](http://www.schlosslab.org/), 
+R is their primary programming language.
 I can't speak for Pat, but my understanding of the reason is:
 
 1. Pat knows R.
 1. If you write your code in R, Pat and other lab members can help you with bugs in your code.^[Pat on "Why R?": <https://riffomonas.org/minimalR/01_introduction.html#why-r>]
 
-When I joined the lab, Python was my main programming language. 
-I had also taken some computer science classes in C++ and dabbled in R for 
+When I first joined the lab, Python was my main programming language. 
+I had taken some computer science classes in C++ and dabbled in R for 
 statistics classes, but I didn't know R well and hadn't even heard of the tidyverse.
 Fortunately, picking up R & the tidyverse packages was a breeze thanks to 
-[Pat's learning resources](https://riffomonas.org/)
-and other lab members leading [code clubs](https://doi.org/10.1371/journal.pcbi.1008119) 
-that showcased cool tips & tricks.
+[Pat's learning resources](https://riffomonas.org/), 
+other lab members leading 
+[code clubs](https://doi.org/10.1371/journal.pcbi.1008119) 
+that showcased their cool tips & tricks,
+and a vibrant `#analysis-questions` channel in the lab Slack workspace.
 
-I started using the tidyverse in R for all my data analysis code, but
+So I started using the tidyverse in R for all my data analysis code, but
 I kept on using [Snakemake](https://snakemake.readthedocs.io/en/stable/), 
-a Python-based workflow management tool, for writing reproducible workflows.
-Fortunately, Pat either didn't mind, or didn't mind _enough_ to tell me to use Make instead. 
+a Python-based tool for writing reproducible workflows.
+Fortunately, Pat either didn't mind, or didn't mind _enough_ to tell me to use Make instead (_phew_ 😅). 
 
 Fast-forward several years: not only does everyone in the lab use Snakemake, 
-Pat even made a Code Club video teaching intro to Snakemake!
+Pat even made a video teaching intro to Snakemake!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pat has joined the snake people! 🎉 <a href="https://t.co/7HgaWHrMTp">https://t.co/7HgaWHrMTp</a></p>&mdash; Kelly Sovacool (@kelly_sovacool) <a href="https://twitter.com/kelly_sovacool/status/1570763926689976323?ref_src=twsrc%5Etfw">September 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Outside of writing Snakemake workflows, no one aside from me used Python.
-We're able to write all of our data analysis code in R and it's possible to 
-write good Snakemake workflows with very little knowledge of Python,
-so there just wasn't a pressing need for Python.
+It's possible to write good, simple Snakemake workflows with very little knowledge of Python.
 However, once you begin to take your workflows to an intermediate or advanced level,
 learning some Python is very helpful. 
 I would even say learning Python is _required_ if you want to understand advanced 
-Snakemake tricks, like using lambda functions to define input files based on wildcards.
+Snakemake tricks.
+
+So it was high time to make the code club I've been secretly dying to make since day 0:
+[Just enough Python for R users to write advanced Snakemake workflows](https://www.schlosslab.org/just-enough-python/).
+We covered the content in two 1-hour lab meetings over the last couple weeks.
+The tutorial covers enough Python to grok these Snakemake concepts:
+
+- f-Strings for human-readable string formatting
+- Config files as dictionaries
+- Snakemake's expand() function
+- Lambda functions to define input files based on wildcards
+
+Although the original intended audience is the Schloss Lab,
+anyone with basic Snakemake experience but limited Python knowledge may find 
+this useful.
+
+It was hard to stop myself from turning this code club into a brain-dump of 
+everything I know and like about Python.
+There were a lot of topics I wished I had time to cover.
+I may eventually make a follow-up tutorial, "Just a little more Python". Stay tuned!
