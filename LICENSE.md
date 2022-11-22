@@ -4,7 +4,7 @@ The original software included in this repository is made available under the
 [OSI][osi]-approved [MIT License](#mit-license).
 
 All other original content is made available under the 
-[Creative Commons Attribution License](#cc-by-4.0-license).
+[Creative Commons Attribution License](#cc-by-license).
 
 ## MIT License
 
@@ -28,7 +28,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## CC BY 4.0 License
+## CC BY License
 
 All other original non-software content is
 made available under the 
