@@ -27,7 +27,7 @@ I can't speak for Pat, but my understanding of the reason is:
 1. If you write your code in R, Pat and other lab members can help you with bugs in your code.^[Pat on "Why R?": <https://riffomonas.org/minimalR/01_introduction.html#why-r>]
 
 When I first joined the lab, Python was my main programming language. 
-I had taken some computer science classes in C++ and dabbled in R for 
+I had also taken some computer science classes in C++ and dabbled in R for 
 statistics classes, but I didn't know R well and hadn't even heard of the tidyverse.
 Fortunately, picking up R & the tidyverse packages was a breeze thanks to 
 [Pat's learning resources](https://riffomonas.org/), 
