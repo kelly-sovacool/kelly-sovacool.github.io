@@ -2,20 +2,22 @@
 title: "Just enough Python for Snakemake"
 description: |
   A tutorial for R users who want to write advanced Snakemake workflows
-date: 2022-11-21
+date: 2022-11-22
 categories:
   - R
   - Python
   - Snakemake
   - code club
-draft: true
-#image: TODO
+image: /images/python-snakemake-r-logos-horiz.png
+reference-location: document
 ---
 
 **TLDR: I made a tutorial: 
 [Just enough Python for R users to write advanced Snakemake workflows](https://www.schlosslab.org/just-enough-python/). 
 The original intended audience is the Schloss Lab, but anyone with basic Snakemake
 experience may find it useful.**
+
+![](/images/python-snakemake-r-logos-horiz.png){ width=300px fig-align="center" fig-alt="The Python, R, and Snakemake logos linked together."}^[The [Python logo](https://commons.wikimedia.org/wiki/File:Python-logo-notext.svg) by the Python Software Foundation is licensed under GNU GPL v2. The [Snakemake logo](https://commons.wikimedia.org/wiki/File:Snakemake_logo_dark.png) by Johannes Köster is  licensed under CC BY-SA 4.0. The [R logo](https://commons.wikimedia.org/wiki/File:R_logo.svg) by Hadley Wickham and others at RStudio is licensed under CC BY-SA 4.0.]
 
 For almost everyone in the [Schloss Lab](http://www.schlosslab.org/), 
 R is their primary programming language.
