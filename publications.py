@@ -6,39 +6,35 @@ import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import *
 import datetime
+import yaml
 
 MONTHS = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6, 
           'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
           }
 
-
 def main():
-    for entry in parse_entries():
-        print(entry, '\n')
+    with open('pubs.yml', 'w') as file:
+        yaml.dump([entry.__dict__ for entry in parse_entries('cv_KLS.bib')], file)
 
-# adapted from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pepper
-def parse_entries():
-    with open('cv_KLS.bib', 'r') as bibtex_file:
+# adapted from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pep per
+def parse_entries(bibtex_filename):
+    with open(bibtex_filename, 'r') as bibtex_file:
         parser = BibTexParser()
         parser.customization = customizations
         bib_database = bibtexparser.load(bibtex_file, parser=parser)
-    return sorted([BibEntry(record) for record in bib_database.entries], key = lambda x: x.year_mo, reverse = True)
-
-def get_bib_str():
-    return '\n'.join(f"{idx+1}. {entry.bib} {entry.altmetric()}" for idx, entry in enumerate(parse_entries()))
+    return sorted([BibEntry(record) for record in bib_database.entries], 
+                  key = lambda x: x.year_mo, reverse = True)
 
 def get_markdown():
     table = ['| | | |', '|---|---|---|']
     entries = parse_entries()
     idx = len(entries)
     for entry in entries:
-        table.append(f"| {idx}. | {entry.bib} | {entry.altmetric()} |")
+        table.append(f"| {idx}. | {entry.bib_md} | {entry.altmetric()} |")
         idx -= 1
     return table
 
 # from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pepper
-# Let's define a function to customize our entries.
-# It takes a record and return this record.
 def customizations(record):
     """Use some functions delivered by the library
 
@@ -72,7 +68,32 @@ def format_author(name, bold = 'Sovacool, Kelly'):
 class BibEntry:
 
     def __init__(self, record):
-        self.record = record
+        self.id = record['ID']
+        self.entry_type = record['ENTRYTYPE']
+        self.doi = record['doi']
+        self.doi_link = record['link'][0]['url']
+        self.authors = record['author']
+        self.title = record['title']
+        self.title_md = f"[{self.title}]({self.doi_link})"
+        self.authors_md = ', '.join([format_author(author) for author in record['author']])
+        self.year = record['year']
+        self.month = record['month'].capitalize()
+        self.month_num = MONTHS[record['month'].lower()]
+        self.year_mo = datetime.datetime.strptime(f"{record['year']}-{MONTHS[record['month'].lower()]}", '%Y-%m')
+        self.date = f"{self.month} {self.year}"
+        self.journal = record['journal']['name']
+        self.link_md = f"[{record['doi']}]({self.doi_link})"
+        self.journal_md = f"[{self.journal}]({self.doi_link})"
+        self.title_journal = f"{self.title}.  _{self.journal_md}_"
+        self.bib_md = f"{self.authors_md}. {self.month} " \
+                f"{self.year}. " \
+                f"{self.title}. _{self.journal}_. {self.link_md} "
+        self.github_link = record['github'] if 'github' in record else ''
+        self.github_icon = f'<a href="{self.github_link}"> <i class="fa-brands fa-github" style="font-size:20px;"></i> </a>' if self.github_link else ''
+        self.github_badge = f"[![GitHub](https://img.shields.io/static/v1?style=flat&logo=GitHub&label=+&message=GitHub&color=black)]({self.github_link})" if self.github_link else ''
+        self.altmetrics_badge = f'<div data-badge-popover="right" data-badge-type="medium_badge" data-doi="{record["doi"]}" data-condensed="true" data-hide-no-mentions="false" class="altmetric-embed"></div>'
+        self.dimensions_badge = f'<span class="__dimensions_badge_embed__" data-doi="{record["doi"]}" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>'
+        self.badges = f"{self.github_icon} {self.altmetrics_badge} {self.dimensions_badge}"
 
     def altmetric(self, 
                   badge_type = 'donut', 
@@ -90,37 +111,8 @@ class BibEntry:
         # https://badge.dimensions.ai/
         return f'<span class="__dimensions_badge_embed__" data-doi="{self.record["doi"]}" data-hide-zero-citations="{data_hide}" data-style="{data_style}" data-legend="{data_legend}"></span>'
 
-    @property
-    def github_link(self):
-        return self.record['github'] if 'github' in self.record else ''
-
-    @property
-    def authors(self):
-        return ', '.join([format_author(author) for author in self.record['author']])
-
-    @property
-    def month_num(self):
-        return MONTHS[self.record['month'].lower()]
-
-    @property
-    def year_mo(self):
-        return datetime.datetime.strptime(f"{self.record['year']}-{self.month_num}", '%Y-%m')
-
-    @property
-    def journal(self):
-        return f"_{self.record['journal']['name']}_"
-
-    @property
-    def link(self):
-        return f"[{self.record['doi']}]({self.record['link'][0]['url']})"
-
-    @property
-    def bib(self):
-        return f"{self.authors}. {self.record['month'].capitalize()} {self.record['year']}. " \
-               f"{self.record['title']}. {self.journal}. {self.link} &ensp; "
-
     def __repr__(self):
-        return self.bib
+        return self.bib_md
 
 
 if __name__ == "__main__":

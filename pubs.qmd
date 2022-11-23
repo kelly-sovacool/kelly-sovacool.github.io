@@ -1,12 +1,32 @@
 ---
 title: "Publications"
-description: "[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)"
+description: '[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)'
 date-modified: today
 execute:
   echo: false
   output: false
   freeze: auto
-engine: jupyter
+title-block-banner: true
+page-layout: full
+link-color: '#000000'
+listing:
+  id: pubs
+  contents:
+    - pubs.yml
+  date-format: 'YYYY MMM'
+  page-size: 10
+  type: table
+  categories: false
+  table-striped: false
+  table-hover: true
+  sort-ui: [date]
+  filter-ui: [date, title_journal, authors_md]
+  fields: [date, title_journal, authors_md, badges]
+  field-display-names: 
+      title_journal: Article
+      authors_md: Authors
+      journal_md: Journal
+      badges: Badges
 ---
 <style>
 d-article a {
@@ -23,37 +43,15 @@ d-article a:hover { border-bottom:1px dotted; }
 <!-- for altmetrics badges -->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
 
-
 **\*** Indicates co-first author.
 
-```{python import_pubs}
-from publications import *
-entries = parse_entries()
+:::{#pubs}
+:::
+
+ <a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ"><img alt="Google Scholar logo" src="/images/Google_Scholar_logo.png" width="20px" height="20px" /></a>
+
+```{r pub-count}
+pubs_yml <- yaml::read_yaml('pubs.yml')
 ```
 
-
-<table style="width:100%">
-  <tr>
-    <th> </th>
-    <th> </th>
-    <th> </th>
-  </tr>
-
-```{python pubtable}
-#| output: asis
-fa_github = "{{< fa brands github size=20px >}}"
-idx = len(entries)
-for entry in entries:
-    print("<tr>\n",
-          f'<td  style="vertical-align:top">{idx}. ',
-          f'<td>{entry.bib} &ensp; [{fa_github}]({entry.github_link}) ',
-          f"<td>{entry.dimensions_badge(data_style = 'small_rectangle')} \n\n {entry.altmetric(badge_type = 'medium_badge')}",
-          sep = "&ensp; </td>\n",
-          end = "</tr>\n")
-    idx -= 1
-```
-</table>
-
-<a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ">
-<img alt="Google Scholar logo" src="/images/Google_Scholar_logo.png" width="20px" height="20px" />
-</a>
+N = `r length(pubs_yml)`
