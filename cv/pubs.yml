@@ -381,7 +381,7 @@
     AG, Flynn KJ, Hannigan GD, Koumpouras CC, Jenior ML, Kozik AJ, McBride K, Rifkin
     SB, Stough J, **Sovacool KL**, Sze MA, Tomkovich S, Topcuoglu BD, Schloss PD.
     Aug 2020. Ten Simple Rules to Increase Computational Skills among Biologists with
-    Code Clubs. _PLOS Computational Biology_. [10.1371/journal.pcbi.1008119](https://doi.org/10.1371/journal.pcbi.1008119) '
+    Code Clubs. _PLoS Comput Biol_. [10.1371/journal.pcbi.1008119](https://doi.org/10.1371/journal.pcbi.1008119) '
   date: Aug 2020
   dimensions_badge: <span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pcbi.1008119"
     data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>
@@ -393,15 +393,15 @@
     class="fa-brands fa-github" style="font-size:20px;"></i> </a>
   github_link: https://github.com/SchlossLab/Hagan_CodeClub_PLOSComp
   id: hagan_ten_2020
-  journal: PLOS Computational Biology
-  journal_md: '[PLOS Computational Biology](https://doi.org/10.1371/journal.pcbi.1008119)'
+  journal: PLoS Comput Biol
+  journal_md: '[PLoS Comput Biol](https://doi.org/10.1371/journal.pcbi.1008119)'
   link_md: '[10.1371/journal.pcbi.1008119](https://doi.org/10.1371/journal.pcbi.1008119)'
   month: Aug
   month_num: 8
   title: Ten Simple Rules to Increase Computational Skills among Biologists with Code
     Clubs
   title_journal: Ten Simple Rules to Increase Computational Skills among Biologists
-    with Code Clubs.  _[PLOS Computational Biology](https://doi.org/10.1371/journal.pcbi.1008119)_
+    with Code Clubs.  _[PLoS Comput Biol](https://doi.org/10.1371/journal.pcbi.1008119)_
   title_md: '[Ten Simple Rules to Increase Computational Skills among Biologists with
     Code Clubs](https://doi.org/10.1371/journal.pcbi.1008119)'
   year: '2020'
@@ -425,7 +425,7 @@
     data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>'
   bib_md: 'Goodin MM, Farman M, Inocencio H, Jang C, Jaromczyk JW, Moore N, **Sovacool
     KL**. Aug 2016. Processing RNA-Seq Data of Plants Infected with Coffee Ringspot
-    Virus. _BMC Bioinformatics_. [10.1186/s12859-016-1154-y](https://doi.org/10.1186/s12859-016-1154-y) '
+    Virus. _BMC Bioinform_. [10.1186/s12859-016-1154-y](https://doi.org/10.1186/s12859-016-1154-y) '
   date: Aug 2016
   dimensions_badge: <span class="__dimensions_badge_embed__" data-doi="10.1186/s12859-016-1154-y"
     data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>
@@ -436,14 +436,14 @@
   github_icon: ''
   github_link: ''
   id: goodin_processing_2016
-  journal: BMC Bioinformatics
-  journal_md: '[BMC Bioinformatics](https://doi.org/10.1186/s12859-016-1154-y)'
+  journal: BMC Bioinform
+  journal_md: '[BMC Bioinform](https://doi.org/10.1186/s12859-016-1154-y)'
   link_md: '[10.1186/s12859-016-1154-y](https://doi.org/10.1186/s12859-016-1154-y)'
   month: Aug
   month_num: 8
   title: Processing RNA-Seq Data of Plants Infected with Coffee Ringspot Virus
   title_journal: Processing RNA-Seq Data of Plants Infected with Coffee Ringspot Virus.  _[BMC
-    Bioinformatics](https://doi.org/10.1186/s12859-016-1154-y)_
+    Bioinform](https://doi.org/10.1186/s12859-016-1154-y)_
   title_md: '[Processing RNA-Seq Data of Plants Infected with Coffee Ringspot Virus](https://doi.org/10.1186/s12859-016-1154-y)'
   year: '2016'
   year_mo: 2016-08-01 00:00:00
