@@ -22,6 +22,7 @@ listing:
   sort-ui: [date]
   filter-ui: [date, title_journal, authors_md]
   fields: [date, title_journal, authors_md, badges]
+  field-links: []
   field-display-names: 
       title_journal: Article
       authors_md: Authors
