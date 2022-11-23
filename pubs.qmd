@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 description: '[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)'
-date-modified: today
+#date-modified: today
 execute:
   echo: false
   output: false
@@ -18,7 +18,7 @@ listing:
   type: table
   categories: false
   table-striped: false
-  table-hover: true
+  table-hover: false
   sort-ui: [date]
   filter-ui: [date, title_journal, authors_md]
   fields: [date, title_journal, authors_md, badges]
@@ -27,22 +27,19 @@ listing:
       title_journal: Article
       authors_md: Authors
       journal_md: Journal
-      badges: Badges
 ---
-<style>
-d-article a {
-  border-bottom: none;
-  text-decoration: none;
-  color: #2f65a7;
-} /* remove hyperlink underlines until hover */
-d-article a:hover { border-bottom:1px dotted; }
-</style>
 
 <!-- for dimensions badges -->
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 <!-- for altmetrics badges -->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
+
+```{r date-updated}
+last_updated <- format(lubridate::as_date(file.info('cv/pubs.bib')$mtime), "%B %d, %Y")
+```
+
+Last updated: `r last_updated`
 
 **\*** Indicates co-first author.
 
