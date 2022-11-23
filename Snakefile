@@ -14,6 +14,12 @@ if bib_path.exists():
     if (now - update_frequency) > timestamp:
         sh_path.touch(exist_ok=True)
 
+rule render_site:
+    shell:
+        """
+        quarto render
+        """
+
 rule download_bib:
     input:
         sh=sh_filename
