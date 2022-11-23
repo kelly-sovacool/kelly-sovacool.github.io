@@ -1,10 +1,8 @@
 project:
   type: website
   output-dir: docs/
-  pre-render:
-    - publications.py
-  post-render:
-    - cp keybase.txt docs/
+  pre-render: snakemake -c 1 prerender
+  post-render: snakemake -c 1 postrender
 
 execute:
   freeze: auto
