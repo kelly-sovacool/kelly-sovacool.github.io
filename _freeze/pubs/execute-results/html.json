@@ -1,8 +1,10 @@
 {
-  "hash": "782ab8ff95f9a1bbde7397660289c5b2",
+  "hash": "579600c857b1e45be651a9199a94adef",
   "result": {
     "markdown": "---\ntitle: \"Publications\"\ndescription: '[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)'\ndate-modified: today\nexecute:\n  echo: false\n  output: false\n  freeze: auto\ntitle-block-banner: true\npage-layout: full\nlink-color: '#000000'\nlisting:\n  id: pubs\n  contents:\n    - pubs.yml\n  date-format: 'YYYY MMM'\n  page-size: 10\n  type: table\n  categories: false\n  table-striped: false\n  table-hover: true\n  sort-ui: [date]\n  filter-ui: [date, title_journal, authors_md]\n  fields: [date, title_journal, authors_md, badges]\n  field-links: []\n  field-display-names: \n      title_journal: Article\n      authors_md: Authors\n      journal_md: Journal\n      badges: Badges\n---\n\n<style>\nd-article a {\n  border-bottom: none;\n  text-decoration: none;\n  color: #2f65a7;\n} /* remove hyperlink underlines until hover */\nd-article a:hover { border-bottom:1px dotted; }\n</style>\n\n<!-- for dimensions badges -->\n<script async src=\"https://badge.dimensions.ai/badge.js\" charset=\"utf-8\"></script>\n\n<!-- for altmetrics badges -->\n<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> \n\n**\\*** Indicates co-first author.\n\n:::{#pubs}\n:::\n\n <a href=\"https://scholar.google.com/citations?user=TlglgLgAAAAJ\"><img alt=\"Google Scholar logo\" src=\"/images/Google_Scholar_logo.png\" width=\"20px\" height=\"20px\" /></a>\n\n\n::: {.cell}\n\n:::\n\n\nN = 9\n",
-    "supporting": [],
+    "supporting": [
+      "pubs_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
