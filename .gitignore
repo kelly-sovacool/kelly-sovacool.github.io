@@ -1,7 +1,7 @@
 /.quarto/
 /.Rhistory
 /.Rproj.user/
-/__pycache__/
 /.luarc.json
+__pycache__/
 .DS_Store
 .snakemake/
