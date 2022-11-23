@@ -3,6 +3,8 @@ project:
   output-dir: docs/
   pre-render:
     - publications.py
+  post-render:
+    - cp keybase.txt docs/
 
 execute:
   freeze: auto
