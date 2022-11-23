@@ -52,7 +52,7 @@ d-article a:hover { border-bottom:1px dotted; }
  <a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ"><img alt="Google Scholar logo" src="/images/Google_Scholar_logo.png" width="20px" height="20px" /></a>
 
 ```{r pub-count}
-pubs_yml <- yaml::read_yaml('pubs.yml')
+pubs_yml <- yaml::read_yaml('cv/pubs.yml')
 ```
 
 N = `r length(pubs_yml)`

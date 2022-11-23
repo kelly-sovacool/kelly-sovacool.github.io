@@ -7,14 +7,15 @@ from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import *
 import datetime
 import yaml
+import sys
 
 MONTHS = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6, 
           'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
           }
 
-def main():
-    with open('pubs.yml', 'w') as file:
-        yaml.dump([entry.__dict__ for entry in parse_entries('cv_KLS.bib')], file)
+def main(bib_filename, yml_filename):
+    with open(yml_filename, 'w') as file:
+        yaml.dump([entry.__dict__ for entry in parse_entries(bib_filename)], file)
 
 # adapted from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pep per
 def parse_entries(bibtex_filename):
@@ -24,15 +25,6 @@ def parse_entries(bibtex_filename):
         bib_database = bibtexparser.load(bibtex_file, parser=parser)
     return sorted([BibEntry(record) for record in bib_database.entries], 
                   key = lambda x: x.year_mo, reverse = True)
-
-def get_markdown():
-    table = ['| | | |', '|---|---|---|']
-    entries = parse_entries()
-    idx = len(entries)
-    for entry in entries:
-        table.append(f"| {idx}. | {entry.bib_md} | {entry.altmetric()} |")
-        idx -= 1
-    return table
 
 # from https://bibtexparser.readthedocs.io/en/master/tutorial.html#step-4-add-salt-and-pepper
 def customizations(record):
@@ -52,7 +44,6 @@ def customizations(record):
     record = doi(record)
     return record
 
-
 def format_author(name, bold = 'Sovacool, Kelly'):
     last_firstmi = name.split(',')
     lastname = last_firstmi[0]
@@ -64,6 +55,7 @@ def format_author(name, bold = 'Sovacool, Kelly'):
     if bold in name:
         author = f'**{author}**'
     return author
+
 
 class BibEntry:
 
@@ -95,25 +87,25 @@ class BibEntry:
         self.dimensions_badge = f'<span class="__dimensions_badge_embed__" data-doi="{record["doi"]}" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>'
         self.badges = f"{self.github_icon} {self.altmetrics_badge} {self.dimensions_badge}"
 
-    def altmetric(self, 
+    def __repr__(self):
+        return self.bib_md
+
+    def github(self, 
+                     font_size_px=20):
+        return f'<a href="{self.github_link}"> <i class="fa-brands fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
+
+    def altmetrics(self, 
                   badge_type = 'donut', 
                   data_hide = "false"):
         return f'<div data-badge-popover="right" data-badge-type="{badge_type}" data-doi="{self.record["doi"]}" data-condensed="true" data-hide-no-mentions="{data_hide}" class="altmetric-embed"></div>'
 
-    def github_badge(self, 
-                     font_size_px=20):
-        return f'<a href="{self.github_link}"> <i class="fa-brands fa-github" style="font-size:{font_size_px}px;"></i> </a>' if self.github_link else ''
-
-    def dimensions_badge(self,
+    def dimensions(self,
                          data_hide = "true",
                          data_style = "small_circle",
                          data_legend = 'hover-right'):
         # https://badge.dimensions.ai/
         return f'<span class="__dimensions_badge_embed__" data-doi="{self.record["doi"]}" data-hide-zero-citations="{data_hide}" data-style="{data_style}" data-legend="{data_legend}"></span>'
 
-    def __repr__(self):
-        return self.bib_md
-
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1], sys.argv[2])
