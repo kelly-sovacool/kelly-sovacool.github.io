@@ -20,18 +20,13 @@ website:
     location: navbar
     type: textbox
   navbar:
-    left:
-      - icon: github
-        href: https://github.com/kelly-sovacool
     right:
       - text: "About"
         href: index.html
+      - text: "CV"
+        href: "cv/index.html"
       - text: "Posts"
         href: posts.html
-      - text: "CV"
-        href: /latex-cv/cv_KLS.pdf
-      - text: "Publications"
-        href: pubs.html
 
 format:
   html:

@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-description: '[{{< fa brands orcid size=24px >}}](https://orcid.org/0000-0003-3283-829X)'
+description: '[{{< fa brands orcid size=large >}}](https://orcid.org/0000-0003-3283-829X)'
 #date-modified: today
 execute:
   echo: false
@@ -8,7 +8,6 @@ execute:
   freeze: auto
 title-block-banner: true
 page-layout: full
-link-color: '#000000'
 listing:
   id: pubs
   contents:
@@ -29,27 +28,4 @@ listing:
       journal_md: Journal
 ---
 
-<!-- for dimensions badges -->
-<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-<!-- for altmetrics badges -->
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> 
-
-```{r date-updated}
-last_updated <- format(lubridate::as_date(file.info('cv/pubs.bib')$mtime), "%B %d, %Y")
-```
-
-Last updated: `r last_updated`
-
-**\*** Indicates co-first author.
-
-:::{#pubs}
-:::
-
- <a href="https://scholar.google.com/citations?user=TlglgLgAAAAJ"><img alt="Google Scholar logo" src="/images/Google_Scholar_logo.png" width="20px" height="20px" /></a>
-
-```{r pub-count}
-pubs_yml <- yaml::read_yaml('cv/pubs.yml')
-```
-
-N = `r length(pubs_yml)`
+{{< include cv/_pubs.qmd >}}

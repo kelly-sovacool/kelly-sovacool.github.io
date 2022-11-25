@@ -1,6 +1,8 @@
 ---
 title: "Kelly L. Sovacool"
-#description: "Bioinformatician"
+description: | 
+    Bioinformatician building and applying open source tools for microbiome
+    research, and contributing to data science education along the way
 aliases:
     - about.html
 image: images/pibs_profile.jpg
@@ -13,7 +15,7 @@ about:
     - icon: github
       href: https://github.com/kelly-sovacool
     - icon: envelope
-      href: mailto:kelly@sovacool.dev
+      href: mailto:sovacool@umich.edu
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
       rel: me
