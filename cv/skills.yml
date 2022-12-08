@@ -1,11 +1,11 @@
 - title: "Languages & Tools"
-  categories: 
+  categories:
     - R
     - Python
     - Bash
     - C++
     - Snakemake
-    - R Markdow
+    - R Markdown
     - Quarto
     - LaTeX
     - conda
@@ -13,7 +13,7 @@
     - GitHub
     - SLURM
 - title: Research 
-  categories: 
+  categories:
     - gut microbiome composition
     - amplicon sequence analysis
     - metagenomics
@@ -21,7 +21,7 @@
     - data visualization
     - reproducible manuscripts
 - title: Software 
-  categories: 
+  categories:
     - R package maintenance
     - continuous integration
     - high performance computing
