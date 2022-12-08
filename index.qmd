@@ -1,5 +1,5 @@
 ---
-title: "Kelly L. Sovacool"
+title: "Kelly Sovacool"
 description: | 
     Bioinformatician building and applying open source tools for microbiome
     research, and contributing to data science education along the way
