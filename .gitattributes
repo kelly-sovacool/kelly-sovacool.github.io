@@ -1,2 +1,3 @@
-/_extensions/ linguist-vendored=true
-/docs/ linguist-vendored=true
+/_extensions/** linguist-vendored=true
+/docs/** linguist-vendored=true
+/cv/pubs.bib linguist-vendored=true
