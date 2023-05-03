@@ -1,3 +1,4 @@
 /_extensions/** linguist-vendored=true
+/_freeze/** linguist-vendored=true
 /docs/** linguist-vendored=true
 /cv/pubs.bib linguist-vendored=true
