@@ -1,8 +1,7 @@
 ---
 title: "Kelly Sovacool"
 description: | 
-    Bioinformatician building and applying open source tools for microbiome
-    research, and contributing to data science education along the way
+    Bioinformatician building and applying open source software
 aliases:
     - about.html
 image: images/pibs_profile.jpg
@@ -32,19 +31,24 @@ engine: jupyter
 
 :::{#about}
 
-Hi, I'm Kelly! I'm a
+Hi, I'm Kelly! 
+I work remotely as a Bioinformatics Software Engineer for 
+[Frederick National Lab](https://frederick.cancer.gov/).
+I completed my PhD in
 [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics)
-PhD candidate in [Pat Schloss' lab](http://www.schlosslab.org/) at the
-University of Michigan. I develop bioinformatics tools and
+in [Pat Schloss' lab](http://www.schlosslab.org/) at the
+University of Michigan, where I developed bioinformatics tools and
 data analysis pipelines for microbial ecology and host-associated microbiome research.
 I'm a fan of open science, open source software, and reproducible research.
 
 When I'm not in the dry lab, you might find me running, cycling, climbing, or 
 otherwise being active outside. 
-I also volunteer with [Girls Who Code](http://umich.edu/~girlswc/), 
-teach [Software Carpentry](https://umcarpentries.github.io/) workshops, 
-host [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/),
-and moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf).
+While pursuing my PhD at UMich, I volunteered with 
+[Girls Who Code](http://umich.edu/~girlswc/), 
+taught [Software Carpentry](https://umcarpentries.github.io/) workshops, and
+hosted [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/). 
+I also moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf)
+from time to time.
 
 :::
 
