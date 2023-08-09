@@ -11,6 +11,7 @@ website:
   title: "sovacool.dev"
   site-url: https://sovacool.dev
   repo-url: https://github.com/kelly-sovacool/kelly-sovacool.github.io
+  repo-actions: [edit, issue]
   favicon: images/favicon-32x32.png
   google-analytics: "G-4XQKSHWZY6"
   twitter-card:
@@ -27,10 +28,12 @@ website:
         href: "cv/index.html"
       - text: "Posts"
         href: posts.html
+      - icon: rss
+        href: index.xml
 
 format:
   html:
-    theme: 
+    theme:
       light: flatly
       dark: darkly
     css: styles.css
