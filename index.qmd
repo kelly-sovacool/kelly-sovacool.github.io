@@ -14,7 +14,7 @@ about:
     - icon: github
       href: https://github.com/kelly-sovacool
     - icon: envelope
-      href: mailto:sovacool@umich.edu
+      href: mailto:kelly@sovacool.dev
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
       rel: me
