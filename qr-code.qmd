@@ -2,4 +2,6 @@
 title: "QR Code"
 ---
 
-<img alt="QR Code to Kelly Sovacool's personal website" src="images/qr-code_personal-website.png" width="500px"/>
+<img alt="QR Code to Kelly Sovacool's personal website: https://sovacool.dev" src="images/qr-code_personal-website.png" width="500px"/>
+
+<https://sovacool.dev>
