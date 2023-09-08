@@ -18,8 +18,6 @@ about:
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
       rel: me
-    - icon: twitter
-      href: https://twitter.com/kelly_sovacool
     - icon: linkedin
       href: https://linkedin.com/in/kelly-sovacool
     - text: "{{< fa brands orcid >}}" # https://github.com/quarto-ext/fontawesome/issues/6
