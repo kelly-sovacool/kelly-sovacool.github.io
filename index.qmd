@@ -1,6 +1,6 @@
 ---
 title: "Kelly Sovacool"
-description: | 
+description: |
     Bioinformatician developing and maintaining open source software
 aliases:
     - about.html
@@ -18,6 +18,8 @@ about:
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
       rel: me
+    - text: "{{< fa solid square >}}" # https://github.com/FortAwesome/Font-Awesome/issues/19810
+      href: https://bsky.app/profile/kelly-sovacool.bsky.social
     - icon: linkedin
       href: https://linkedin.com/in/kelly-sovacool
     - text: "{{< fa brands orcid >}}" # https://github.com/quarto-ext/fontawesome/issues/6
@@ -29,8 +31,8 @@ engine: jupyter
 
 :::{#about}
 
-Hi, I'm Kelly! 
-I work remotely as a Bioinformatics Software Engineer for 
+Hi, I'm Kelly!
+I work remotely as a Bioinformatics Software Engineer for
 [Frederick National Lab](https://frederick.cancer.gov/) on the
 [CCBR](https://github.com/ccbr) core team.
 I completed my PhD in
@@ -40,12 +42,12 @@ University of Michigan, where I developed bioinformatics tools and
 data analysis pipelines for microbial ecology and host-associated microbiome research.
 I'm a fan of open science, open source software, and reproducible research.
 
-When I'm not in the dry lab, you might find me running, cycling, climbing, or 
-otherwise being active outside. 
-While pursuing my PhD at UMich, I volunteered with 
-[Girls Who Code](http://umich.edu/~girlswc/), 
+When I'm not in the dry lab, you might find me running, cycling, climbing, or
+otherwise being active outside.
+While pursuing my PhD at UMich, I volunteered with
+[Girls Who Code](http://umich.edu/~girlswc/),
 taught [Software Carpentry](https://umcarpentries.github.io/) workshops, and
-hosted [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/). 
+hosted [CoderSpaces office hours](https://datascience.isr.umich.edu/events/coderspaces/).
 I also moonlight as a [live sound engineer](https://sovacool.dev/latex-cv/sound.pdf)
 from time to time.
 
