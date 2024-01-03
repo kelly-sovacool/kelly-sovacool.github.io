@@ -4,7 +4,7 @@ description: |
     Bioinformatician developing and maintaining open source software
 aliases:
     - about.html
-image: images/pibs_profile.jpg
+image: images/grad-portrait_2023-12.jpg
 about:
   template: trestles
   id: about
