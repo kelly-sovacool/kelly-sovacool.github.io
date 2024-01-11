@@ -1,7 +1,7 @@
 ---
 title: "Kelly Sovacool"
 description: |
-    Bioinformatician developing and maintaining open source software
+    Bioinformatician developing open source software
 aliases:
     - about.html
 image: images/pibs_profile.jpg
