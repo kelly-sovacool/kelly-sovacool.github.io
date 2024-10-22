@@ -18,7 +18,7 @@ about:
     - icon: mastodon
       href: https://mastodon.social/@kelly_sovacool
       rel: me
-    - text: "{{< fa solid square >}}" # https://github.com/FortAwesome/Font-Awesome/issues/19810
+    - text: "{{< fa brands bluesky >}}" # https://github.com/FortAwesome/Font-Awesome/issues/19810
       href: https://bsky.app/profile/kelly-sovacool.bsky.social
     - icon: linkedin
       href: https://linkedin.com/in/kelly-sovacool
