@@ -259,4 +259,4 @@ dependencies:
   - zlib=1.2.13
   - zstd=1.5.2
   - pip:
-    - googleapis-common-protos=1.57.0
+    - googleapis-common-protos==1.57.0
