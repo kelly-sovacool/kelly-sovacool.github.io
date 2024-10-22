@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sovacool.dev/LICENSE.html</loc>
-    <lastmod>2023-08-27T00:48:43.191Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts/just-enough-python/index.html</loc>
-    <lastmod>2023-08-27T00:48:47.627Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts/2020-03-20-learn-to-code/index.html</loc>
-    <lastmod>2023-08-27T00:48:51.566Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts/2021-08-26-r-sort-locale/index.html</loc>
-    <lastmod>2023-08-27T00:48:56.416Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts/2019-12-19-urssi-winterschool-notes/index.html</loc>
-    <lastmod>2023-08-27T00:49:06.195Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts/2019-05-15-bioinf-resources/index.html</loc>
-    <lastmod>2023-08-27T00:49:10.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/qr-code.html</loc>
-    <lastmod>2023-08-27T00:49:14.022Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/index.html</loc>
-    <lastmod>2024-01-03T15:38:46.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/pubs.html</loc>
-    <lastmod>2023-08-27T00:49:33.451Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/posts.html</loc>
-    <lastmod>2023-08-27T00:49:37.944Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/cv/code-clubs.html</loc>
-    <lastmod>2023-08-27T00:49:42.049Z</lastmod>
+    <loc>https://sovacool.dev/cv/index.html</loc>
+    <lastmod>2024-01-11T18:28:39.596Z</lastmod>
   </url>
   <url>
     <loc>https://sovacool.dev/cv/carpentries.html</loc>
-    <lastmod>2023-08-27T00:49:46.027Z</lastmod>
+    <lastmod>2023-12-23T04:28:07.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts.html</loc>
+    <lastmod>2023-12-23T04:28:07.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/index.html</loc>
+    <lastmod>2024-10-22T21:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts/2019-05-15-bioinf-resources/index.html</loc>
+    <lastmod>2023-12-23T04:28:07.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts/2019-12-19-urssi-winterschool-notes/index.html</loc>
+    <lastmod>2023-12-23T04:28:07.357Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts/2021-08-26-r-sort-locale/index.html</loc>
+    <lastmod>2023-12-23T04:28:07.362Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts/just-enough-python/index.html</loc>
+    <lastmod>2023-12-23T04:28:07.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/LICENSE.html</loc>
+    <lastmod>2023-12-23T04:28:07.032Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/posts/2020-03-20-learn-to-code/index.html</loc>
+    <lastmod>2023-12-23T04:28:07.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/qr-code.html</loc>
+    <lastmod>2023-12-23T04:28:07.366Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/pubs.html</loc>
+    <lastmod>2023-12-23T04:28:07.366Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sovacool.dev/cv/code-clubs.html</loc>
+    <lastmod>2023-12-23T04:28:07.041Z</lastmod>
   </url>
   <url>
     <loc>https://sovacool.dev/cv/girls-who-code.html</loc>
-    <lastmod>2023-08-27T00:49:49.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sovacool.dev/cv/index.html</loc>
-    <lastmod>2023-08-27T00:49:58.051Z</lastmod>
+    <lastmod>2023-12-23T04:28:07.042Z</lastmod>
   </url>
 </urlset>
