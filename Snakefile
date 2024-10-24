@@ -17,7 +17,7 @@ rule copy_keybase:
     input:
         "keybase.txt"
     output:
-        'docs/keybase.txt'
+        '_site/keybase.txt'
     shell:
         """
         cp {input} {output}
