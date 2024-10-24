@@ -16,5 +16,7 @@ dependencies:
   - pyyaml=6
   - quarto=1.5
   - r-base=4
+  - r-rmarkdown
+  - r-tidyverse
   - snakemake=7
   - snakemake-minimal=7
