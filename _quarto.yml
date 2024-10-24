@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs/
+  output-dir: _site/
   pre-render: snakemake -c 1 prerender
   post-render: snakemake -c 1 postrender
 
