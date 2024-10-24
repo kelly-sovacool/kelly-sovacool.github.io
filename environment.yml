@@ -15,5 +15,6 @@ dependencies:
   - python=3.11
   - pyyaml=6
   - quarto=1.5
+  - r-base=4
   - snakemake=7
   - snakemake-minimal=7
