@@ -204,6 +204,7 @@ dependencies:
   - qtconsole=5.4.0
   - qtconsole-base=5.4.0
   - qtpy=2.3.0
+  - quarto=1.5
   - re2=2022.06.01
   - readline=8.1.2
   - requests=2.28.1
