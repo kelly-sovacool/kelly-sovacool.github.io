@@ -140,6 +140,18 @@ Contact:  &ensp;
 View a PDF version of my CV: &ensp;
 [{{< fa regular file-pdf >}} https://sovacool.dev/latex-cv/vitae_KLS.pdf](https://sovacool.dev/latex-cv/vitae_KLS.pdf)
 
+## Skills
+
+:::{#skills}
+:::
+
+## Open Source Contributions
+
+[{{< fa brands github >}}](https://github.com/kelly-sovacool)
+
+:::{#contribs}
+:::
+
 ## Education
 
 :::{#edu}
@@ -193,16 +205,4 @@ View a PDF version of my CV: &ensp;
 ### Posters
 
 :::{#posters}
-:::
-
-## Open Source Contributions
-
-[{{< fa brands github >}}](https://github.com/kelly-sovacool)
-
-:::{#contribs}
-:::
-
-## Skills
-
-:::{#skills}
 :::
