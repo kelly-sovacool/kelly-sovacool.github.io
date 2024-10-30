@@ -100,7 +100,7 @@ listing:
   - id: talks
     contents: talks.yml
     type: table
-    fields: [date, event, title, location]
+    fields: [date, title, event, location]
     sort-ui: false
     filter-ui: false
     field-display-names: 
@@ -109,7 +109,7 @@ listing:
   - id: posters
     contents: posters.yml
     type: table
-    fields: [date, event, title, location]
+    fields: [date, title, event, location]
     sort-ui: false
     filter-ui: false
     field-display-names: 
