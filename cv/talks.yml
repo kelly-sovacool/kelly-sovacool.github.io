@@ -1,6 +1,11 @@
+- event: BTEP Coding Club
+  title: Introduction to GitHub Actions for Analysts & Engineers
+  location: NCI CCR Bioinformatics Training & Education Program (virtual)
+  date: Feb 2025
+  path: https://github.com/kelly-sovacool/gh-actions-demo
 - event: ABCS Programmer's Corner
   title: Organizing and documenting NGS pipelines on GitHub
-  location: NCI at Frederick
+  location: NCI at Frederick (virtual)
   date: Apr 2024
   path: https://bioinfo-abcc.ncifcrf.gov/training/event/organizing-and-documenting-ngs-pipelines-on-github-building-549-executive-board-room-nci-frederick-1204241200
 - event: Bioinformatics Student Research Hour
