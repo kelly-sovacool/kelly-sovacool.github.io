@@ -8,6 +8,11 @@
   location: NCI at Frederick (virtual)
   date: Apr 2024
   path: https://bioinfo-abcc.ncifcrf.gov/training/event/organizing-and-documenting-ngs-pipelines-on-github-building-549-executive-board-room-nci-frederick-1204241200
+- event: PhD Defense
+  title: Improving Machine Learning Models for Microbiome Analysis and Democratizing Data Science Along the Way
+  location: University of Michigan
+  date: Jun 2023
+  path: https://github.com/kelly-sovacool/phd-defense
 - event: Bioinformatics Student Research Hour
   title: Predicting _C. difficile_ infection severity from the taxonomic composition of the gut microbiome
   location: University of Michigan
