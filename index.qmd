@@ -45,6 +45,8 @@ I'm a fan of open science, open source software, and reproducible research.
 
 When I'm not in the dry lab, you might find me running, cycling, climbing, or
 otherwise being active outside.
+I recently co-founded [Your Neighborhood Scientist](https://neighborhoodscientist.org),
+a nonprofit organization dedicated to improving public understanding of science.
 While pursuing my PhD at UMich, I volunteered with
 [Girls Who Code](http://umich.edu/~girlswc/),
 taught [Software Carpentry](https://umcarpentries.github.io/) workshops, and
