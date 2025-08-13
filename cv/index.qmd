@@ -31,7 +31,7 @@ listing:
     field-display-names: 
       dates: Dates
       lab: Lab
-      tasks: Projects
+      tasks: Description
   - id: service
     contents: service.yml
     type: table
@@ -42,16 +42,19 @@ listing:
     field-display-names: 
       dates: Dates
       org: Organization
-      tasks: Projects
+      tasks: Description
   - id: teaching
     contents: teaching.yml
     type: table
-    fields: [dates, title, org, event]
+    fields: [dates, title, org, where, event]
+    sort: false
     sort-ui: false
     filter-ui: false
     field-links: [event]
-    field-display-names: 
+    field-display-names:
+      dates: Date
       org: Organization
+      location: Location
       event: Event(s)
   - id: continuing-edu
     contents: continuing-edu.yml
@@ -93,7 +96,7 @@ listing:
     sort-ui: [date]
     filter-ui: [date, title_journal, authors_md]
     field-links: []
-    field-display-names: 
+    field-display-names:
       title_journal: Article
       authors_md: Authors
       journal_md: Journal
@@ -101,9 +104,11 @@ listing:
     contents: talks.yml
     type: table
     fields: [date, title, event, location]
+    sort: false
     sort-ui: false
     filter-ui: false
-    field-display-names: 
+    field-display-names:
+      dates: Date
       event: Event
       location: Location
   - id: posters
@@ -116,7 +121,7 @@ listing:
       event: Event
       location: Location
   - id: contribs
-    contents: 
+    contents:
       - software.yml
       - curricula.yml
     type: grid
@@ -133,7 +138,7 @@ listing:
     sort-ui: false
     filter-ui: false
 ---
- 
+
 Contact:  &ensp;
 [{{< fa regular envelope >}} sovacool [at] umich.edu](mailto:sovacool@umich.edu)
 
@@ -143,13 +148,6 @@ View a PDF version of my CV: &ensp;
 ## Skills
 
 :::{#skills}
-:::
-
-## Open Source Contributions
-
-[{{< fa brands github >}}](https://github.com/kelly-sovacool)
-
-:::{#contribs}
 :::
 
 ## Education
@@ -167,26 +165,9 @@ View a PDF version of my CV: &ensp;
 :::{#service}
 :::
 
-## Teaching Experience
+## Teaching
 
 :::{#teaching}
-:::
-
-## Continuing Education
-
-:::{#continuing-edu}
-:::
-
-## Awards
-
-### Grants
-
-:::{#grants}
-:::
-
-### Honors
-
-:::{#honors}
 :::
 
 ## Publications
@@ -205,4 +186,28 @@ View a PDF version of my CV: &ensp;
 ### Posters
 
 :::{#posters}
+:::
+
+## Awards
+
+### Grants
+
+:::{#grants}
+:::
+
+### Honors
+
+:::{#honors}
+:::
+
+## Open Source Contributions
+
+[{{< fa brands github >}}](https://github.com/kelly-sovacool)
+
+:::{#contribs}
+:::
+
+## Continuing Education
+
+:::{#continuing-edu}
 :::

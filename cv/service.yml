@@ -2,6 +2,8 @@
   org: "Your Neighborhood Scientist"
   dates: "2025-present"
   path: https://neighborhoodscientist.org
+  tasks: |
+    Your Neighborhood Scientist cultivates community-based conversations around science, science policy, and scientists through a newsletter and blog.
 - title: "Executive Committee Member: Open Source Technical Lead"
   org: "Girls Who Code at U-M DCMB"
   dates: "2019-2022"
@@ -34,9 +36,9 @@
 
 - title: Peer reviewer
   org: ""
-  dates: "2021"
+  dates: "2021-present"
   path: ""
-  tasks: PLOS ONE (1)
+  tasks: PLOS ONE (1), JOSS (2)
 
 - title: Graduate Student Coordinator
   org: U-M Data Analysis Networking Group
