@@ -1,3 +1,8 @@
+- event: R Ladies Trondheim
+  title: Tips & Tricks for Reproducible R Projects
+  location: Trondheim, Norway
+  date: Aug 2025
+  path: https://github.com/kelly-sovacool/repro-r
 - event: BTEP Coding Club
   title: Introduction to GitHub Actions for Analysts & Engineers
   location: NCI CCR Bioinformatics Training & Education Program (virtual)
@@ -19,11 +24,11 @@
   date: Nov 2022
 - event: Seminar for the KG Jebsen Center for Genetic Epidemiology
   title: Intro to git & GitHub
-  location: (Virtual) Norwegian University of Science and Technology
+  location: Norwegian University of Science and Technology (Virtual)
   date: Feb 2022
 - event: Bioinformatics Student Research Hour
   title: "OptiFit: a fast method for fitting amplicon sequences to existing OTUs"
-  location: (Virtual) University of Michigan
+  location: University of Michigan (Virtual)
   date: Mar 2021
 - event: Systems Biology and Omics Integration Seminar
   title: Developing a Global Homology Analysis for Comparative Genomics
