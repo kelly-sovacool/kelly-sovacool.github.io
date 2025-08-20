@@ -1,0 +1,61 @@
+---
+title: "Teaching R and reproducibility in Norway"
+#description:
+date: 2025-08-20
+lightbox: true
+image: molden-lustrafjord.jpeg
+categories:
+- R
+- Reproducibility
+- Teaching
+---
+
+I had the privilege of traveling to Norway to assist my friend
+Brooke Wolford in teaching the inaugural Health AI in R workshop at NTNU last week.
+When she asked if I would be a guest instructor for her workshop I jumped at the opportunity!
+Brooke and I met in grad school while volunteering with our department's Girls Who Code club, which Brooke co-founded.
+Back then, we spent many hours developing a custom curriculum for teaching high schoolers how to code for data science.
+It was great to be back in the saddle teaching with Brooke like old times!
+It is always a privilege to get to help other scientists gain computational skills,
+and I find that teaching through live coding helps freshen my own understanding as well.
+
+:::{.flex-container .align-center}
+![Brooke teaching at the conclusion of the workshop.](brooke-workshop.jpeg){width=80% group="R"}
+:::
+
+Over the course of this two-day workshop, graduate students and researchers from
+across Norway learned the basics of programming in R, data wrangling and
+visualization with the tidyverse, performing statistical tests, and training
+machine learning models.
+Brooke did a phenomenal job creating the workshop curriculum, which is open and
+available on GitHub: <https://github.com/bnwolford/HealthAIinR>.
+
+:::{.flex-container .align-center}
+![Speaking on reproducibility for R Ladies Trondheim.](r-ladies-talk.jpg){width=80% group="R"}
+:::
+
+After the conclusion of the workshop, we met up with the
+[Trondheim chapter of R Ladies](https://www.meetup.com/rladies-trondheim/)
+(organized by Brooke Wolford and Emma Skarstein) and I gave a talk on
+reproducibility. I shared 5 practical tips for making R projects more
+reproducible, and we had a nice discussion about audience members' needs and
+creative solutions they've come up with in practice. The slides from my talk are
+available here:
+<https://github.com/kelly-sovacool/repro-r>.
+
+
+:::{.flex-container .align-center}
+![Brooke and I at the R Ladies Trondheim meetup.](r-ladies-logo.jpeg){width=80% group="R"}
+:::
+
+My spouse and I turned this trip into a longer vacation.
+We had a lovely time visiting Norway's three largest cities,
+kayaking and hiking in Jostedalsbreen National Park,
+and taking in the breathtaking views of the fjords.
+Many thanks to my dear friend Brooke for extending the invitation, hosting us in
+Trondheim, and making this trip possible.
+I already can't wait to come back!
+
+:::{.flex-container .align-center}
+![View of the Lustrafjord from Molden.](molden-lustrafjord.jpeg){group="R"}
+:::
