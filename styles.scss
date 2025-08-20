@@ -1,0 +1,42 @@
+
+/*-- scss:rules --*/
+/* css styles */
+div.quarto-about-trestles .about-entity .about-link {
+    font-size: 1em;
+    border-style: none;
+    transition: all .35s ease;
+  }
+
+
+.align-center {
+  text-align: center !important;
+}
+
+// flex box
+// source https://www.geeksforgeeks.org/how-to-auto-resize-image-in-css-flexbox-layout-and-keeping-aspect-ratio/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  flex: 1 1 auto;
+  /* Allow images to grow and shrink */
+  object-fit: cover;
+  //position: absolute;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-height: 480px) {
+  .flex-container img {
+    flex: 1 1 100%;
+    /* Full width on small screens */
+  }
+}
