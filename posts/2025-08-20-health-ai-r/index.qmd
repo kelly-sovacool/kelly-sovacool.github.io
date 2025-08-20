@@ -1,6 +1,5 @@
 ---
-title: "Teaching R and reproducibility in Norway"
-#description:
+title: "Teaching R and Reproducibility in Norway"
 date: 2025-08-20
 lightbox: true
 image: molden-lustrafjord.jpeg
