@@ -1,0 +1,30 @@
+---
+title: "Introduction to GitHub Actions for Analysts & Engineers"
+date: "2025-02-19"
+date-modified: "2025-08-22"
+draft: true
+image: gha-demo-quarto.png
+---
+
+Back in February, I presented a live demonstration on GitHub Actions for the
+[NCI Bioinformatics Training and Education Program](https://bioinformatics.ccr.cancer.gov/btep/classes/)
+Coding Club.
+
+Data scientists, analysts, and software engineers alike can all benefit from
+learning how to use continuous integration & deployment tools like GitHub
+Actions, even if you're not deploying software.
+I use GitHub Actions almost daily to automate repetitive tasks like formatting
+code, running tests, and publishing reports and documentation.
+It can seem like an intimidating skill to learn, but it doesn't have to be.
+In my demo, I start with the "Hello world!" of GitHub Actions workflows,
+gradually introduce building blocks for creating useful actions,
+and show examples of more complex workflows for CI/CD tasks.
+
+You can [watch the recorded video from my demo](https://cbiit.webex.com/cbiit/ldr.php?RCID=3c728d9bd6f2efc3ecad6b72a807a7c2)
+and follow along with the stand-alone [instructor notes](https://sovacool.dev/gh-actions-demo/),
+or just read the notes at your own pace.
+At the end, there's a [list of resources](https://sovacool.dev/gh-actions-demo/sections/conclusion.html)
+for learning more about GitHub Actions and many useful Actions that you can reuse
+to automate just about any task you can think of.
+
+[![](gha-demo-quarto.png){fig-alt="A slide with octocat in the background with the title: Intro to GitHub Actions for Analysts & Engineers"}](https://sovacool.dev/gh-actions-demo)
