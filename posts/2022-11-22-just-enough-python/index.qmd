@@ -10,6 +10,8 @@ categories:
   - code club
 image: /images/python-snakemake-r-logos-horiz.png
 reference-location: document
+aliases:
+  - /posts/just-enough-python/index.html
 ---
 
 **TLDR: I made a tutorial: 
