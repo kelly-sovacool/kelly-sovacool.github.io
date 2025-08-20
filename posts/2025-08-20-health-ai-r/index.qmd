@@ -27,8 +27,10 @@ Over the course of this two-day workshop, graduate students and researchers from
 across Norway learned the basics of programming in R, data wrangling and
 visualization with the tidyverse, performing statistical tests, and training
 machine learning models.
-Brooke did a phenomenal job creating the workshop curriculum, which is open and
-available on GitHub: <https://github.com/bnwolford/HealthAIinR>.
+Brooke did a phenomenal job creating the workshop curriculum, which is [open and
+available on GitHub here](https://github.com/bnwolford/HealthAIinR).
+You can read Brooke's workshop reflections in
+[her LinkedIn post here](https://www.linkedin.com/posts/bwolford_this-week-i-led-the-inaugural-health-ai-in-activity-7361438475805507584-2dBo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAB8TXUABBLtNQAGHW9qZUGm17vXuBayWM3A).
 
 :::{.flex-container .align-center}
 ![Speaking on reproducibility for R Ladies Trondheim.](r-ladies-talk.jpg){width=80% group="R"}
@@ -40,8 +42,7 @@ After the conclusion of the workshop, we met up with the
 reproducibility. I shared 5 practical tips for making R projects more
 reproducible, and we had a nice discussion about audience members' needs and
 creative solutions they've come up with in practice. The slides from my talk are
-available here:
-<https://github.com/kelly-sovacool/repro-r>.
+available [here](https://github.com/kelly-sovacool/repro-r).
 
 
 :::{.flex-container .align-center}
