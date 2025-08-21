@@ -1,8 +1,8 @@
 ---
 title: "Introduction to GitHub Actions for Analysts & Engineers"
 date: "2025-02-19"
-date-modified: "2025-08-22"
-draft: true
+date-modified: "2025-08-21"
+draft: false
 image: gha-demo-quarto.png
 ---
 
