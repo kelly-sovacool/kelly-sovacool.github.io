@@ -35,7 +35,8 @@ engine: jupyter
 Hi, I'm Kelly!
 I work remotely as a Bioinformatics Software Engineer for
 [Frederick National Lab](https://frederick.cancer.gov/) on the
-[CCBR](https://github.com/ccbr) core team.
+[CCBR](https://github.com/ccbr) core team, where I develop & maintain
+high-throughput genomics workflows for reproducible cancer research.
 I completed my PhD in
 [Bioinformatics](https://medicine.umich.edu/dept/computational-medicine-bioinformatics)
 in [Pat Schloss' lab](http://www.schlosslab.org/) at the
