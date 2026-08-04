@@ -28,6 +28,10 @@ website:
         href: posts.html
       - icon: rss
         href: index.xml
+  page-footer: |
+    © 2019-2026 Kelly Sovacool
+
+    Views are my own.
 
 format:
   html:
