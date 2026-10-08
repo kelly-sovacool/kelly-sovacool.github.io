@@ -5,6 +5,7 @@ channels:
   - defaults
   - r
 dependencies:
+  - bibtexparser
   - jupyter=1
   - nbconvert=7
   - numpy=1
