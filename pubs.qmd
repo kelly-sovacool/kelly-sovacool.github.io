@@ -1,6 +1,5 @@
 ---
 title: "Publications"
-description: '[{{< fa brands orcid size=large >}}](https://orcid.org/0000-0003-3283-829X)'
 #date-modified: today
 execute:
   echo: false
@@ -22,7 +21,7 @@ listing:
   filter-ui: [date, title_journal, authors_md]
   fields: [date, title_journal, authors_md, badges]
   field-links: []
-  field-display-names: 
+  field-display-names:
       title_journal: Article
       authors_md: Authors
       journal_md: Journal
