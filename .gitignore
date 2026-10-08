@@ -7,3 +7,10 @@ __pycache__/
 .snakemake/
 _freeze/
 _site/
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+pixi.lock
+
+**/*.quarto_ipynb
