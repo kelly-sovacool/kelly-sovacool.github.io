@@ -1,3 +1,8 @@
+- event: BTEP Generative AI in Bioinformatics Seminar Series
+  title: Responsible AI Use, Validation, and Reproducibility in Bioinformatics
+  location: NCI CCR Bioinformatics Training & Education Program (virtual)
+  date: Oct 2026
+  path: https://bioinformatics.ccr.cancer.gov/btep/classes/responsible-ai-use-validation-and-reproducibility-in-bioinformatics
 - event: ABCS Technical Workshop
   title: Anatomy of a modular toolchain for reproducible bioinformatics workflows
   location: NCI at Frederick (Virtual)
